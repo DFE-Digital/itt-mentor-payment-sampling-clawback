@@ -12,6 +12,9 @@ const generateOrganisation = () => {
   
   organisation.details = {}
 
+  //Organisation ID
+  organisation.details.id = faker.string.uuid()
+
   //Organisation name
   organisation.details.name = faker.company.name()
 
