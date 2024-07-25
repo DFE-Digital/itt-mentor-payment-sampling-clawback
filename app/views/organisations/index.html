@@ -4,24 +4,33 @@
 
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+      <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
-    {{ govukButton({
-      text: "Add organisation",
-      href: "#"
-    }) }}
-
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+      {{ govukButton({
+        text: "Add organisation",
+        href: "#"
+      }) }}
 
     {{ data.organisations | log }}
 
+
+        {# {% include "./_sort-options.njk" %} #}
+
+        <div class="app-list">
+          {% for organisation in data.organisations %}
+          <div class="app-list__item">
+              <h2 class="govuk-heading-s">
+                <a class="govuk-link" href="/organisations/{{organisation.id}}">
+                  {{ organisation.details.name}}
+                </a>
+              </h2>
+          </div>
+          {% endfor %}
+        </div>
+
+    </div>
   </div>
-</div>
 {% endblock %}
