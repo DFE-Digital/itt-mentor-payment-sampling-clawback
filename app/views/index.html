@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Prototype" %}
+{% set pageName = "Claim funding for mentor training" %}
 
 {% block content %}
 
@@ -8,12 +8,78 @@
   <div class="govuk-grid-column-two-thirds">
 
 
-
     <h1 class="govuk-heading-l">{{ pageName }}</h1>
-    <p><a href="/account/sign-in">Go to the first page of the prototype</a></p>
+    <p class="govuk-body">
+      Use this service to claim for mentors who supported, or intended to support, trainee teachers from September 2023 to July 2024.
+    </p>
 
+    <p class="govuk-body">
+      Final closing date for claims: <strong>19 July 2024 at 11:59 pm</strong>
+    </p>
 
+    <p class="govuk-body">
+      You must wait until May 2025 to claim for training that took place from April 2024 for the school year starting September 2025.
+    </p>
+
+    <h2 class="govuk-heading-m">Before you start</h2>
+
+    <p class="govuk-body">
+      You’ll be asked for:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        initial teacher training (ITT) provider name
+      </li>
+      <li>
+        your mentors’ teacher reference numbers (TRN)
+      </li>
+      <li>
+        your mentors’ dates of birth
+      </li>
+      <li>
+        hours of training each mentor completed
+      </li>
+    </ul>
+
+    <a href="/account/sign-in" role="button" draggable="false" class="govuk-button govuk-!-margin-top-4 govuk-button--start" data-module="govuk-button">
+      Start now
+      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/>
+      </svg>
+    </a>
+    
+    
+    <h2 class="govuk-heading-m">Get an account to claim funding for mentor training</h2>
+
+    <p class="govuk-body">
+      Ask a colleague within your organisation to add you if you do not have an account.
+    </p>
+
+    <p class="govuk-body">
+      If your organisation has not been set up to claim funding for mentor training, send an email to <a href="mailto:ittmentor.funding@education.gov.uk" class="govuk-link">ittmentor.funding@education.gov.uk</a>.
+    </p>
+    
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <aside class="app-related" role="complementary">
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-2" id="-title">Related content</h2>
+
+      <nav role="navigation" aria-labelledby="-title">
+        <ul class="app-related__list">
+        
+          <li class="app-related__list-item">
+            <a class="govuk-link" href="https://www.gov.uk/government/collections/initial-teacher-training">Guidance for providers on initial teacher training (ITT)</a>
+          </li>
+        
+          <li class="app-related__list-item">
+            <a class="govuk-link" href="https://www.gov.uk/guidance/teacher-reference-number-trn">Find out what a teacher reference number (TRN) is and how to find or request a TRN</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
   </div>
 </div>
 
-{% endblock %}
+{% endblock %}  
