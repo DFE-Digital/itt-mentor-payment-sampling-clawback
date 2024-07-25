@@ -1,6 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% set pageName = "Organisations" %}
+{% set primaryNavId = "organisations" %}
 
 {% block content %}
 
@@ -23,8 +24,8 @@
           {% for organisation in data.organisations %}
           <div class="app-list__item">
               <h2 class="govuk-heading-s">
-                <a class="govuk-link" href="/organisations/{{organisation.id}}">
-                  {{ organisation.details.name}}
+                <a href="/organisations/{{organisation.details.id}}">
+                  {{ organisation.details.name }}
                 </a>
               </h2>
           </div>

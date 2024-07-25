@@ -13,7 +13,10 @@ const generateOrganisation = () => {
   organisation.details = {}
 
   //Organisation ID
-  organisation.details.id = faker.string.uuid()
+  organisation.details.id = "" + faker.number.int({ min: 123456, max: 999999 })
+  
+  //Organisation uuid
+  organisation.details.uuid = faker.string.uuid()
 
   //Organisation name
   organisation.details.name = faker.company.name()
@@ -29,7 +32,7 @@ const generateOrganisation = () => {
   organisation.details.lastName = faker.person.lastName()
 
   //Agreed on
-  organisation.details.date = faker.date.between({ from: '2020-01-01T00:00:00.000Z', to: '2024-01-01T00:00:00.000Z' }) // '2026-05-16T02:22:53.002Z'
+  organisation.details.date = faker.date.recent({ days: 300 })
 
   //Region
   organisation.details.region = faker.location.county()

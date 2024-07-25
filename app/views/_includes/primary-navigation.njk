@@ -1,0 +1,16 @@
+
+
+{{ xGovukPrimaryNavigation({
+    visuallyHiddenTitle: "Navigation",
+    items: [{
+      text: "Organisations",
+      href: "/organisations",
+      current: primaryNavId == 'organisations'
+    },{
+      text: "Claims",
+      href: "/claims"
+    },{
+      text: "Support users",
+      href: "/support users"
+    }]
+  }) if data.user }}
