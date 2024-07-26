@@ -58,7 +58,8 @@ const generateOrganisation = () => {
   //Region
   organisation.details.region = faker.location.county()
 
-  //Hourly rate
+  //Cost
+  organisation.details.cost = faker.commerce.price({ min: 100, max: 10000, symbol: '£' })
 
   //Email
   organisation.details.emailAddress = `${organisation.details.firstName.toLowerCase()}.${organisation.details.lastName.toLowerCase()}@${organisation.details.name.toLowerCase()}.school.uk`
@@ -114,3 +115,6 @@ const generateOrganisations = () => {
   }
   
   generateOrganisationsFile(path.join(__dirname, '../app/data/organisations.json'))
+
+
+  
