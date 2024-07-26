@@ -14,6 +14,27 @@ const generateOrganisation = () => {
 
   //Organisation ID
   organisation.details.id = "" + faker.number.int({ min: 123456, max: 999999 })
+
+  //Stautuses
+  organisation.details.status = faker.helpers.arrayElement([
+    'Submitted',
+    'Draft',
+    'Checking',
+    'Sent for payment',
+    'Sampling',
+    'Information needed',
+    'Inelibible',
+    'Paid',
+    'Approved',
+    'Awaiting clawback',
+    'Clawback complete'
+  ])
+
+  //Providers
+  organisation.details.provider = faker.helpers.arrayElement([
+    'Best Practice Network',
+    'National Institute of Teaching'
+  ])
   
   //Organisation uuid
   organisation.details.uuid = faker.string.uuid()
