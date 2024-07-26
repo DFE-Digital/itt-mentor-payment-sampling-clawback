@@ -36,7 +36,8 @@
                     </a>
                   </h3>
                   {{ govukTag({
-                    text: organisation.details.status
+                    text: organisation.details.status,
+                    classes: organisation.details.status | statusColour
                   }) }}
                 </header>
   

@@ -40,7 +40,7 @@ const generateOrganisation = () => {
   organisation.details.uuid = faker.string.uuid()
 
   //Organisation name
-  organisation.details.name = faker.company.name()
+  organisation.details.name = faker.company.buzzNoun() + " school"
 
   //UK provider reference number (UKPRN)
   organisation.details.ukprn = faker.string.numeric(8)
