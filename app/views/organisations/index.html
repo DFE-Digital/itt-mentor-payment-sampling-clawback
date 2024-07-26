@@ -17,8 +17,8 @@
 
     {{ data.organisations | log }}
 
-
-        {# {% include "./_sort-options.njk" %} #}
+    {% include "_includes/search-form.njk" %}
+    {# {% include "./_sort-options.njk" %} #}
 
         <div class="app-list">
           {% for organisation in data.organisations %}

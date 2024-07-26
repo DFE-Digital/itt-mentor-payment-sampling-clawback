@@ -40,13 +40,14 @@ const generateOrganisation = () => {
   //Hourly rate
 
   //Email
-  organisation.details.email = emailAddress = `${organisation.details.firstName.toLowerCase()}.${organisation.details.lastName.toLowerCase()}@ed.co.uk`
+  organisation.details.emailAddress = `${organisation.details.firstName.toLowerCase()}.${organisation.details.lastName.toLowerCase()}@${organisation.details.name.toLowerCase()}.school.uk`
 
   //Tel
-  
+  organisation.details.phone = faker.phone.number()
 
   //Website
   organisation.details.website = faker.internet.domainName()
+  
   
   //Address
   organisation.details.address = {

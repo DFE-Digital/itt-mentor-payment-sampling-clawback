@@ -1,0 +1,28 @@
+{{ govukSummaryList({
+        rows: [
+          {
+            key: {
+              text: "Organisation name"
+            },
+            value: {
+              text: organisation.details.name
+            }
+          },
+          {
+            key: {
+              text: "UK provider reference number (UKPRN)"
+            },
+            value: {
+              text: organisation.details.ukprn
+            }
+          },
+          {
+            key: {
+              text: "Unique reference number (URN)"
+            },
+            value: {
+              text: organisation.details.urn
+            }
+          }
+        ]
+      }) }}

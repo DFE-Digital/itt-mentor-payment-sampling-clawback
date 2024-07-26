@@ -1,0 +1,19 @@
+
+{{ xGovukSecondaryNavigation({
+  visuallyHiddenTitle: "Secondary menu",
+  items: [{
+    text: "Details",
+    href: "#",
+    current: true,
+    classes: "govuk-!-margin-bottom-6"
+  }, {
+    text: "Users",
+    href: "#"
+  }, {
+    text: "Mentors",
+    href: "#"
+  }, {
+    text: "Claims",
+    href: "#"
+  }]
+}) if data.user }}

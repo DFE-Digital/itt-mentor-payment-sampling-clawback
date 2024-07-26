@@ -2,6 +2,7 @@
 
 {% set pageName = organisation.details.name %}
 {% set primaryNavId = "organisations" %}
+{% set secondaryNavId = "details" %}
 
 
 {% block content %}
@@ -11,8 +12,24 @@
 
       <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
+      {% include "_includes/secondary-navigation.njk" %}
+
 
       {{ data.pageName | log }}
+
+      {% include "_includes/organisation-details.njk" %}
+
+      {% include "_includes/grant-conditions.njk" %}
+
+      {% include "_includes/grant-funding.njk" %}
+
+      {# pass this to contact details include #}
+      {% set address %}
+        {{appAddress({ address: organisation.details.address })}}
+      {% endset %}
+      
+
+      {% include "_includes/contact-details.njk" %}
 
       
     </div>

@@ -1,0 +1,44 @@
+<h2 class="govuk-heading-m govuk-!-margin-top-9">
+  Contact details
+</h2>
+
+
+{{ govukSummaryList({
+  rows: [
+    {
+      key: {
+        text: "Email address"
+      },
+      value: {
+        text: organisation.details.emailAddress if organisation.details.emailAddress.length else "Not entered",
+        classes: "govuk-hint" if not organisation.details.emailAddress.length
+      }
+    },
+    {
+      key: {
+        text: "Telephone number"
+      },
+      value: {
+        text: organisation.details.phone if organisation.details.phone.length else "Not entered",
+        classes: "govuk-hint" if not organisation.details.phone.length
+      }
+    },
+    {
+      key: {
+        text: "Website"
+      },
+      value: {
+        text: (organisation.details.website | urlize | safe) if organisation.details.website.length else "Not entered",
+        classes: "govuk-hint" if not organisation.details.website.length
+      }
+    },
+    {
+      key: {
+        text: "Address"
+      },
+      value: {
+        html: address
+      }
+    }
+  ]
+}) }}
