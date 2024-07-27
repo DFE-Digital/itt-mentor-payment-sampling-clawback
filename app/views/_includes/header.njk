@@ -8,13 +8,18 @@
 
 
 {{ govukHeader({
-    homepageUrl: "#",
+    homepageUrl: "/",
     productName: serviceName,
     serviceUrl: serviceUrl,
+    navigationClasses: "govuk-header__navigation--end",
     navigation: [
     {
         href: '/account/sign-out',
         text: 'Sign out'    
+    },
+    {
+        href: '/account',
+        text: 'Your account'    
     }
     ] if data.user 
 }) }}

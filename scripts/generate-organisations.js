@@ -16,14 +16,14 @@ const generateOrganisation = () => {
   organisation.details.id = "" + faker.number.int({ min: 123456, max: 999999 })
 
   //Stautuses
-  organisation.details.status = faker.helpers.arrayElement([
+  organisation.details.claim = faker.helpers.arrayElement([
     'Submitted',
     'Draft',
     'Checking',
     'Sent for payment',
     'Sampling',
     'Information needed',
-    'Inelibible',
+    'Ineligible',
     'Paid',
     'Approved',
     'Awaiting clawback',

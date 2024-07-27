@@ -3,45 +3,156 @@
   {{ govukCheckboxes({
     idPrefix: "filters[statuses]",
     name: "filters[statuses]",
-    classes: "govuk-checkboxes--small",
+    classes: "govuk-checkboxes--small app-checkbox-filter__container",
     fieldset: {
       legend: {
-        text: "Status",
-        classes: "govuk-fieldset__legend--s"
-      }
+      html: 'Status<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
     },
     items: [{
-      value: 'Received',
-      text: 'Received'
+      value: 'submitted',
+      text: 'Submitted'
     }, {
-      value: 'Approved',
+      value: 'Draft',
+      text: 'draft'
+    }, {
+      value: 'checking',
+      text: 'Checking'
+    }, {
+      value: 'sent for payment',
+      text: 'Sent for payment'
+    }, {
+      value: 'Sampling',
+      text: 'Sampling'
+    }, {
+      value: 'information needed',
+      text: 'Information needed'
+    }, {
+      value: 'ineligible',
+      text: 'Ineligible'
+    }, {
+      value: 'paid',
+      text: 'Paid'
+    }, {
+      value: 'approved',
       text: 'Approved'
     }, {
-      value: 'Rejected',
-      text: 'Rejected'
+      value: 'awaiting clawback',
+      text: 'Awaiting clawback'
+    }, {
+      value: 'clawback complete',
+      text: 'Clawback complete'
     }],
     values: data.filters.statuses
   }) }}
 
   {{ govukCheckboxes({
-    idPrefix: "filters[numberOfBalls]",
-    name: "filters[numberOfBalls]",
-    classes: "govuk-checkboxes--small",
+    idPrefix: "filters[school]",
+    name: "filters[school]",
+    classes: "govuk-checkboxes--small app-checkbox-filter__container govuk-!-margin-bottom-4",
     fieldset: {
       legend: {
-        text: "Number of balls",
-        classes: "govuk-fieldset__legend--s"
+      html: 'School<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+    },
+    items: [{
+      value: 'School 1',
+      text: 'School 1'
+    }, {
+      value: 'School 2',
+      text: 'School 2'
+    }, {
+      value: 'School 3',
+      text: 'School 3'
+    }],
+    values: data.filters.school
+  }) }}
+
+  {{ govukCheckboxes({
+    idPrefix: "filters[accreditedProvider]",
+    name: "filters[accreditedProvider]",
+    classes: "govuk-checkboxes--small app-checkbox-filter__container",
+    fieldset: {
+      legend: {
+        html: 'Accredited providers<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
       }
     },
     items: [{
-      value: '1 or 2',
-      text: '1 or 2'
+      value: 'Best Practice Network',
+      text: 'Best Practice Network'
     }, {
-      value: '3 or more',
-      text: '3 or more'
+      value: 'NIoT: National Institute of Teaching, founded by the School-Led Development Trust',
+      text: 'NIoT: National Institute of Teaching, founded by the School-Led Development Trust'
     }],
-    values: data.filters.numberOfBalls
+    values: data.filters.accreditedProvider
   }) }}
+
+  {{ govukDateInput({
+  id: "filters[submittedAfter]",
+  namePrefix: "filters[submittedAfter]",
+  fieldset: {
+    legend: {
+      text: "Submitted after",
+      isPageHeading: false,
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  hint: {
+    text: "For example, 31 3 2024"
+  },
+  items: [
+    {
+      name: "day",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-day"
+    },
+    {
+      name: "month",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-month"
+    },
+    {
+      name: "year",
+      classes: "govuk-input--width-4",
+      autocomplete: "bday-year"
+    }
+  ]
+}) }}
+
+{{ govukDateInput({
+  id: "filters[submittedBefore]",
+  namePrefix: "filters[submittedBefore]",
+  fieldset: {
+    legend: {
+      text: "Submitted before",
+      isPageHeading: false,
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  hint: {
+    text: "For example, 31 3 2024"
+  },
+  items: [
+    {
+      name: "day",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-day"
+    },
+    {
+      name: "month",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-month"
+    },
+    {
+      name: "year",
+      classes: "govuk-input--width-4",
+      autocomplete: "bday-year"
+    }
+  ]
+}) }}
 
 {% endset %}
 
