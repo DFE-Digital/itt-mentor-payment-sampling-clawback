@@ -20,7 +20,14 @@
     @include govuk-media-query($until: desktop) {
       margin-bottom: govuk-spacing(1)
     }
+
+    .govuk-checkboxes__item {
+      position: relative;
+      top: govuk-spacing(4);
+      left: 0;
+    }
   }
+
 
   // .govuk-grid-column-one-third {
   //   @include govuk-media-query($from: tablet) {

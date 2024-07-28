@@ -11,12 +11,26 @@
 
     <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Mark as complete",
+        href: 'sampling-mark-complete'
+      }) }}
+    
+      {{ govukButton({
+        text: "Mark as clawback pending",
+        href: 'sampling-mark-clawback',
+        classes: "govuk-button--secondary"
+      }) }}
+    </div>
+
     {% include "_includes/secondary-navigation-claims.njk" %}
 
       <div class="app-filter-layout">
         <div class="app-filter-layout__filter">
           {% include "_includes/filter-panel.njk" %}
         </div>
+
         <div class="app-filter-layout__content">
 
           {% include "_includes/search-form.njk" %}
@@ -26,41 +40,62 @@
           </div>
 
           {{ data | log }}
-          {% if data.organisations.length %}
+          
           {# Taken from current proto for styling #}
-          <table class="govuk-table" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th class="govuk-table__header" scope="col" id="select-all"></th>
-                <th class="govuk-table__header" scope="col">Name</th>
-                <th class="govuk-table__header" scope="col">Elevation</th>
-                <th class="govuk-table__header" scope="col">Continent</th>
-                <th class="govuk-table__header govuk-table__header--numeric" scope="col">First summit</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row govuk-table__row--selected">
-                <td class="govuk-table__cell">
-                  <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
-                    <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
-                    <label class="govuk-label govuk-checkboxes__label" for="mountain-aconcagua">
-                      <span class="govuk-visually-hidden">Select Aconcagua</span>
-                    </label>
-                  </div>
-                </td>
-                <td class="govuk-table__cell">Aconcagua</td>
-                <td class="govuk-table__cell">6,961 meters</td>
-                <td class="govuk-table__cell">South America</td>
-                <td class="govuk-table__cell govuk-table__cell--numeric">1897</td>
-              </tr>
-            </tbody>
-          </table>  
-
-          {% else %}
-        <p>There are no results.</p>
-      {% endif %}
+          
+          <div class="app-claim-cards">
+            
+            {% for organisation in data.organisations %}
+            {% if organisation.details.claim == 'Sampling' %}
+                <section class="app-claim-card">
+                  
+                    <div class="govuk-checkboxes__item govuk-checkboxes--small app-multi-select__checkbox">
+                      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
+                      <label class="govuk-label govuk-checkboxes__label" for="sampling-claims">
+                        <span class="govuk-visually-hidden">Select a claim</span>
+                      </label>
+                    </div>
+                    <header class="app-claim-card__header">
+                      <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+                        <a href="/organisations/{{organisation.details.id}}" class="govuk-link govuk-link--no-visited-state">
+                          {{organisation.details.name}}
+                        </a>
+                      </h3>
+                      {{ govukTag({
+                        text: organisation.details.claim,
+                        classes: organisation.details.claim | statusColour
+                      }) }}
+                    </header>
+      
+                    <div class="govuk-grid-row">
+                      <div class="govuk-grid-column-two-thirds">
+                        <dl class="app-claim-card__list">
+                          <dt class="govuk-visually-hidden">Accredited provider</dt>
+                          <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                            {{ organisation.details.provider }}
+                          </dd>
+                        </dl>
+                      </div>
+      
+                      <div class="govuk-grid-column-one-third">
+                        <dl class="app-claim-card__list app-claim-card__list--secondary">
+                          <dt class="govuk-visually-hidden">Submitted on</dt>
+                          <dd class="govuk-body-s govuk-!-margin-bottom-1">
+                            {{ organisation.details.date }}
+                          </dd>
+                          <dt class="govuk-visually-hidden">Total amount</dt>
+                          <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                            {{ organisation.details.cost  }}
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    
+                </section>
+              {% endif %}                
+            {% endfor %}
+          </div>
         
-      </div>
 
 {% endblock %}
 
