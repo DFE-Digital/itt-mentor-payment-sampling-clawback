@@ -1,0 +1,35 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Support users" %}
+{% set primaryNavId = "support-users" %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">{{ pageName }}</h1>
+
+      {{ govukButton({
+        text: "Add user",
+        href: "#"
+      }) }}
+
+    {{ data.organisations | log }}
+
+    {# {% include "_includes/search-form.njk" %} #}
+    {# {% include "./_sort-options.njk" %} #}
+
+        <div class="app-list">
+          {% for organisation in data.organisations %}
+          <div class="app-list__item">
+              <h2 class="govuk-heading-s">
+                list of users
+              </h2>
+          </div>
+          {% endfor %}
+        </div>
+
+    </div>
+  </div>
+{% endblock %}

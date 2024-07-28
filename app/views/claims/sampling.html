@@ -1,0 +1,88 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Sampling claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling-claims" %}
+
+{% block content %}
+
+
+
+
+    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+
+    {% include "_includes/secondary-navigation-claims.njk" %}
+
+      <div class="app-filter-layout">
+        <div class="app-filter-layout__filter">
+          {% include "_includes/filter-panel.njk" %}
+        </div>
+        <div class="app-filter-layout__content">
+
+          {% include "_includes/search-form.njk" %}
+
+          <div class="app-action-bar">
+            <div class="app-action-bar__filter"></div>
+          </div>
+
+          {{ data | log }}
+          {% if data.organisations.length %}
+          {# Taken from current proto for styling #}
+          <table class="govuk-table" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col" id="select-all"></th>
+                <th class="govuk-table__header" scope="col">Name</th>
+                <th class="govuk-table__header" scope="col">Elevation</th>
+                <th class="govuk-table__header" scope="col">Continent</th>
+                <th class="govuk-table__header govuk-table__header--numeric" scope="col">First summit</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row govuk-table__row--selected">
+                <td class="govuk-table__cell">
+                  <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                    <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
+                    <label class="govuk-label govuk-checkboxes__label" for="mountain-aconcagua">
+                      <span class="govuk-visually-hidden">Select Aconcagua</span>
+                    </label>
+                  </div>
+                </td>
+                <td class="govuk-table__cell">Aconcagua</td>
+                <td class="govuk-table__cell">6,961 meters</td>
+                <td class="govuk-table__cell">South America</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">1897</td>
+              </tr>
+            </tbody>
+          </table>  
+
+          {% else %}
+        <p>There are no results.</p>
+      {% endif %}
+        
+      </div>
+
+{% endblock %}
+
+{% block scripts %}
+  {{super()}}
+  <script>
+    new AppFrontend.FilterToggleButton({
+      bigModeMediaQuery: '(min-width: 48.063em)',
+      startHidden: false,
+      toggleButton: {
+        container: $('.app-action-bar__filter'),
+        showText: 'Show filter',
+        hideText: 'Hide filter',
+        classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+      },
+      closeButton: {
+        container: $('.app-filter__header-action'),
+        text: 'Close'
+      },
+      filter: {
+        container: $('.app-filter-layout__filter')
+      }
+    })
+  </script>
+{% endblock %}

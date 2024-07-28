@@ -3,11 +3,12 @@
   visuallyHiddenTitle: "Secondary menu",
   items: [{
     text: "All claims",
-    href: "#",
-    current: true,
+    href: "/claims",
+    current: (secondaryNavId == "all-claims"),
     classes: "govuk-!-margin-bottom-6"
   }, {
     text: "Sampling",
-    href: "#"
+    href: "/claims/sampling",
+    current: (secondaryNavId == "sampling-claims")
   }]
 }) if data.user }}
