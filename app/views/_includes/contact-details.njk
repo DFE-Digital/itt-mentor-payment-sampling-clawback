@@ -10,8 +10,8 @@
         text: "Email address"
       },
       value: {
-        text: organisation.details.emailAddress if organisation.details.emailAddress.length else "Not entered",
-        classes: "govuk-hint" if not organisation.details.emailAddress.length
+        text: organisation.emailAddress if organisation.emailAddress.length else "Not entered",
+        classes: "govuk-hint" if not organisation.emailAddress.length
       }
     },
     {
@@ -19,8 +19,8 @@
         text: "Telephone number"
       },
       value: {
-        text: organisation.details.phone if organisation.details.phone.length else "Not entered",
-        classes: "govuk-hint" if not organisation.details.phone.length
+        text: organisation.phone if organisation.phone.length else "Not entered",
+        classes: "govuk-hint" if not organisation.phone.length
       }
     },
     {
@@ -28,8 +28,8 @@
         text: "Website"
       },
       value: {
-        text: (organisation.details.website | urlize | safe) if organisation.details.website.length else "Not entered",
-        classes: "govuk-hint" if not organisation.details.website.length
+        text: (organisation.website | urlize | safe) if organisation.website.length else "Not entered",
+        classes: "govuk-hint" if not organisation.website.length
       }
     },
     {
