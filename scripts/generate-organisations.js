@@ -15,6 +15,7 @@ const generateOrganisation = () => {
   //Organisation ID
   organisation.details.id = "" + faker.number.int({ min: 123456, max: 999999 })
 
+
   //Stautuses
   organisation.details.claim = faker.helpers.arrayElement([
     'Submitted',
@@ -39,8 +40,12 @@ const generateOrganisation = () => {
   //Organisation uuid
   organisation.details.uuid = faker.string.uuid()
 
-  //Organisation name
-  organisation.details.name = faker.company.buzzNoun() + " school"
+  //School name
+  organisation.details.name = faker.company.buzzAdjective() + " school"
+  
+
+  //Organisation Ref number append to school name
+  organisation.details.claimRef = faker.number.int({ min: 123456, max: 999999 }) + " - " + organisation.details.name
 
   //UK provider reference number (UKPRN)
   organisation.details.ukprn = faker.string.numeric(8)
@@ -62,7 +67,7 @@ const generateOrganisation = () => {
   organisation.details.cost = faker.commerce.price({ min: 100, max: 10000, symbol: '£' })
 
   //Email
-  organisation.details.emailAddress = `${organisation.details.firstName.toLowerCase()}.${organisation.details.lastName.toLowerCase()}@${organisation.details.name.toLowerCase()}.school.uk`
+  organisation.details.emailAddress = `${organisation.details.firstName.toLowerCase()}.${organisation.details.lastName.toLowerCase()}@${organisation.details.name.toLowerCase()}.uk`
 
   //Tel
   organisation.details.phone = faker.phone.number()

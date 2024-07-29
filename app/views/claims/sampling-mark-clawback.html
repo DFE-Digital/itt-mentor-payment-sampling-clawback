@@ -27,58 +27,7 @@
 
     {% include "_includes/secondary-navigation-claims.njk" %}
 
-    <div class="app-claim-cards">
-            
-        {% for organisation in data.organisations %}
-        {% if organisation.details.claim == 'Sampling' %}
-            <section class="app-claim-card">
-              
-                <div class="govuk-checkboxes__item govuk-checkboxes--small app-multi-select__checkbox">
-                  <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
-                  <label class="govuk-label govuk-checkboxes__label" for="sampling-claims">
-                    <span class="govuk-visually-hidden">Select a claim</span>
-                  </label>
-                </div>
-                <header class="app-claim-card__header">
-                  <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-                    <a href="/organisations/{{organisation.details.id}}" class="govuk-link govuk-link--no-visited-state">
-                      {{organisation.details.name}}
-                    </a>
-                  </h3>
-                  {{ govukTag({
-                    text: 'Awaiting clawback'
-                  }) }}
-                </header>
-  
-                <div class="govuk-grid-row">
-                  <div class="govuk-grid-column-two-thirds">
-                    <dl class="app-claim-card__list">
-                      <dt class="govuk-visually-hidden">Accredited provider</dt>
-                      <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                        {{ organisation.details.provider }}
-                      </dd>
-                    </dl>
-                  </div>
-  
-                  <div class="govuk-grid-column-one-third">
-                    <dl class="app-claim-card__list app-claim-card__list--secondary">
-                      <dt class="govuk-visually-hidden">Submitted on</dt>
-                      <dd class="govuk-body-s govuk-!-margin-bottom-1">
-                        {{ organisation.details.date }}
-                      </dd>
-                      <dt class="govuk-visually-hidden">Total amount</dt>
-                      <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                        {{ organisation.details.cost  }}
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-                
-            </section>
-          {% endif %}                
-        {% endfor %}
-      </div>
-
+    {% include "_includes/claim-card.njk" %}
 
 {% endblock %}
 

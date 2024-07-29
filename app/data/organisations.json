@@ -1,1560 +1,1375 @@
 [
   {
     "details": {
-      "id": "942899",
-      "claim": "Awaiting clawback",
-      "provider": "National Institute of Teaching",
-      "uuid": "cfc5e272-9fe9-488f-a0da-e861a9fdb658",
-      "name": "experiences school",
-      "ukprn": "91980765",
-      "urn": "650526",
-      "firstName": "Abbie",
-      "lastName": "Smitham",
-      "date": "2023-10-22T13:00:39.685Z",
-      "region": "Dorset",
-      "cost": "£6517.00",
-      "emailAddress": "abbie.smitham@experiences school.school.uk",
-      "phone": "579-856-8865 x35569",
-      "website": "scientific-overhead.net",
-      "address": {
-        "line1": "142 Leila Skyway",
-        "town": "Glenview",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "996285",
-      "claim": "Draft",
-      "provider": "National Institute of Teaching",
-      "uuid": "d186e563-af19-4fe3-8a73-021fea98c03a",
-      "name": "web services school",
-      "ukprn": "13829561",
-      "urn": "819141",
-      "firstName": "Keanu",
-      "lastName": "Dicki",
-      "date": "2024-02-20T18:58:49.563Z",
-      "region": "Highlands and Islands",
-      "cost": "£9723.00",
-      "emailAddress": "keanu.dicki@web services school.school.uk",
-      "phone": "988-310-6569",
-      "website": "attractive-examination.org",
-      "address": {
-        "line1": "150 Veum Fort",
-        "town": "Crystelboro",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "859231",
-      "claim": "Sent for payment",
+      "id": "669494",
+      "claim": "Information needed",
       "provider": "Best Practice Network",
-      "uuid": "e35a5505-5891-4539-b00e-fc867981290b",
-      "name": "blockchains school",
-      "ukprn": "87156728",
-      "urn": "556526",
-      "firstName": "Trisha",
-      "lastName": "Deckow",
-      "date": "2024-05-18T15:07:40.272Z",
-      "region": "West Sussex",
-      "cost": "£8643.00",
-      "emailAddress": "trisha.deckow@blockchains school.school.uk",
-      "phone": "1-963-668-7328 x3415",
-      "website": "great-creature.biz",
-      "address": {
-        "line1": "179 E 9th Street",
-        "town": "Kenner",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "142059",
-      "claim": "Awaiting clawback",
-      "provider": "Best Practice Network",
-      "uuid": "30d66b8a-8b9e-462a-b518-f721eb69f7c2",
-      "name": "applications school",
-      "ukprn": "04631768",
-      "urn": "238997",
-      "firstName": "Dejah",
-      "lastName": "Langworth",
-      "date": "2023-12-27T05:17:21.687Z",
-      "region": "Lawrence County",
-      "cost": "£6833.00",
-      "emailAddress": "dejah.langworth@applications school.school.uk",
-      "phone": "(915) 368-6371 x031",
-      "website": "square-impudence.info",
-      "address": {
-        "line1": "2293 Birch Road",
-        "town": "Fort Flavioberg",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "763735",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "df5e28a4-cae8-49ea-9e5f-0879edcbc016",
-      "name": "deliverables school",
-      "ukprn": "81949765",
-      "urn": "787359",
-      "firstName": "Hollie",
-      "lastName": "Monahan",
-      "date": "2023-12-29T12:20:17.394Z",
-      "region": "Dyfed",
-      "cost": "£7973.00",
-      "emailAddress": "hollie.monahan@deliverables school.school.uk",
-      "phone": "(399) 203-3048 x2897",
-      "website": "profitable-infix.com",
-      "address": {
-        "line1": "529 E 12th Street",
-        "town": "Collierville",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "230502",
-      "claim": "Sampling",
-      "provider": "Best Practice Network",
-      "uuid": "3f145fed-e500-4c48-a09f-489f14352d17",
-      "name": "methodologies school",
-      "ukprn": "23575149",
-      "urn": "872512",
-      "firstName": "Sally",
-      "lastName": "Lockman",
-      "date": "2024-04-01T19:34:09.899Z",
-      "region": "Shropshire",
-      "cost": "£6495.00",
-      "emailAddress": "sally.lockman@methodologies school.school.uk",
-      "phone": "211-929-7619 x235",
-      "website": "troubled-jackfruit.net",
-      "address": {
-        "line1": "6225 Kling Shoal",
-        "town": "Port Allen",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "217110",
-      "claim": "Sent for payment",
-      "provider": "National Institute of Teaching",
-      "uuid": "ec180c81-fd4e-46d6-9f7f-216ab1729c26",
-      "name": "communities school",
-      "ukprn": "71216293",
-      "urn": "357242",
-      "firstName": "Gunner",
-      "lastName": "Ryan",
-      "date": "2024-04-09T02:58:22.117Z",
-      "region": "Grant County",
-      "cost": "£4684.00",
-      "emailAddress": "gunner.ryan@communities school.school.uk",
-      "phone": "(719) 923-9956 x32679",
-      "website": "steep-dial.name",
-      "address": {
-        "line1": "1007 Madelynn Divide",
-        "town": "Bayleehaven",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "990613",
-      "claim": "Ineligible",
-      "provider": "National Institute of Teaching",
-      "uuid": "6badff8a-d374-44dc-b57a-a01d018a380f",
-      "name": "interfaces school",
-      "ukprn": "11070793",
-      "urn": "944993",
-      "firstName": "Meagan",
-      "lastName": "Conroy",
-      "date": "2023-11-25T01:02:24.007Z",
-      "region": "Suffolk",
-      "cost": "£4861.00",
-      "emailAddress": "meagan.conroy@interfaces school.school.uk",
-      "phone": "1-723-993-5099 x866",
-      "website": "upright-division.org",
-      "address": {
-        "line1": "94542 N Market Street",
-        "town": "New Jordyn",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "353883",
-      "claim": "Clawback complete",
-      "provider": "National Institute of Teaching",
-      "uuid": "a6c64480-233d-4ed7-a8a2-9abb0028f322",
-      "name": "networks school",
-      "ukprn": "25273695",
-      "urn": "419727",
-      "firstName": "Ettie",
-      "lastName": "O'Connell",
-      "date": "2024-05-29T09:59:39.751Z",
-      "region": "Strathclyde",
-      "cost": "£3469.00",
-      "emailAddress": "ettie.o'connell@networks school.school.uk",
-      "phone": "1-439-413-8272",
-      "website": "minty-theology.name",
-      "address": {
-        "line1": "71900 E Water Street",
-        "town": "Berylview",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "234172",
-      "claim": "Sent for payment",
-      "provider": "Best Practice Network",
-      "uuid": "7ab5a590-d9e1-4a38-8846-98017e8b51c6",
-      "name": "bandwidth school",
-      "ukprn": "13776217",
-      "urn": "018627",
-      "firstName": "Esperanza",
-      "lastName": "Hintz",
-      "date": "2023-12-07T18:57:05.548Z",
-      "region": "Logan County",
-      "cost": "£5587.00",
-      "emailAddress": "esperanza.hintz@bandwidth school.school.uk",
-      "phone": "488.306.9771",
-      "website": "plush-partridge.name",
-      "address": {
-        "line1": "216 Holly Close",
-        "town": "Waldorf",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "682257",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "e4203fc4-68a2-41b1-8852-e22b81e36c7b",
-      "name": "initiatives school",
-      "ukprn": "90103043",
-      "urn": "353328",
-      "firstName": "Judah",
+      "uuid": "3cacd830-fdce-4739-86cf-2af0bc26aea7",
+      "name": "granular school",
+      "claimRef": "654986 - granular school",
+      "ukprn": "96986987",
+      "urn": "458690",
+      "firstName": "Jermey",
       "lastName": "Grimes",
-      "date": "2024-05-02T21:20:23.207Z",
-      "region": "Crawford County",
-      "cost": "£5758.00",
-      "emailAddress": "judah.grimes@initiatives school.school.uk",
-      "phone": "372.823.7189 x54392",
-      "website": "villainous-handsaw.org",
-      "address": {
-        "line1": "157 Spinka Centers",
-        "town": "East Gregoria",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "259862",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "28ce0cb5-446a-4506-80fa-0e1666d1b3a2",
-      "name": "relationships school",
-      "ukprn": "20104593",
-      "urn": "077230",
-      "firstName": "Rozella",
-      "lastName": "Beatty",
-      "date": "2024-02-12T05:47:32.465Z",
-      "region": "Greene County",
-      "cost": "£3001.00",
-      "emailAddress": "rozella.beatty@relationships school.school.uk",
-      "phone": "876-722-2419 x90963",
-      "website": "firsthand-hive.name",
-      "address": {
-        "line1": "3958 Koch Shore",
-        "town": "Welchstad",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "881149",
-      "claim": "Clawback complete",
-      "provider": "National Institute of Teaching",
-      "uuid": "8e017a3f-b2d8-4fd4-9b63-5c8016fa77b8",
-      "name": "partnerships school",
-      "ukprn": "79385387",
-      "urn": "848773",
-      "firstName": "Rosie",
-      "lastName": "Corkery",
-      "date": "2024-03-20T20:26:44.744Z",
-      "region": "Henry County",
-      "cost": "£3666.00",
-      "emailAddress": "rosie.corkery@partnerships school.school.uk",
-      "phone": "1-728-662-7617 x4563",
-      "website": "lone-interviewer.name",
-      "address": {
-        "line1": "78216 Chestnut Close",
-        "town": "Ethylville",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "208788",
-      "claim": "Checking",
-      "provider": "National Institute of Teaching",
-      "uuid": "9ac155b2-f417-4149-8532-7bacfe0e7162",
-      "name": "deliverables school",
-      "ukprn": "18256549",
-      "urn": "338596",
-      "firstName": "Travis",
-      "lastName": "Kulas",
-      "date": "2024-06-08T00:47:13.324Z",
-      "region": "Hamilton County",
-      "cost": "£8666.00",
-      "emailAddress": "travis.kulas@deliverables school.school.uk",
-      "phone": "1-626-262-7572 x969",
-      "website": "quintessential-media.net",
-      "address": {
-        "line1": "6009 Stokes Hill",
-        "town": "Lake Evertfield",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "479617",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "e2248ee3-17ad-4285-8f50-c098c7a513f8",
-      "name": "infrastructures school",
-      "ukprn": "39103644",
-      "urn": "346940",
-      "firstName": "Monique",
-      "lastName": "Hayes",
-      "date": "2024-06-07T20:04:46.084Z",
-      "region": "County Antrim",
-      "cost": "£9157.00",
-      "emailAddress": "monique.hayes@infrastructures school.school.uk",
-      "phone": "604.598.3159 x178",
-      "website": "best-veldt.info",
-      "address": {
-        "line1": "43761 Kuhic Station",
-        "town": "Port Albert",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "860291",
-      "claim": "Information needed",
-      "provider": "Best Practice Network",
-      "uuid": "72eb484b-690b-423b-af04-ba30df77213f",
-      "name": "niches school",
-      "ukprn": "11847045",
-      "urn": "727040",
-      "firstName": "Lew",
-      "lastName": "Douglas",
-      "date": "2024-01-09T13:31:24.594Z",
-      "region": "Lawrence County",
-      "cost": "£9481.00",
-      "emailAddress": "lew.douglas@niches school.school.uk",
-      "phone": "1-771-952-2059 x042",
-      "website": "forceful-immigrant.net",
-      "address": {
-        "line1": "9581 Reynolds Spring",
-        "town": "Stephonmouth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "240232",
-      "claim": "Approved",
-      "provider": "National Institute of Teaching",
-      "uuid": "7adac214-2e31-4a15-8c3f-40d6cd821f54",
-      "name": "users school",
-      "ukprn": "70600713",
-      "urn": "260018",
-      "firstName": "Bethany",
-      "lastName": "Mertz",
-      "date": "2023-12-17T23:15:19.138Z",
-      "region": "Cleveland",
-      "cost": "£8461.00",
-      "emailAddress": "bethany.mertz@users school.school.uk",
-      "phone": "(386) 243-0643 x351",
-      "website": "blaring-expectation.biz",
-      "address": {
-        "line1": "6262 Lauriane Fords",
-        "town": "West Monique",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "773726",
-      "claim": "Draft",
-      "provider": "National Institute of Teaching",
-      "uuid": "4100a2ec-4a25-4051-b4fd-3f00750d2060",
-      "name": "lifetime value school",
-      "ukprn": "37945378",
-      "urn": "749597",
-      "firstName": "Marianne",
-      "lastName": "Trantow",
-      "date": "2023-11-25T18:30:42.584Z",
-      "region": "Devon",
-      "cost": "£644.00",
-      "emailAddress": "marianne.trantow@lifetime value school.school.uk",
-      "phone": "1-287-742-2468 x419",
-      "website": "alert-farm.biz",
-      "address": {
-        "line1": "7529 The Oaks",
-        "town": "Alafaya",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "368163",
-      "claim": "Approved",
-      "provider": "National Institute of Teaching",
-      "uuid": "900048bb-ad37-400a-8dea-fb64d219f54e",
-      "name": "metrics school",
-      "ukprn": "30974323",
-      "urn": "098935",
-      "firstName": "Haleigh",
-      "lastName": "Leuschke",
-      "date": "2024-03-18T06:31:00.120Z",
-      "region": "Gwent",
-      "cost": "£7297.00",
-      "emailAddress": "haleigh.leuschke@metrics school.school.uk",
-      "phone": "326-373-7936 x985",
-      "website": "handmade-puppy.info",
-      "address": {
-        "line1": "25496 Toy Knoll",
-        "town": "Ellaboro",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "504967",
-      "claim": "Awaiting clawback",
-      "provider": "Best Practice Network",
-      "uuid": "8cdbf65a-5180-4836-b7de-89b580228d39",
-      "name": "e-commerce school",
-      "ukprn": "21934234",
-      "urn": "269310",
-      "firstName": "Ozella",
-      "lastName": "Flatley",
-      "date": "2024-06-16T12:38:33.642Z",
-      "region": "Fife",
-      "cost": "£7252.00",
-      "emailAddress": "ozella.flatley@e-commerce school.school.uk",
-      "phone": "1-665-781-6083 x59163",
-      "website": "unnatural-heifer.name",
-      "address": {
-        "line1": "2736 A Street",
-        "town": "Manntown",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "248956",
-      "claim": "Approved",
-      "provider": "Best Practice Network",
-      "uuid": "2a936464-8ed0-454f-bf10-3a89484b8f92",
-      "name": "models school",
-      "ukprn": "07482562",
-      "urn": "007880",
-      "firstName": "Furman",
-      "lastName": "Stamm",
-      "date": "2024-07-18T21:35:57.457Z",
-      "region": "Lincoln County",
-      "cost": "£513.00",
-      "emailAddress": "furman.stamm@models school.school.uk",
-      "phone": "(565) 917-8404",
-      "website": "energetic-father.biz",
-      "address": {
-        "line1": "380 Rath Light",
-        "town": "North Wilhelmberg",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "631723",
-      "claim": "Sent for payment",
-      "provider": "Best Practice Network",
-      "uuid": "08cab967-d2bc-4007-95b8-003e76af5505",
-      "name": "paradigms school",
-      "ukprn": "58453364",
-      "urn": "415689",
-      "firstName": "Nayeli",
-      "lastName": "Kozey",
-      "date": "2024-05-17T17:23:29.217Z",
-      "region": "Buckinghamshire",
-      "cost": "£3753.00",
-      "emailAddress": "nayeli.kozey@paradigms school.school.uk",
-      "phone": "1-318-499-7612 x72018",
-      "website": "cultivated-lemur.info",
-      "address": {
-        "line1": "3629 E 9th Street",
-        "town": "Turnerworth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "597856",
-      "claim": "Ineligible",
-      "provider": "Best Practice Network",
-      "uuid": "c4c89aab-af78-477f-bb39-b6328e217047",
-      "name": "channels school",
-      "ukprn": "69055092",
-      "urn": "077399",
-      "firstName": "Raphaelle",
-      "lastName": "Schumm",
-      "date": "2023-12-19T22:04:49.818Z",
-      "region": "Wayne County",
-      "cost": "£8038.00",
-      "emailAddress": "raphaelle.schumm@channels school.school.uk",
-      "phone": "629-903-9000",
-      "website": "numb-speaking.com",
-      "address": {
-        "line1": "68265 Fadel Ville",
-        "town": "West Altafurt",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "484634",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "9fe8df11-1b75-4fa9-b0a0-35efb0495e6e",
-      "name": "solutions school",
-      "ukprn": "46054465",
-      "urn": "734852",
-      "firstName": "Arlo",
-      "lastName": "Mohr-Ernser",
-      "date": "2024-04-05T00:18:03.625Z",
-      "region": "Montgomery County",
-      "cost": "£6726.00",
-      "emailAddress": "arlo.mohr-ernser@solutions school.school.uk",
-      "phone": "690.754.4040",
-      "website": "slow-needle.name",
-      "address": {
-        "line1": "5028 Koepp Fields",
-        "town": "Faemouth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "971778",
-      "claim": "Awaiting clawback",
-      "provider": "National Institute of Teaching",
-      "uuid": "bdb84943-627c-4f4e-b0f1-2b2c4f61b9af",
-      "name": "supply-chains school",
-      "ukprn": "87256873",
-      "urn": "318370",
-      "firstName": "Justina",
-      "lastName": "Purdy",
-      "date": "2023-12-06T10:48:55.945Z",
-      "region": "Tayside",
-      "cost": "£5309.00",
-      "emailAddress": "justina.purdy@supply-chains school.school.uk",
-      "phone": "1-666-537-4006",
-      "website": "tidy-bassoon.com",
-      "address": {
-        "line1": "94976 Collins Ville",
-        "town": "Waukesha",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "486067",
-      "claim": "Sampling",
-      "provider": "Best Practice Network",
-      "uuid": "7cdc9192-82cc-4805-a25c-b9f5272511ca",
-      "name": "e-business school",
-      "ukprn": "66023152",
-      "urn": "757659",
-      "firstName": "Candace",
-      "lastName": "Hudson",
-      "date": "2024-05-05T18:53:49.734Z",
-      "region": "Suffolk",
-      "cost": "£6361.00",
-      "emailAddress": "candace.hudson@e-business school.school.uk",
-      "phone": "1-956-552-4146 x209",
-      "website": "filthy-channel.biz",
-      "address": {
-        "line1": "67553 Melissa Road",
-        "town": "Quincystad",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "670094",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "6f2ada5a-e969-4f67-b9ac-42159f6998c3",
-      "name": "e-markets school",
-      "ukprn": "76867559",
-      "urn": "905662",
-      "firstName": "Benny",
-      "lastName": "Bashirian",
-      "date": "2024-02-06T05:08:10.857Z",
-      "region": "Isle of Wight",
-      "cost": "£3975.00",
-      "emailAddress": "benny.bashirian@e-markets school.school.uk",
-      "phone": "1-624-737-6949 x34383",
-      "website": "fearful-ruffle.info",
-      "address": {
-        "line1": "590 Broderick Corner",
-        "town": "South Kurt",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "809914",
-      "claim": "Sampling",
-      "provider": "Best Practice Network",
-      "uuid": "e25e939c-e82f-4f9e-9b23-a83938bb9987",
-      "name": "users school",
-      "ukprn": "53230830",
-      "urn": "493751",
-      "firstName": "Erling",
-      "lastName": "Klocko-Marks",
-      "date": "2024-07-21T00:03:38.615Z",
-      "region": "County Down",
-      "cost": "£4370.00",
-      "emailAddress": "erling.klocko-marks@users school.school.uk",
-      "phone": "518.541.7668 x847",
-      "website": "sinful-lookout.info",
-      "address": {
-        "line1": "7358 Farrell Causeway",
-        "town": "North Patsy",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "540764",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "da9d853e-be4b-4965-9d20-4f0fb863451e",
-      "name": "content school",
-      "ukprn": "77269020",
-      "urn": "429289",
-      "firstName": "Elyse",
-      "lastName": "Macejkovic",
-      "date": "2024-04-12T02:12:30.458Z",
-      "region": "Crawford County",
-      "cost": "£4587.00",
-      "emailAddress": "elyse.macejkovic@content school.school.uk",
-      "phone": "1-540-292-3259",
-      "website": "wasteful-crawdad.com",
-      "address": {
-        "line1": "683 The Chase",
-        "town": "Apex",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "303450",
-      "claim": "Information needed",
-      "provider": "Best Practice Network",
-      "uuid": "bf283f66-c354-4f20-834b-30473b9e290c",
-      "name": "models school",
-      "ukprn": "60813088",
-      "urn": "071292",
-      "firstName": "Sheila",
-      "lastName": "Mitchell",
-      "date": "2024-03-30T19:44:58.524Z",
-      "region": "Scott County",
-      "cost": "£4011.00",
-      "emailAddress": "sheila.mitchell@models school.school.uk",
-      "phone": "753-470-8646",
-      "website": "bite-sized-venom.name",
-      "address": {
-        "line1": "82722 Jasmin Parks",
-        "town": "Germaineboro",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "390669",
-      "claim": "Awaiting clawback",
-      "provider": "National Institute of Teaching",
-      "uuid": "fe5ef4bf-b449-422b-97ce-a7b97dda6ae6",
-      "name": "initiatives school",
-      "ukprn": "78062165",
-      "urn": "090042",
-      "firstName": "Ayla",
-      "lastName": "Romaguera",
-      "date": "2023-11-05T19:30:27.358Z",
-      "region": "Logan County",
-      "cost": "£2702.00",
-      "emailAddress": "ayla.romaguera@initiatives school.school.uk",
-      "phone": "(761) 692-6583",
-      "website": "short-term-deep.org",
-      "address": {
-        "line1": "66429 Wunsch Bypass",
-        "town": "Port Flossieville",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "179752",
-      "claim": "Sent for payment",
-      "provider": "Best Practice Network",
-      "uuid": "5119cab2-d5dc-46d3-9893-0931d4c6c5f2",
-      "name": "deliverables school",
-      "ukprn": "38967687",
-      "urn": "598992",
-      "firstName": "Alessia",
-      "lastName": "Mitchell",
-      "date": "2023-12-17T16:38:36.741Z",
-      "region": "County Tyrone",
-      "cost": "£1140.00",
-      "emailAddress": "alessia.mitchell@deliverables school.school.uk",
-      "phone": "(921) 317-7221 x36718",
-      "website": "skinny-wrapping.info",
-      "address": {
-        "line1": "808 Muhammad Lock",
-        "town": "Fort Mosesfort",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "360742",
-      "claim": "Awaiting clawback",
-      "provider": "National Institute of Teaching",
-      "uuid": "da62f2bc-165b-44f6-84c7-6e10416c60e2",
-      "name": "lifetime value school",
-      "ukprn": "06416061",
-      "urn": "384550",
-      "firstName": "Elton",
-      "lastName": "Rodriguez",
-      "date": "2023-11-01T21:39:05.148Z",
-      "region": "Nottinghamshire",
-      "cost": "£4126.00",
-      "emailAddress": "elton.rodriguez@lifetime value school.school.uk",
-      "phone": "1-425-948-2902 x0973",
-      "website": "light-junior.com",
-      "address": {
-        "line1": "5504 Jackeline Parkway",
-        "town": "North Rickyview",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "644734",
-      "claim": "Sampling",
-      "provider": "Best Practice Network",
-      "uuid": "f63737f4-0daf-4d52-ac89-44b459baf8a9",
-      "name": "markets school",
-      "ukprn": "19795445",
-      "urn": "663712",
-      "firstName": "Ozella",
-      "lastName": "Towne-Schulist",
-      "date": "2024-05-22T02:30:38.834Z",
-      "region": "South Glamorgan",
-      "cost": "£4194.00",
-      "emailAddress": "ozella.towne-schulist@markets school.school.uk",
-      "phone": "1-769-586-3610",
-      "website": "grumpy-helo.org",
-      "address": {
-        "line1": "515 3rd Avenue",
-        "town": "Nettieboro",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "965015",
-      "claim": "Ineligible",
-      "provider": "Best Practice Network",
-      "uuid": "a9ac1ee0-f210-4457-b295-31cb2c1d3e96",
-      "name": "bandwidth school",
-      "ukprn": "50963347",
-      "urn": "383317",
-      "firstName": "Alena",
-      "lastName": "Ankunding",
-      "date": "2023-10-08T06:06:26.751Z",
-      "region": "Leicestershire",
-      "cost": "£1856.00",
-      "emailAddress": "alena.ankunding@bandwidth school.school.uk",
-      "phone": "(810) 436-7727",
-      "website": "key-motor.biz",
-      "address": {
-        "line1": "39262 Gusikowski Fords",
-        "town": "Dallaston",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "232573",
-      "claim": "Draft",
-      "provider": "Best Practice Network",
-      "uuid": "5f0620f2-27aa-4397-8673-226004c39f5e",
-      "name": "platforms school",
-      "ukprn": "97659301",
-      "urn": "357486",
-      "firstName": "Kayley",
-      "lastName": "White",
-      "date": "2023-11-25T07:03:34.838Z",
-      "region": "Powys",
-      "cost": "£7717.00",
-      "emailAddress": "kayley.white@platforms school.school.uk",
-      "phone": "864.995.7677 x929",
-      "website": "bronze-conservative.com",
-      "address": {
-        "line1": "41748 Virgie Keys",
-        "town": "West Asiachester",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "554782",
-      "claim": "Sent for payment",
-      "provider": "Best Practice Network",
-      "uuid": "f560d64b-ea45-4d48-82a6-6282964e72e0",
-      "name": "bandwidth school",
-      "ukprn": "48876838",
-      "urn": "072566",
-      "firstName": "Raymond",
-      "lastName": "Hagenes",
-      "date": "2023-12-14T01:15:24.337Z",
-      "region": "Merseyside",
-      "cost": "£211.00",
-      "emailAddress": "raymond.hagenes@bandwidth school.school.uk",
-      "phone": "(373) 710-5861 x549",
-      "website": "mortified-coffee.biz",
-      "address": {
-        "line1": "723 Field Close",
-        "town": "Lake Gavinhaven",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "766798",
-      "claim": "Submitted",
-      "provider": "National Institute of Teaching",
-      "uuid": "756ac50a-7b9c-431a-b16a-75fdf0ab425f",
-      "name": "interfaces school",
-      "ukprn": "80047306",
-      "urn": "140500",
-      "firstName": "Lorenz",
-      "lastName": "Altenwerth",
-      "date": "2023-10-12T14:26:32.949Z",
-      "region": "Greene County",
-      "cost": "£270.00",
-      "emailAddress": "lorenz.altenwerth@interfaces school.school.uk",
-      "phone": "237-561-5454",
-      "website": "thrifty-naturalisation.name",
-      "address": {
-        "line1": "72474 Meadow Way",
-        "town": "O'Keefetown",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "454206",
-      "claim": "Submitted",
-      "provider": "National Institute of Teaching",
-      "uuid": "c8bd3181-6f6f-4f70-9c09-6d82b60065f0",
-      "name": "content school",
-      "ukprn": "66037718",
-      "urn": "192303",
-      "firstName": "Peyton",
-      "lastName": "Rohan",
-      "date": "2023-12-30T00:02:57.111Z",
-      "region": "Douglas County",
-      "cost": "£1024.00",
-      "emailAddress": "peyton.rohan@content school.school.uk",
-      "phone": "1-724-452-7851",
-      "website": "coarse-estuary.org",
-      "address": {
-        "line1": "784 Torrance Cove",
-        "town": "Estelleburgh",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "890145",
-      "claim": "Paid",
-      "provider": "National Institute of Teaching",
-      "uuid": "1d98b0be-98c1-41c5-b311-911474202245",
-      "name": "methodologies school",
-      "ukprn": "03941312",
-      "urn": "287452",
-      "firstName": "Omer",
-      "lastName": "Hirthe",
-      "date": "2024-02-11T23:09:03.931Z",
-      "region": "Norfolk",
-      "cost": "£408.00",
-      "emailAddress": "omer.hirthe@methodologies school.school.uk",
-      "phone": "317.914.7875 x78969",
-      "website": "hateful-retention.net",
-      "address": {
-        "line1": "52258 Eula Greens",
-        "town": "Biloxi",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "507374",
-      "claim": "Clawback complete",
-      "provider": "National Institute of Teaching",
-      "uuid": "f80da946-f9c2-479f-b825-0b66db5d51ea",
-      "name": "models school",
-      "ukprn": "41786818",
-      "urn": "851476",
-      "firstName": "Emily",
-      "lastName": "Hirthe",
-      "date": "2024-05-30T21:42:34.259Z",
-      "region": "Avon",
-      "cost": "£8315.00",
-      "emailAddress": "emily.hirthe@models school.school.uk",
-      "phone": "1-324-424-5962 x880",
-      "website": "afraid-basil.org",
-      "address": {
-        "line1": "681 Leone Drive",
-        "town": "Yostworth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "554927",
-      "claim": "Sent for payment",
-      "provider": "Best Practice Network",
-      "uuid": "56f000fa-a7dd-49d1-8ed1-eb0cbf480465",
-      "name": "e-markets school",
-      "ukprn": "56687298",
-      "urn": "255740",
-      "firstName": "Shanelle",
-      "lastName": "Sporer",
-      "date": "2023-12-22T07:15:09.865Z",
-      "region": "Lothian",
-      "cost": "£598.00",
-      "emailAddress": "shanelle.sporer@e-markets school.school.uk",
-      "phone": "588-736-8943 x56575",
-      "website": "yearly-judo.net",
-      "address": {
-        "line1": "49364 Konopelski Lakes",
-        "town": "Hutchinson",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "819692",
-      "claim": "Approved",
-      "provider": "Best Practice Network",
-      "uuid": "8d7fd105-5585-4f5a-87dd-b99d80a0fa7d",
-      "name": "mindshare school",
-      "ukprn": "20486065",
-      "urn": "312438",
-      "firstName": "Clovis",
-      "lastName": "Bauch",
-      "date": "2023-11-16T17:08:27.965Z",
-      "region": "Berkshire",
-      "cost": "£7005.00",
-      "emailAddress": "clovis.bauch@mindshare school.school.uk",
-      "phone": "864.586.4813",
-      "website": "favorite-dolman.com",
-      "address": {
-        "line1": "50245 Lesch Neck",
-        "town": "Holdenbury",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "579162",
-      "claim": "Approved",
-      "provider": "National Institute of Teaching",
-      "uuid": "b1ef913f-81d8-4faa-bb38-24104c4efd14",
-      "name": "blockchains school",
-      "ukprn": "84575181",
-      "urn": "104841",
-      "firstName": "Durward",
-      "lastName": "Morissette",
-      "date": "2024-01-14T14:32:09.724Z",
-      "region": "County Down",
-      "cost": "£8210.00",
-      "emailAddress": "durward.morissette@blockchains school.school.uk",
-      "phone": "(307) 956-6982 x8478",
-      "website": "brown-photodiode.net",
-      "address": {
-        "line1": "44218 Eda Bridge",
-        "town": "Lottiebury",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "270335",
-      "claim": "Checking",
-      "provider": "National Institute of Teaching",
-      "uuid": "aa9eb69e-5f84-4461-ad43-6b340a3d1c9a",
-      "name": "portals school",
-      "ukprn": "65903398",
-      "urn": "312078",
-      "firstName": "Jerad",
-      "lastName": "Brekke",
-      "date": "2024-01-26T15:55:29.174Z",
-      "region": "Surrey",
-      "cost": "£3571.00",
-      "emailAddress": "jerad.brekke@portals school.school.uk",
-      "phone": "603.233.5504",
-      "website": "fumbling-wrinkle.net",
-      "address": {
-        "line1": "37557 Nathaniel Wells",
-        "town": "East Daynabury",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "492584",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "cf6d9424-b0b1-441c-a047-d0820bd5dab0",
-      "name": "solutions school",
-      "ukprn": "71371288",
-      "urn": "873792",
-      "firstName": "Elissa",
-      "lastName": "Harris",
-      "date": "2023-10-15T07:24:01.413Z",
-      "region": "Central",
-      "cost": "£5841.00",
-      "emailAddress": "elissa.harris@solutions school.school.uk",
-      "phone": "769-610-4828 x199",
-      "website": "fancy-cylinder.com",
-      "address": {
-        "line1": "13597 Ernser Burgs",
-        "town": "Kameronview",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "533547",
-      "claim": "Clawback complete",
-      "provider": "National Institute of Teaching",
-      "uuid": "c69b43d8-9247-479d-8e28-4006392bb822",
-      "name": "models school",
-      "ukprn": "42842079",
-      "urn": "783224",
-      "firstName": "Tristian",
-      "lastName": "Grant",
-      "date": "2024-04-07T17:04:53.396Z",
+      "date": "2024-07-22T19:56:29.507Z",
       "region": "Hertfordshire",
-      "cost": "£6474.00",
-      "emailAddress": "tristian.grant@models school.school.uk",
-      "phone": "(555) 375-3342 x205",
-      "website": "attractive-spy.info",
+      "cost": "£2970.00",
+      "emailAddress": "jermey.grimes@granular school.uk",
+      "phone": "1-424-792-7085 x91677",
+      "website": "odd-originality.name",
       "address": {
-        "line1": "8357 Frankie Extensions",
-        "town": "Gislasonstad",
+        "line1": "418 Schuppe Views",
+        "town": "North Joany",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "304240",
-      "claim": "Ineligible",
+      "id": "429061",
+      "claim": "Submitted",
       "provider": "Best Practice Network",
-      "uuid": "1cdca4b6-d3b9-4cfe-a16f-a8ac8e831681",
-      "name": "systems school",
-      "ukprn": "83227784",
-      "urn": "736378",
-      "firstName": "Isom",
-      "lastName": "Bergstrom",
-      "date": "2023-11-11T14:15:57.473Z",
-      "region": "Tyne and Wear",
-      "cost": "£5909.00",
-      "emailAddress": "isom.bergstrom@systems school.school.uk",
-      "phone": "(653) 926-9703 x6666",
-      "website": "beloved-barrel.name",
+      "uuid": "bc8f258f-abc3-4fc3-be81-c20d7b4cc47c",
+      "name": "wireless school",
+      "claimRef": "856158 - wireless school",
+      "ukprn": "20850912",
+      "urn": "309517",
+      "firstName": "Hillard",
+      "lastName": "Rath",
+      "date": "2024-04-24T14:54:18.739Z",
+      "region": "Cheshire",
+      "cost": "£8806.00",
+      "emailAddress": "hillard.rath@wireless school.uk",
+      "phone": "550-292-4231 x5093",
+      "website": "witty-auto.net",
       "address": {
-        "line1": "71051 Goyette Coves",
-        "town": "Miami Beach",
+        "line1": "367 Penelope Ville",
+        "town": "New Carliefield",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "778115",
-      "claim": "Ineligible",
-      "provider": "Best Practice Network",
-      "uuid": "4a194945-77cc-4022-a391-fa431adb9890",
-      "name": "web services school",
-      "ukprn": "49593544",
-      "urn": "055872",
-      "firstName": "Baron",
-      "lastName": "Pouros",
-      "date": "2024-01-17T03:40:24.520Z",
-      "region": "Clark County",
-      "cost": "£4043.00",
-      "emailAddress": "baron.pouros@web services school.school.uk",
-      "phone": "486.383.6465 x057",
-      "website": "constant-capability.info",
-      "address": {
-        "line1": "9149 Kamron Expressway",
-        "town": "Andreaneborough",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "561871",
-      "claim": "Draft",
-      "provider": "National Institute of Teaching",
-      "uuid": "6a6a5c2c-e065-4e22-9855-ef1f7494988c",
-      "name": "e-markets school",
-      "ukprn": "97194281",
-      "urn": "005785",
-      "firstName": "Alexis",
-      "lastName": "Kulas",
-      "date": "2024-06-07T09:37:48.319Z",
-      "region": "Calhoun County",
-      "cost": "£6972.00",
-      "emailAddress": "alexis.kulas@e-markets school.school.uk",
-      "phone": "234-518-1986 x34208",
-      "website": "minor-id.info",
-      "address": {
-        "line1": "43262 Williamson Circles",
-        "town": "Moenfield",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "854394",
+      "id": "987339",
       "claim": "Sent for payment",
-      "provider": "National Institute of Teaching",
-      "uuid": "0dc87f80-3f6b-45bc-8a70-60faba664021",
-      "name": "architectures school",
-      "ukprn": "23232001",
-      "urn": "998322",
-      "firstName": "Una",
-      "lastName": "Bergnaum",
-      "date": "2023-12-01T17:05:20.923Z",
-      "region": "Warwickshire",
-      "cost": "£4313.00",
-      "emailAddress": "una.bergnaum@architectures school.school.uk",
-      "phone": "1-769-543-5194 x531",
-      "website": "courageous-rat.biz",
-      "address": {
-        "line1": "246 Magdalena Glens",
-        "town": "Kuphalfort",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "953558",
-      "claim": "Sampling",
-      "provider": "National Institute of Teaching",
-      "uuid": "08b81c1d-2784-45e1-9d41-e3f5e9a3de5c",
-      "name": "schemas school",
-      "ukprn": "11992071",
-      "urn": "081086",
-      "firstName": "Samir",
-      "lastName": "O'Conner",
-      "date": "2023-10-04T03:21:37.275Z",
+      "provider": "Best Practice Network",
+      "uuid": "fcb2eeff-507a-4645-b25c-db81a72f5bca",
+      "name": "clicks-and-mortar school",
+      "claimRef": "441036 - clicks-and-mortar school",
+      "ukprn": "83178462",
+      "urn": "694379",
+      "firstName": "Federico",
+      "lastName": "Stoltenberg",
+      "date": "2023-11-14T02:59:26.507Z",
       "region": "Hampshire",
-      "cost": "£2755.00",
-      "emailAddress": "samir.o'conner@schemas school.school.uk",
-      "phone": "720-409-3394 x3720",
-      "website": "husky-sprag.info",
+      "cost": "£4849.00",
+      "emailAddress": "federico.stoltenberg@clicks-and-mortar school.uk",
+      "phone": "(954) 842-6061",
+      "website": "linear-hometown.net",
       "address": {
-        "line1": "2671 Wehner Glen",
-        "town": "Fort Stevie",
+        "line1": "11784 The Mount",
+        "town": "Lorenzstead",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "604993",
+      "id": "125381",
+      "claim": "Ineligible",
+      "provider": "Best Practice Network",
+      "uuid": "676905af-3969-4dfe-b84a-42997f7d8017",
+      "name": "B2B school",
+      "claimRef": "735917 - B2B school",
+      "ukprn": "58576990",
+      "urn": "764574",
+      "firstName": "Helena",
+      "lastName": "Schinner",
+      "date": "2024-04-03T00:50:31.782Z",
+      "region": "Grampian",
+      "cost": "£4661.00",
+      "emailAddress": "helena.schinner@b2b school.uk",
+      "phone": "622-578-0403 x30318",
+      "website": "vicious-semiconductor.name",
+      "address": {
+        "line1": "48766 Haley Underpass",
+        "town": "Lorain",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "275648",
+      "claim": "Sent for payment",
+      "provider": "National Institute of Teaching",
+      "uuid": "10fdc774-97ef-4253-b17b-caa882030ba3",
+      "name": "cross-media school",
+      "claimRef": "544927 - cross-media school",
+      "ukprn": "29903090",
+      "urn": "842732",
+      "firstName": "Augusta",
+      "lastName": "Leuschke",
+      "date": "2024-06-25T19:15:24.081Z",
+      "region": "Madison County",
+      "cost": "£5552.00",
+      "emailAddress": "augusta.leuschke@cross-media school.uk",
+      "phone": "1-464-933-6715 x389",
+      "website": "elaborate-legal.net",
+      "address": {
+        "line1": "3427 Arlie Ferry",
+        "town": "West Evie",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "476777",
       "claim": "Submitted",
       "provider": "National Institute of Teaching",
-      "uuid": "29cb775a-ae1c-440c-bd26-c4bd659cff86",
-      "name": "supply-chains school",
-      "ukprn": "94651319",
-      "urn": "330702",
-      "firstName": "Syble",
-      "lastName": "Ebert",
-      "date": "2024-01-10T06:25:33.744Z",
-      "region": "Perry County",
-      "cost": "£5430.00",
-      "emailAddress": "syble.ebert@supply-chains school.school.uk",
-      "phone": "1-354-666-0567 x51811",
-      "website": "quick-lecture.net",
+      "uuid": "242d8058-2ef0-42af-b6df-3fa18e73548b",
+      "name": "rich school",
+      "claimRef": "366354 - rich school",
+      "ukprn": "86118475",
+      "urn": "678525",
+      "firstName": "Audreanne",
+      "lastName": "Ruecker",
+      "date": "2024-03-28T02:51:50.265Z",
+      "region": "Essex",
+      "cost": "£1976.00",
+      "emailAddress": "audreanne.ruecker@rich school.uk",
+      "phone": "674-479-5707",
+      "website": "ignorant-altar.com",
       "address": {
-        "line1": "407 Park Drive",
-        "town": "Yuba City",
+        "line1": "82057 Wolf Spring",
+        "town": "Port Chaz",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "905484",
+      "id": "328474",
       "claim": "Sent for payment",
       "provider": "Best Practice Network",
-      "uuid": "dec4fa05-b5e3-48f6-b242-086bf839a90c",
-      "name": "communities school",
-      "ukprn": "13025694",
-      "urn": "300939",
-      "firstName": "Alice",
-      "lastName": "Kuphal",
-      "date": "2024-01-15T20:43:35.593Z",
-      "region": "Union County",
-      "cost": "£1901.00",
-      "emailAddress": "alice.kuphal@communities school.school.uk",
-      "phone": "1-661-648-5715 x965",
-      "website": "scratchy-system.com",
+      "uuid": "68143694-61b7-4d53-8df6-1dead66332c5",
+      "name": "frictionless school",
+      "claimRef": "301395 - frictionless school",
+      "ukprn": "02983152",
+      "urn": "083807",
+      "firstName": "Eric",
+      "lastName": "Flatley",
+      "date": "2024-04-16T17:18:19.324Z",
+      "region": "Calhoun County",
+      "cost": "£4365.00",
+      "emailAddress": "eric.flatley@frictionless school.uk",
+      "phone": "1-616-582-7874 x69780",
+      "website": "indelible-snob.name",
       "address": {
-        "line1": "67658 Castle Street",
-        "town": "Port Esteban",
+        "line1": "783 Pearl Street",
+        "town": "Port Chadview",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "542870",
-      "claim": "Clawback complete",
-      "provider": "Best Practice Network",
-      "uuid": "651c2609-f9dc-448f-b6ab-ba09bb867bac",
-      "name": "initiatives school",
-      "ukprn": "74699500",
-      "urn": "231901",
-      "firstName": "Samantha",
-      "lastName": "Rice",
-      "date": "2024-01-30T15:34:38.392Z",
-      "region": "County Down",
-      "cost": "£6173.00",
-      "emailAddress": "samantha.rice@initiatives school.school.uk",
-      "phone": "327.460.9700 x367",
-      "website": "third-serial.info",
-      "address": {
-        "line1": "3587 Heron Close",
-        "town": "Dashawnhaven",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "877142",
-      "claim": "Awaiting clawback",
-      "provider": "Best Practice Network",
-      "uuid": "43d4ba8c-831e-458d-bb3b-fc04280115af",
-      "name": "web services school",
-      "ukprn": "64811047",
-      "urn": "323585",
-      "firstName": "Elvis",
-      "lastName": "Heidenreich",
-      "date": "2023-10-03T18:49:55.023Z",
-      "region": "Douglas County",
-      "cost": "£6363.00",
-      "emailAddress": "elvis.heidenreich@web services school.school.uk",
-      "phone": "(820) 571-0463 x16540",
-      "website": "elaborate-acrylic.biz",
-      "address": {
-        "line1": "392 Modesta Ford",
-        "town": "Buffalo",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "910444",
-      "claim": "Paid",
+      "id": "135889",
+      "claim": "Submitted",
       "provider": "National Institute of Teaching",
-      "uuid": "6907281e-5363-4132-adeb-84993481c727",
-      "name": "blockchains school",
-      "ukprn": "64347056",
-      "urn": "757072",
-      "firstName": "Lindsey",
+      "uuid": "05824693-f350-44e6-a2a6-2e55fa777fac",
+      "name": "dot-com school",
+      "claimRef": "336418 - dot-com school",
+      "ukprn": "80484414",
+      "urn": "567612",
+      "firstName": "Shanna",
+      "lastName": "Zboncak",
+      "date": "2024-02-13T19:10:51.797Z",
+      "region": "County Fermanagh",
+      "cost": "£2230.00",
+      "emailAddress": "shanna.zboncak@dot-com school.uk",
+      "phone": "(799) 475-6209 x001",
+      "website": "fond-reservoir.info",
+      "address": {
+        "line1": "6004 Littel Motorway",
+        "town": "Malcolmborough",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "318607",
+      "claim": "Approved",
+      "provider": "Best Practice Network",
+      "uuid": "8a31919c-ad86-406d-a176-0dc9d7207fc3",
+      "name": "seamless school",
+      "claimRef": "414962 - seamless school",
+      "ukprn": "13660190",
+      "urn": "155438",
+      "firstName": "Dominique",
+      "lastName": "Jerde",
+      "date": "2023-12-20T23:21:08.959Z",
+      "region": "Greater Manchester",
+      "cost": "£532.00",
+      "emailAddress": "dominique.jerde@seamless school.uk",
+      "phone": "1-273-900-7444 x033",
+      "website": "oddball-perfume.biz",
+      "address": {
+        "line1": "3993 Frida Pass",
+        "town": "New Zakarybury",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "203843",
+      "claim": "Paid",
+      "provider": "Best Practice Network",
+      "uuid": "7b75d8ae-14cf-47a8-b89d-3f26de6df2ce",
+      "name": "granular school",
+      "claimRef": "528991 - granular school",
+      "ukprn": "68059750",
+      "urn": "109051",
+      "firstName": "Tanner",
+      "lastName": "Hamill-Bashirian",
+      "date": "2024-05-20T08:47:13.203Z",
+      "region": "Grant County",
+      "cost": "£9762.00",
+      "emailAddress": "tanner.hamill-bashirian@granular school.uk",
+      "phone": "(984) 968-3732 x72077",
+      "website": "unwelcome-misreading.net",
+      "address": {
+        "line1": "3901 Schumm Center",
+        "town": "Roychester",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "630906",
+      "claim": "Ineligible",
+      "provider": "National Institute of Teaching",
+      "uuid": "85e4335b-4f7e-4109-b77c-b7b876f89b9a",
+      "name": "magnetic school",
+      "claimRef": "602840 - magnetic school",
+      "ukprn": "66975323",
+      "urn": "839604",
+      "firstName": "Lucio",
       "lastName": "Anderson",
-      "date": "2024-04-16T21:39:16.234Z",
-      "region": "Clwyd",
-      "cost": "£7745.00",
-      "emailAddress": "lindsey.anderson@blockchains school.school.uk",
-      "phone": "(533) 917-6858 x7434",
-      "website": "shiny-sorbet.org",
+      "date": "2024-01-07T16:32:25.311Z",
+      "region": "West Midlands",
+      "cost": "£502.00",
+      "emailAddress": "lucio.anderson@magnetic school.uk",
+      "phone": "(305) 884-6681 x6140",
+      "website": "delicious-giraffe.net",
       "address": {
-        "line1": "54907 Josie Cliff",
-        "town": "Kirlinside",
+        "line1": "80311 O'Hara Views",
+        "town": "O'Konstad",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "874027",
+      "id": "371361",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "56930500-5260-420a-a830-a6739a0e66af",
+      "name": "visionary school",
+      "claimRef": "805536 - visionary school",
+      "ukprn": "01237754",
+      "urn": "352349",
+      "firstName": "Lenora",
+      "lastName": "Wisoky",
+      "date": "2023-11-18T15:33:11.741Z",
+      "region": "Shropshire",
+      "cost": "£6011.00",
+      "emailAddress": "lenora.wisoky@visionary school.uk",
+      "phone": "(584) 221-3704",
+      "website": "virtual-proximal.biz",
+      "address": {
+        "line1": "746 Waters Roads",
+        "town": "Port Halleboro",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "445864",
+      "claim": "Ineligible",
+      "provider": "Best Practice Network",
+      "uuid": "0ad134c6-4bf1-4b8b-bd9a-95b60dc516da",
+      "name": "impactful school",
+      "claimRef": "153259 - impactful school",
+      "ukprn": "98124463",
+      "urn": "645772",
+      "firstName": "Logan",
+      "lastName": "Lemke",
+      "date": "2024-02-21T14:40:34.574Z",
+      "region": "Durham",
+      "cost": "£4308.00",
+      "emailAddress": "logan.lemke@impactful school.uk",
+      "phone": "280.600.2730 x91774",
+      "website": "ruddy-hail.info",
+      "address": {
+        "line1": "3996 Lindsay Burgs",
+        "town": "East Kristin",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "263425",
+      "claim": "Paid",
+      "provider": "National Institute of Teaching",
+      "uuid": "36248b29-930b-4867-bb63-ba8742b1efca",
+      "name": "granular school",
+      "claimRef": "303311 - granular school",
+      "ukprn": "79646121",
+      "urn": "552152",
+      "firstName": "Lelia",
+      "lastName": "VonRueden",
+      "date": "2024-04-18T18:55:44.939Z",
+      "region": "Shropshire",
+      "cost": "£6687.00",
+      "emailAddress": "lelia.vonrueden@granular school.uk",
+      "phone": "(496) 679-4797",
+      "website": "wordy-mid-course.name",
+      "address": {
+        "line1": "644 Collins Motorway",
+        "town": "Schadenstad",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "819264",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "9ee560d4-1703-4df0-9a6c-8becf2d502fd",
+      "name": "global school",
+      "claimRef": "381476 - global school",
+      "ukprn": "00087313",
+      "urn": "301568",
+      "firstName": "Darrion",
+      "lastName": "Crooks",
+      "date": "2024-01-13T23:11:37.998Z",
+      "region": "Clark County",
+      "cost": "£9607.00",
+      "emailAddress": "darrion.crooks@global school.uk",
+      "phone": "1-746-531-9090",
+      "website": "handmade-revascularization.name",
+      "address": {
+        "line1": "34605 Rita Courts",
+        "town": "Fort Herminaburgh",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "319063",
+      "claim": "Draft",
+      "provider": "National Institute of Teaching",
+      "uuid": "672b991d-b62c-4659-bad3-64b111330db8",
+      "name": "e-business school",
+      "claimRef": "563950 - e-business school",
+      "ukprn": "68550434",
+      "urn": "157465",
+      "firstName": "Gino",
+      "lastName": "Haag",
+      "date": "2024-05-05T21:00:56.018Z",
+      "region": "Carroll County",
+      "cost": "£4222.00",
+      "emailAddress": "gino.haag@e-business school.uk",
+      "phone": "(861) 309-8137",
+      "website": "shy-chord.net",
+      "address": {
+        "line1": "45262 Rahsaan Summit",
+        "town": "South Kenya",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "519355",
+      "claim": "Sent for payment",
+      "provider": "Best Practice Network",
+      "uuid": "11e6052c-06b5-4c39-98f1-620a69b04dcc",
+      "name": "rich school",
+      "claimRef": "218524 - rich school",
+      "ukprn": "63306208",
+      "urn": "839642",
+      "firstName": "Leonie",
+      "lastName": "Will",
+      "date": "2024-07-02T23:04:53.353Z",
+      "region": "Jackson County",
+      "cost": "£3399.00",
+      "emailAddress": "leonie.will@rich school.uk",
+      "phone": "(477) 922-5929",
+      "website": "experienced-hybridisation.org",
+      "address": {
+        "line1": "7979 McLaughlin Junctions",
+        "town": "Russelberg",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "990966",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "350262b8-ee01-4a84-ba6f-3d5994ff90d3",
+      "name": "innovative school",
+      "claimRef": "285002 - innovative school",
+      "ukprn": "54687241",
+      "urn": "851677",
+      "firstName": "Robb",
+      "lastName": "Mertz",
+      "date": "2024-03-26T20:04:01.952Z",
+      "region": "Cumbria",
+      "cost": "£4589.00",
+      "emailAddress": "robb.mertz@innovative school.uk",
+      "phone": "(664) 482-4700 x374",
+      "website": "worthwhile-walking.info",
+      "address": {
+        "line1": "45641 Goyette Gateway",
+        "town": "Pasadena",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "145585",
+      "claim": "Submitted",
+      "provider": "Best Practice Network",
+      "uuid": "c16c2d17-ec2c-41ba-ac92-89be6e868041",
+      "name": "user-centric school",
+      "claimRef": "334587 - user-centric school",
+      "ukprn": "29335513",
+      "urn": "731390",
+      "firstName": "Emerald",
+      "lastName": "Kilback",
+      "date": "2024-02-21T05:34:09.111Z",
+      "region": "Perry County",
+      "cost": "£737.00",
+      "emailAddress": "emerald.kilback@user-centric school.uk",
+      "phone": "1-813-533-6031 x060",
+      "website": "spirited-tamale.com",
+      "address": {
+        "line1": "86272 Ibrahim Views",
+        "town": "West Jordane",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "238353",
       "claim": "Clawback complete",
       "provider": "National Institute of Teaching",
-      "uuid": "01596b14-dc28-4e42-9f92-b6267f471323",
-      "name": "technologies school",
-      "ukprn": "44659920",
-      "urn": "314585",
-      "firstName": "Alf",
-      "lastName": "Kunze",
-      "date": "2024-02-14T05:47:39.236Z",
-      "region": "Hertfordshire",
-      "cost": "£3945.00",
-      "emailAddress": "alf.kunze@technologies school.school.uk",
-      "phone": "871-564-7770 x2436",
-      "website": "constant-diam.org",
+      "uuid": "379e4d96-3f7c-4595-80fa-ee0ab35d53f3",
+      "name": "frictionless school",
+      "claimRef": "182870 - frictionless school",
+      "ukprn": "37185178",
+      "urn": "487632",
+      "firstName": "Dylan",
+      "lastName": "Conn-Wyman",
+      "date": "2024-06-27T11:35:40.688Z",
+      "region": "Scott County",
+      "cost": "£3854.00",
+      "emailAddress": "dylan.conn-wyman@frictionless school.uk",
+      "phone": "(408) 626-9390 x55250",
+      "website": "silky-wrestler.net",
       "address": {
-        "line1": "7699 Koelpin Courts",
-        "town": "Runteborough",
+        "line1": "474 Alayna Fields",
+        "town": "Port Paulastad",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "398761",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "554b97a8-404a-4f23-9986-f77d3b60d391",
-      "name": "e-business school",
-      "ukprn": "92549077",
-      "urn": "429573",
-      "firstName": "Hal",
-      "lastName": "Wiza",
-      "date": "2024-05-10T08:03:51.076Z",
-      "region": "Clay County",
-      "cost": "£9265.00",
-      "emailAddress": "hal.wiza@e-business school.school.uk",
-      "phone": "442.405.2464 x2834",
-      "website": "scornful-football.net",
-      "address": {
-        "line1": "760 W Franklin Street",
-        "town": "Conroyfort",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "807492",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "133429cd-912f-4a32-8aba-ce7689d786d9",
-      "name": "paradigms school",
-      "ukprn": "42910557",
-      "urn": "138511",
-      "firstName": "Vesta",
-      "lastName": "Breitenberg",
-      "date": "2024-05-09T14:44:35.164Z",
-      "region": "Highlands and Islands",
-      "cost": "£6544.00",
-      "emailAddress": "vesta.breitenberg@paradigms school.school.uk",
-      "phone": "303.491.4106 x372",
-      "website": "high-level-tenet.com",
-      "address": {
-        "line1": "23070 Daron Views",
-        "town": "Fort Hilton",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "552937",
+      "id": "490473",
       "claim": "Sampling",
       "provider": "Best Practice Network",
-      "uuid": "02a53687-3099-4a19-aee1-be6e1aa11efa",
-      "name": "content school",
-      "ukprn": "17921544",
-      "urn": "168052",
-      "firstName": "Hugh",
-      "lastName": "Nolan",
-      "date": "2024-04-16T15:53:11.748Z",
-      "region": "Franklin County",
-      "cost": "£3956.00",
-      "emailAddress": "hugh.nolan@content school.school.uk",
-      "phone": "1-736-966-7018 x499",
-      "website": "jubilant-altar.biz",
+      "uuid": "35bd3687-8e17-4237-a442-ac3ff7bd795f",
+      "name": "cutting-edge school",
+      "claimRef": "542643 - cutting-edge school",
+      "ukprn": "03777742",
+      "urn": "411980",
+      "firstName": "Eleanora",
+      "lastName": "Hilll-Russel",
+      "date": "2023-10-22T09:58:54.613Z",
+      "region": "Bedfordshire",
+      "cost": "£7152.00",
+      "emailAddress": "eleanora.hilll-russel@cutting-edge school.uk",
+      "phone": "622.493.9700 x6893",
+      "website": "hearty-tent.name",
       "address": {
-        "line1": "366 Kariane Lock",
-        "town": "East Eladiofurt",
+        "line1": "292 VonRueden Club",
+        "town": "East Roel",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "416137",
-      "claim": "Submitted",
+      "id": "403728",
+      "claim": "Draft",
       "provider": "National Institute of Teaching",
-      "uuid": "ec83dc3d-6e7e-41f2-ad26-12bdd228ee45",
-      "name": "content school",
-      "ukprn": "17507845",
-      "urn": "118426",
-      "firstName": "Brennon",
-      "lastName": "Torphy",
-      "date": "2023-12-14T01:11:30.502Z",
-      "region": "Jackson County",
-      "cost": "£8862.00",
-      "emailAddress": "brennon.torphy@content school.school.uk",
-      "phone": "(831) 405-6091 x5284",
-      "website": "uneven-ethernet.org",
+      "uuid": "00c52b23-2154-4cb5-9e84-efff01a90253",
+      "name": "strategic school",
+      "claimRef": "361622 - strategic school",
+      "ukprn": "66677548",
+      "urn": "500278",
+      "firstName": "Erich",
+      "lastName": "Sporer",
+      "date": "2023-10-30T23:19:38.842Z",
+      "region": "County Antrim",
+      "cost": "£1105.00",
+      "emailAddress": "erich.sporer@strategic school.uk",
+      "phone": "(723) 657-5881",
+      "website": "educated-cabinet.name",
       "address": {
-        "line1": "9330 Christiansen Corners",
-        "town": "Port Jovany",
+        "line1": "1997 W Main Street",
+        "town": "North Lexi",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "507390",
+      "id": "561155",
+      "claim": "Draft",
+      "provider": "National Institute of Teaching",
+      "uuid": "17cf31a5-e3f0-44d9-a7bd-1f71d17a5a04",
+      "name": "real-time school",
+      "claimRef": "312654 - real-time school",
+      "ukprn": "76816523",
+      "urn": "099914",
+      "firstName": "Hershel",
+      "lastName": "Renner",
+      "date": "2024-04-28T20:10:43.472Z",
+      "region": "Central",
+      "cost": "£8484.00",
+      "emailAddress": "hershel.renner@real-time school.uk",
+      "phone": "719.295.0389 x963",
+      "website": "weekly-nod.net",
+      "address": {
+        "line1": "43311 Joey Bypass",
+        "town": "Clairhaven",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "911578",
+      "claim": "Paid",
+      "provider": "National Institute of Teaching",
+      "uuid": "805e59df-4f9a-4e0c-89f3-32f057ceeff9",
+      "name": "sexy school",
+      "claimRef": "759586 - sexy school",
+      "ukprn": "70283039",
+      "urn": "012387",
+      "firstName": "Nettie",
+      "lastName": "Predovic",
+      "date": "2024-05-03T03:11:59.304Z",
+      "region": "Bedfordshire",
+      "cost": "£7527.00",
+      "emailAddress": "nettie.predovic@sexy school.uk",
+      "phone": "(547) 374-5062 x08218",
+      "website": "wry-monsoon.biz",
+      "address": {
+        "line1": "92102 Rempel Highway",
+        "town": "Croninboro",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "867411",
+      "claim": "Sent for payment",
+      "provider": "Best Practice Network",
+      "uuid": "205ec96f-85fd-4a52-a87d-c202f985510c",
+      "name": "intuitive school",
+      "claimRef": "882763 - intuitive school",
+      "ukprn": "17783060",
+      "urn": "010517",
+      "firstName": "Rosamond",
+      "lastName": "Hermiston",
+      "date": "2024-07-27T17:55:16.084Z",
+      "region": "Oxfordshire",
+      "cost": "£1332.00",
+      "emailAddress": "rosamond.hermiston@intuitive school.uk",
+      "phone": "1-675-307-8606 x29421",
+      "website": "monumental-doing.net",
+      "address": {
+        "line1": "4203 Willow Street",
+        "town": "Durganfield",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "685817",
       "claim": "Awaiting clawback",
       "provider": "National Institute of Teaching",
-      "uuid": "eca42d34-65cd-49cd-b633-23417e621882",
-      "name": "markets school",
-      "ukprn": "65949695",
-      "urn": "406155",
-      "firstName": "Dario",
-      "lastName": "Durgan",
-      "date": "2023-12-31T02:21:09.740Z",
+      "uuid": "a971c345-b461-4e63-9731-9ab5656433c6",
+      "name": "cross-platform school",
+      "claimRef": "285992 - cross-platform school",
+      "ukprn": "73285823",
+      "urn": "188720",
+      "firstName": "Leonard",
+      "lastName": "Swaniawski",
+      "date": "2024-07-29T08:53:35.644Z",
+      "region": "Surrey",
+      "cost": "£9835.00",
+      "emailAddress": "leonard.swaniawski@cross-platform school.uk",
+      "phone": "809-988-7379 x422",
+      "website": "offbeat-academy.biz",
+      "address": {
+        "line1": "50680 Main Street E",
+        "town": "New Selena",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "505534",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "b2865e0e-cfaf-48de-be54-0222fafc9f91",
+      "name": "clicks-and-mortar school",
+      "claimRef": "449801 - clicks-and-mortar school",
+      "ukprn": "43043376",
+      "urn": "245736",
+      "firstName": "Nicklaus",
+      "lastName": "Zboncak",
+      "date": "2024-01-11T18:53:30.632Z",
       "region": "Shropshire",
-      "cost": "£470.00",
-      "emailAddress": "dario.durgan@markets school.school.uk",
-      "phone": "(374) 308-3385",
-      "website": "excellent-pub.info",
+      "cost": "£334.00",
+      "emailAddress": "nicklaus.zboncak@clicks-and-mortar school.uk",
+      "phone": "(353) 651-0117 x234",
+      "website": "frugal-hope.net",
       "address": {
-        "line1": "99485 Dolores Shoal",
-        "town": "Pagacworth",
+        "line1": "88954 S East Street",
+        "town": "Leoton",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "258579",
-      "claim": "Checking",
+      "id": "313697",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "1ddc44ed-ab8f-4f55-a2de-9a5375fe0822",
+      "name": "integrated school",
+      "claimRef": "424611 - integrated school",
+      "ukprn": "00850595",
+      "urn": "966322",
+      "firstName": "Juliana",
+      "lastName": "Ruecker",
+      "date": "2024-05-29T16:40:56.230Z",
+      "region": "Marshall County",
+      "cost": "£1516.00",
+      "emailAddress": "juliana.ruecker@integrated school.uk",
+      "phone": "(515) 789-7160 x880",
+      "website": "scratchy-cargo.com",
+      "address": {
+        "line1": "72745 Kailee Hill",
+        "town": "Chesterfield",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "246645",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "14dbce03-7792-49de-b0c4-ae3d86dca07b",
+      "name": "e-business school",
+      "claimRef": "881359 - e-business school",
+      "ukprn": "98630441",
+      "urn": "662856",
+      "firstName": "Rebecca",
+      "lastName": "Jast",
+      "date": "2024-07-12T15:10:01.385Z",
+      "region": "Lake County",
+      "cost": "£4376.00",
+      "emailAddress": "rebecca.jast@e-business school.uk",
+      "phone": "1-674-687-7736 x0185",
+      "website": "thick-subsidiary.net",
+      "address": {
+        "line1": "268 Arne Knoll",
+        "town": "Smithberg",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "917249",
+      "claim": "Sampling",
       "provider": "Best Practice Network",
-      "uuid": "3fc70f5e-86f6-4b6f-890c-f0d22760cb0b",
-      "name": "technologies school",
-      "ukprn": "92258589",
-      "urn": "246377",
-      "firstName": "Lillian",
-      "lastName": "Collins",
-      "date": "2024-06-14T11:27:05.131Z",
-      "region": "Gwynedd County",
-      "cost": "£6698.00",
-      "emailAddress": "lillian.collins@technologies school.school.uk",
-      "phone": "250-719-2230 x37755",
-      "website": "dry-publication.com",
+      "uuid": "55250c97-e175-4662-a616-282ac5db9693",
+      "name": "B2B school",
+      "claimRef": "520091 - B2B school",
+      "ukprn": "89430366",
+      "urn": "142229",
+      "firstName": "Jairo",
+      "lastName": "Weissnat",
+      "date": "2024-03-18T18:44:14.934Z",
+      "region": "Cornwall",
+      "cost": "£1187.00",
+      "emailAddress": "jairo.weissnat@b2b school.uk",
+      "phone": "(574) 499-4985",
+      "website": "jealous-voting.biz",
       "address": {
-        "line1": "8509 Tara Shoals",
-        "town": "Cristchester",
+        "line1": "859 Okuneva River",
+        "town": "Port Dortha",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "341582",
+      "id": "178395",
+      "claim": "Clawback complete",
+      "provider": "National Institute of Teaching",
+      "uuid": "af6b2232-8deb-4f50-9b3d-6568bc3fd258",
+      "name": "plug-and-play school",
+      "claimRef": "429480 - plug-and-play school",
+      "ukprn": "55106596",
+      "urn": "833080",
+      "firstName": "Sheldon",
+      "lastName": "Runolfsson",
+      "date": "2023-12-09T16:34:49.590Z",
+      "region": "Shropshire",
+      "cost": "£406.00",
+      "emailAddress": "sheldon.runolfsson@plug-and-play school.uk",
+      "phone": "679-232-5714 x14494",
+      "website": "united-daffodil.com",
+      "address": {
+        "line1": "876 Robb Burg",
+        "town": "Rutherfordhaven",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "887231",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "6ed73d85-1de1-4ef4-a142-2548b187b450",
+      "name": "best-of-breed school",
+      "claimRef": "628524 - best-of-breed school",
+      "ukprn": "57669292",
+      "urn": "560005",
+      "firstName": "Lucienne",
+      "lastName": "Collier",
+      "date": "2024-01-06T14:13:30.260Z",
+      "region": "Lothian",
+      "cost": "£8875.00",
+      "emailAddress": "lucienne.collier@best-of-breed school.uk",
+      "phone": "839-852-7689 x390",
+      "website": "willing-minnow.net",
+      "address": {
+        "line1": "8656 Grand Avenue",
+        "town": "Baldwin Park",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "348229",
+      "claim": "Information needed",
+      "provider": "National Institute of Teaching",
+      "uuid": "8e6b144c-7f19-43b4-85da-4ea1062bc8b1",
+      "name": "cross-media school",
+      "claimRef": "450248 - cross-media school",
+      "ukprn": "53073149",
+      "urn": "706132",
+      "firstName": "Name",
+      "lastName": "Kutch",
+      "date": "2024-01-09T20:12:55.123Z",
+      "region": "County Antrim",
+      "cost": "£4135.00",
+      "emailAddress": "name.kutch@cross-media school.uk",
+      "phone": "1-766-323-7846 x2577",
+      "website": "gloomy-dessert.info",
+      "address": {
+        "line1": "7652 E River Road",
+        "town": "Schusterborough",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "174151",
+      "claim": "Sent for payment",
+      "provider": "National Institute of Teaching",
+      "uuid": "adb8c81a-ba59-4bb6-b5d0-fc2d7f45b136",
+      "name": "frictionless school",
+      "claimRef": "711417 - frictionless school",
+      "ukprn": "18129896",
+      "urn": "816245",
+      "firstName": "Liana",
+      "lastName": "O'Keefe",
+      "date": "2023-12-28T09:15:32.493Z",
+      "region": "Clwyd",
+      "cost": "£4871.00",
+      "emailAddress": "liana.o'keefe@frictionless school.uk",
+      "phone": "468-936-9128 x65779",
+      "website": "angelic-mayor.info",
+      "address": {
+        "line1": "24992 Rohan Meadow",
+        "town": "East Celia",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "919751",
+      "claim": "Approved",
+      "provider": "Best Practice Network",
+      "uuid": "fa3b1678-d773-4ec8-a3f8-4ad2b4f0d293",
+      "name": "leading-edge school",
+      "claimRef": "773511 - leading-edge school",
+      "ukprn": "29802285",
+      "urn": "609456",
+      "firstName": "Travis",
+      "lastName": "Grimes",
+      "date": "2024-02-08T11:50:20.085Z",
+      "region": "Suffolk",
+      "cost": "£3169.00",
+      "emailAddress": "travis.grimes@leading-edge school.uk",
+      "phone": "402-240-8641",
+      "website": "vivacious-wrapping.name",
+      "address": {
+        "line1": "6047 Victoria Street",
+        "town": "Kenyonton",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "404540",
+      "claim": "Information needed",
+      "provider": "Best Practice Network",
+      "uuid": "a99a660e-5a83-429f-90cf-8b9d5c186f6b",
+      "name": "distributed school",
+      "claimRef": "944810 - distributed school",
+      "ukprn": "21904603",
+      "urn": "662884",
+      "firstName": "Dejah",
+      "lastName": "Harris",
+      "date": "2024-02-26T06:43:05.715Z",
+      "region": "Wiltshire",
+      "cost": "£1533.00",
+      "emailAddress": "dejah.harris@distributed school.uk",
+      "phone": "1-477-476-9127 x4932",
+      "website": "quizzical-modem.org",
+      "address": {
+        "line1": "6817 Kevin Valley",
+        "town": "Jakeview",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "825929",
       "claim": "Submitted",
       "provider": "National Institute of Teaching",
-      "uuid": "b4fe4fce-d0fb-4741-a264-5a382dc26133",
-      "name": "markets school",
-      "ukprn": "20556348",
-      "urn": "371220",
-      "firstName": "Melody",
-      "lastName": "West",
-      "date": "2024-02-29T07:37:17.088Z",
-      "region": "Leicestershire",
-      "cost": "£4950.00",
-      "emailAddress": "melody.west@markets school.school.uk",
-      "phone": "1-305-883-7279",
-      "website": "whole-bikini.biz",
+      "uuid": "44694e91-fdb3-48c0-b161-09638428ff30",
+      "name": "mission-critical school",
+      "claimRef": "620979 - mission-critical school",
+      "ukprn": "39420722",
+      "urn": "565342",
+      "firstName": "Casimer",
+      "lastName": "Kling",
+      "date": "2024-01-30T21:05:55.508Z",
+      "region": "Lothian",
+      "cost": "£2873.00",
+      "emailAddress": "casimer.kling@mission-critical school.uk",
+      "phone": "1-934-999-3392",
+      "website": "icky-dash.net",
       "address": {
-        "line1": "3207 Bulah Extension",
-        "town": "New Forest",
+        "line1": "377 McLaughlin Walk",
+        "town": "Pinellas Park",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "337825",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "2640b671-d0e9-40c7-bafd-b85c47fb9e0c",
+      "name": "ubiquitous school",
+      "claimRef": "557790 - ubiquitous school",
+      "ukprn": "66537715",
+      "urn": "469236",
+      "firstName": "Orville",
+      "lastName": "Hermiston",
+      "date": "2024-04-18T11:08:44.351Z",
+      "region": "West Yorkshire",
+      "cost": "£4054.00",
+      "emailAddress": "orville.hermiston@ubiquitous school.uk",
+      "phone": "499-985-1104 x988",
+      "website": "monthly-peacock.org",
+      "address": {
+        "line1": "491 E 14th Street",
+        "town": "North Bethesda",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "153064",
+      "claim": "Paid",
+      "provider": "National Institute of Teaching",
+      "uuid": "55e4fe0f-faf7-4765-874e-c1fdf39426c2",
+      "name": "transparent school",
+      "claimRef": "824493 - transparent school",
+      "ukprn": "82069528",
+      "urn": "509783",
+      "firstName": "Stewart",
+      "lastName": "O'Reilly",
+      "date": "2023-12-15T13:06:59.868Z",
+      "region": "Polk County",
+      "cost": "£898.00",
+      "emailAddress": "stewart.o'reilly@transparent school.uk",
+      "phone": "707-373-4818",
+      "website": "mortified-transom.info",
+      "address": {
+        "line1": "8784 Newton Road",
+        "town": "Arturostad",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "957393",
+      "claim": "Approved",
+      "provider": "National Institute of Teaching",
+      "uuid": "6c68bb6b-c4eb-4867-8aff-4b460b6a1559",
+      "name": "rich school",
+      "claimRef": "433672 - rich school",
+      "ukprn": "24123853",
+      "urn": "404049",
+      "firstName": "Adolphus",
+      "lastName": "Rolfson",
+      "date": "2024-02-01T05:57:32.967Z",
+      "region": "Derbyshire",
+      "cost": "£149.00",
+      "emailAddress": "adolphus.rolfson@rich school.uk",
+      "phone": "(938) 513-4559 x9282",
+      "website": "incomparable-contrast.name",
+      "address": {
+        "line1": "471 Broderick Cove",
+        "town": "State College",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "762421",
+      "claim": "Information needed",
+      "provider": "National Institute of Teaching",
+      "uuid": "c7400bac-a8d2-428e-809f-ec32ee2d2139",
+      "name": "24/7 school",
+      "claimRef": "227129 - 24/7 school",
+      "ukprn": "91020231",
+      "urn": "353287",
+      "firstName": "Lemuel",
+      "lastName": "Hammes",
+      "date": "2024-06-03T00:43:16.672Z",
+      "region": "County Armagh",
+      "cost": "£6117.00",
+      "emailAddress": "lemuel.hammes@24/7 school.uk",
+      "phone": "459-646-9571 x2770",
+      "website": "wonderful-wampum.com",
+      "address": {
+        "line1": "66333 Taylor Club",
+        "town": "Martinaworth",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "683711",
+      "claim": "Draft",
+      "provider": "Best Practice Network",
+      "uuid": "cf289764-e162-4357-94f3-8a91d7a78024",
+      "name": "rich school",
+      "claimRef": "998640 - rich school",
+      "ukprn": "99077489",
+      "urn": "993742",
+      "firstName": "Asia",
+      "lastName": "Weimann",
+      "date": "2024-01-30T14:51:32.734Z",
+      "region": "Northamptonshire",
+      "cost": "£4309.00",
+      "emailAddress": "asia.weimann@rich school.uk",
+      "phone": "597.414.5287 x0772",
+      "website": "peppery-plum.name",
+      "address": {
+        "line1": "3863 Stamm Prairie",
+        "town": "Zemlakstad",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "829816",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "4d843e70-418e-45e0-abcb-c88d8f9d01a7",
+      "name": "vertical school",
+      "claimRef": "428967 - vertical school",
+      "ukprn": "09303688",
+      "urn": "376886",
+      "firstName": "Alexys",
+      "lastName": "Welch",
+      "date": "2024-07-25T06:34:08.961Z",
+      "region": "Nottinghamshire",
+      "cost": "£1837.00",
+      "emailAddress": "alexys.welch@vertical school.uk",
+      "phone": "633.827.2045 x584",
+      "website": "stained-storm.biz",
+      "address": {
+        "line1": "727 McKenzie Rue",
+        "town": "West Lavonne",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "503384",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "d2325f65-63c9-4169-af1b-04ffa901045f",
+      "name": "24/7 school",
+      "claimRef": "992876 - 24/7 school",
+      "ukprn": "24785911",
+      "urn": "625713",
+      "firstName": "Henderson",
+      "lastName": "Graham",
+      "date": "2024-04-07T00:53:21.567Z",
+      "region": "Clwyd",
+      "cost": "£7197.00",
+      "emailAddress": "henderson.graham@24/7 school.uk",
+      "phone": "973-283-2835 x1876",
+      "website": "daring-snowman.org",
+      "address": {
+        "line1": "256 Glover Corner",
+        "town": "Mayerttown",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "550172",
+      "claim": "Approved",
+      "provider": "National Institute of Teaching",
+      "uuid": "68ff5fc0-1ef4-456c-8178-ed1b29ab8d89",
+      "name": "efficient school",
+      "claimRef": "170700 - efficient school",
+      "ukprn": "42458362",
+      "urn": "952134",
+      "firstName": "Gudrun",
+      "lastName": "Lebsack",
+      "date": "2023-10-19T01:04:39.457Z",
+      "region": "Isle of Wight",
+      "cost": "£2421.00",
+      "emailAddress": "gudrun.lebsack@efficient school.uk",
+      "phone": "1-987-401-0364 x50735",
+      "website": "aged-bowler.net",
+      "address": {
+        "line1": "889 Bay Street",
+        "town": "East Lelafurt",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "785501",
+      "claim": "Ineligible",
+      "provider": "National Institute of Teaching",
+      "uuid": "b269ee41-d8fe-4830-8d53-eccd3672cb08",
+      "name": "collaborative school",
+      "claimRef": "407960 - collaborative school",
+      "ukprn": "22201917",
+      "urn": "012937",
+      "firstName": "Guillermo",
+      "lastName": "Pouros",
+      "date": "2024-07-16T18:04:19.989Z",
+      "region": "Surrey",
+      "cost": "£6749.00",
+      "emailAddress": "guillermo.pouros@collaborative school.uk",
+      "phone": "(641) 944-0899",
+      "website": "steel-porcupine.com",
+      "address": {
+        "line1": "5716 Broad Lane",
+        "town": "Andreboro",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "912499",
+      "claim": "Approved",
+      "provider": "Best Practice Network",
+      "uuid": "ca5f5cbf-137c-4a91-b04e-45d39b6e65b5",
+      "name": "real-time school",
+      "claimRef": "132071 - real-time school",
+      "ukprn": "78645521",
+      "urn": "638938",
+      "firstName": "Sadie",
+      "lastName": "Berge",
+      "date": "2023-10-19T02:20:24.695Z",
+      "region": "County Down",
+      "cost": "£5223.00",
+      "emailAddress": "sadie.berge@real-time school.uk",
+      "phone": "794.642.8100 x255",
+      "website": "rundown-peer-to-peer.net",
+      "address": {
+        "line1": "839 N Lincoln Street",
+        "town": "Willfurt",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "702588",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "49396271-258e-48e4-8e45-e1ff6fb95601",
+      "name": "end-to-end school",
+      "claimRef": "424959 - end-to-end school",
+      "ukprn": "79617536",
+      "urn": "275722",
+      "firstName": "Maybelle",
+      "lastName": "Pollich-Collins",
+      "date": "2023-12-10T17:15:30.808Z",
+      "region": "Monroe County",
+      "cost": "£797.00",
+      "emailAddress": "maybelle.pollich-collins@end-to-end school.uk",
+      "phone": "(723) 428-7917",
+      "website": "valid-stealth.biz",
+      "address": {
+        "line1": "656 Marianna Run",
+        "town": "Dagmarmouth",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "878231",
+      "claim": "Paid",
+      "provider": "National Institute of Teaching",
+      "uuid": "4742835c-719a-4bef-ac66-c19cbd79e475",
+      "name": "clicks-and-mortar school",
+      "claimRef": "385667 - clicks-and-mortar school",
+      "ukprn": "37023466",
+      "urn": "167664",
+      "firstName": "Hermann",
+      "lastName": "Moen",
+      "date": "2024-02-22T00:46:10.105Z",
+      "region": "Clark County",
+      "cost": "£5304.00",
+      "emailAddress": "hermann.moen@clicks-and-mortar school.uk",
+      "phone": "571.654.8669 x29246",
+      "website": "bitter-still.org",
+      "address": {
+        "line1": "1358 Wiegand Fields",
+        "town": "West Garrick",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "391281",
+      "claim": "Submitted",
+      "provider": "Best Practice Network",
+      "uuid": "f70e3aec-3ba3-4310-b407-198cee92ba41",
+      "name": "visionary school",
+      "claimRef": "712113 - visionary school",
+      "ukprn": "74672210",
+      "urn": "259639",
+      "firstName": "Lora",
+      "lastName": "Connelly",
+      "date": "2024-02-26T21:00:35.236Z",
+      "region": "Monroe County",
+      "cost": "£5893.00",
+      "emailAddress": "lora.connelly@visionary school.uk",
+      "phone": "(723) 364-5618 x763",
+      "website": "fruitful-struggle.name",
+      "address": {
+        "line1": "60985 Dicki Fork",
+        "town": "Maceyboro",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "443336",
+      "claim": "Paid",
+      "provider": "Best Practice Network",
+      "uuid": "d5536362-0c72-4aba-92b0-944a88784a8a",
+      "name": "ubiquitous school",
+      "claimRef": "576417 - ubiquitous school",
+      "ukprn": "13045735",
+      "urn": "164626",
+      "firstName": "Otilia",
+      "lastName": "Lockman-Dooley",
+      "date": "2024-04-18T23:22:47.757Z",
+      "region": "Montgomery County",
+      "cost": "£3627.00",
+      "emailAddress": "otilia.lockman-dooley@ubiquitous school.uk",
+      "phone": "1-781-569-2729 x954",
+      "website": "bare-wallet.biz",
+      "address": {
+        "line1": "9072 Mill Lane",
+        "town": "South Lon",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "896339",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "ed0c83ee-12e6-43ff-badd-0910078b4a3b",
+      "name": "viral school",
+      "claimRef": "561502 - viral school",
+      "ukprn": "90647740",
+      "urn": "450390",
+      "firstName": "Fay",
+      "lastName": "Gottlieb",
+      "date": "2024-04-03T02:58:59.365Z",
+      "region": "Grampian",
+      "cost": "£3835.00",
+      "emailAddress": "fay.gottlieb@viral school.uk",
+      "phone": "1-880-208-5339 x7288",
+      "website": "voluminous-bumper.biz",
+      "address": {
+        "line1": "598 Union Street",
+        "town": "Port Jettie",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "182062",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "cd347394-f4e3-4f9e-ab90-96e4c1d511c4",
+      "name": "ubiquitous school",
+      "claimRef": "839573 - ubiquitous school",
+      "ukprn": "99511479",
+      "urn": "054960",
+      "firstName": "Sydnee",
+      "lastName": "Flatley",
+      "date": "2024-02-20T09:21:08.128Z",
+      "region": "Strathclyde",
+      "cost": "£3453.00",
+      "emailAddress": "sydnee.flatley@ubiquitous school.uk",
+      "phone": "(224) 808-6271 x05734",
+      "website": "joyful-drop.biz",
+      "address": {
+        "line1": "810 Bergnaum Knolls",
+        "town": "Ceciliaborough",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "930962",
+      "claim": "Approved",
+      "provider": "Best Practice Network",
+      "uuid": "78fec8e7-641d-46a6-94a8-7796497c410c",
+      "name": "visionary school",
+      "claimRef": "347531 - visionary school",
+      "ukprn": "28593698",
+      "urn": "125140",
+      "firstName": "Omari",
+      "lastName": "Jacobi",
+      "date": "2024-02-04T09:25:22.184Z",
+      "region": "Greater Manchester",
+      "cost": "£730.00",
+      "emailAddress": "omari.jacobi@visionary school.uk",
+      "phone": "861.389.9137",
+      "website": "expert-surgery.com",
+      "address": {
+        "line1": "12820 Winnifred Forge",
+        "town": "West Deanburgh",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "605025",
+      "claim": "Submitted",
+      "provider": "National Institute of Teaching",
+      "uuid": "d3629013-4b7c-49dd-a11e-e4177a868c25",
+      "name": "out-of-the-box school",
+      "claimRef": "856196 - out-of-the-box school",
+      "ukprn": "84004151",
+      "urn": "186301",
+      "firstName": "Judd",
+      "lastName": "Braun",
+      "date": "2024-06-21T14:13:08.413Z",
+      "region": "West Sussex",
+      "cost": "£7860.00",
+      "emailAddress": "judd.braun@out-of-the-box school.uk",
+      "phone": "1-412-804-0153 x6873",
+      "website": "wiggly-following.info",
+      "address": {
+        "line1": "4113 Herman Rapids",
+        "town": "South Valley",
         "postcode": "W9 1ST"
       }
     }
@@ -1562,839 +1377,1124 @@
   {
     "details": {
       "id": "184638",
-      "claim": "Submitted",
-      "provider": "National Institute of Teaching",
-      "uuid": "685e7e31-75bc-47a1-ab63-9bb42e5dfd63",
-      "name": "content school",
-      "ukprn": "95880743",
-      "urn": "414293",
-      "firstName": "Zachary",
-      "lastName": "Miller",
-      "date": "2024-04-28T19:14:17.975Z",
-      "region": "Herefordshire",
-      "cost": "£7326.00",
-      "emailAddress": "zachary.miller@content school.school.uk",
-      "phone": "315-223-0949",
-      "website": "unconscious-gemsbok.org",
-      "address": {
-        "line1": "550 Shanahan Locks",
-        "town": "Maceyview",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "220806",
-      "claim": "Ineligible",
-      "provider": "National Institute of Teaching",
-      "uuid": "aa3abb1e-1f8d-460b-9178-b53277ffcd2f",
-      "name": "systems school",
-      "ukprn": "00407386",
-      "urn": "049565",
-      "firstName": "Hyman",
-      "lastName": "Kulas",
-      "date": "2024-07-14T00:29:03.698Z",
-      "region": "Scott County",
-      "cost": "£6222.00",
-      "emailAddress": "hyman.kulas@systems school.school.uk",
-      "phone": "558.715.8110 x491",
-      "website": "loud-airplane.name",
-      "address": {
-        "line1": "60519 Runolfsson Fords",
-        "town": "Treutelstead",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "268605",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "e6d9009b-2d47-42e0-9f45-15527985c3a7",
-      "name": "convergence school",
-      "ukprn": "41547224",
-      "urn": "477721",
-      "firstName": "Carol",
-      "lastName": "Mraz",
-      "date": "2023-12-02T04:42:21.136Z",
-      "region": "Hertfordshire",
-      "cost": "£8810.00",
-      "emailAddress": "carol.mraz@convergence school.school.uk",
-      "phone": "295.375.9748 x05610",
-      "website": "unwitting-medicine.info",
-      "address": {
-        "line1": "3859 St Andrew's Road",
-        "town": "Livonia",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "461485",
       "claim": "Awaiting clawback",
       "provider": "National Institute of Teaching",
-      "uuid": "6b8f69de-849a-466c-8496-28220a7989f3",
-      "name": "markets school",
-      "ukprn": "59325478",
-      "urn": "863855",
-      "firstName": "Libby",
-      "lastName": "Carroll",
-      "date": "2024-01-15T06:53:04.485Z",
-      "region": "Buckinghamshire",
-      "cost": "£8534.00",
-      "emailAddress": "libby.carroll@markets school.school.uk",
-      "phone": "211.636.4064",
-      "website": "astonishing-surfboard.net",
-      "address": {
-        "line1": "240 Savanah Road",
-        "town": "Lakeville",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "959388",
-      "claim": "Ineligible",
-      "provider": "Best Practice Network",
-      "uuid": "c196dc11-3739-4f63-8166-c17d073b7cda",
-      "name": "channels school",
-      "ukprn": "63245263",
-      "urn": "413872",
-      "firstName": "Keagan",
-      "lastName": "Tillman",
-      "date": "2024-06-03T07:54:00.568Z",
-      "region": "Devon",
-      "cost": "£9162.00",
-      "emailAddress": "keagan.tillman@channels school.school.uk",
-      "phone": "745.774.0567 x926",
-      "website": "pungent-nicety.com",
-      "address": {
-        "line1": "2041 Abernathy Estate",
-        "town": "Elmoberg",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "800799",
-      "claim": "Awaiting clawback",
-      "provider": "Best Practice Network",
-      "uuid": "0e7884bc-9479-4543-b912-3cfa560dac2f",
-      "name": "niches school",
-      "ukprn": "78698673",
-      "urn": "764227",
-      "firstName": "Bethel",
-      "lastName": "Hilll",
-      "date": "2023-11-12T22:01:32.462Z",
-      "region": "Hancock County",
-      "cost": "£9624.00",
-      "emailAddress": "bethel.hilll@niches school.school.uk",
-      "phone": "1-617-468-3750 x6214",
-      "website": "mature-tritone.biz",
-      "address": {
-        "line1": "77023 East Road",
-        "town": "Connchester",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "545726",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "08032204-fea3-4292-b7ce-8c551b698729",
-      "name": "systems school",
-      "ukprn": "06599405",
-      "urn": "570601",
-      "firstName": "Santino",
-      "lastName": "Abernathy",
-      "date": "2024-03-04T07:10:29.210Z",
-      "region": "Wiltshire",
-      "cost": "£9208.00",
-      "emailAddress": "santino.abernathy@systems school.school.uk",
-      "phone": "732-867-2590 x412",
-      "website": "tart-testimonial.info",
-      "address": {
-        "line1": "7404 Eliseo Roads",
-        "town": "Normashire",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "879854",
-      "claim": "Information needed",
-      "provider": "Best Practice Network",
-      "uuid": "d3eb55e1-be29-425f-91e7-ad79aca66e10",
-      "name": "deliverables school",
-      "ukprn": "79637332",
-      "urn": "779339",
-      "firstName": "Nathanael",
-      "lastName": "Kerluke",
-      "date": "2023-10-09T02:24:54.066Z",
-      "region": "Clark County",
-      "cost": "£665.00",
-      "emailAddress": "nathanael.kerluke@deliverables school.school.uk",
-      "phone": "1-738-393-8165",
-      "website": "hilarious-spud.com",
-      "address": {
-        "line1": "8063 Murazik Forges",
-        "town": "West Alejandra",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "442032",
-      "claim": "Draft",
-      "provider": "National Institute of Teaching",
-      "uuid": "a883aa87-468f-45f3-b564-f3c219f9f34f",
-      "name": "eyeballs school",
-      "ukprn": "33240834",
-      "urn": "972672",
-      "firstName": "Cristal",
-      "lastName": "Olson",
-      "date": "2024-03-03T12:32:39.697Z",
-      "region": "Essex",
-      "cost": "£2841.00",
-      "emailAddress": "cristal.olson@eyeballs school.school.uk",
-      "phone": "(611) 343-3605 x05183",
-      "website": "candid-verb.name",
-      "address": {
-        "line1": "35462 Clifton Road",
-        "town": "East Sarina",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "290117",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "207bb904-0a71-4b75-b096-a9ed7c33c0e1",
-      "name": "paradigms school",
-      "ukprn": "72924550",
-      "urn": "606488",
-      "firstName": "Cory",
-      "lastName": "Sawayn-Fay",
-      "date": "2024-01-01T06:30:46.290Z",
-      "region": "Hampshire",
-      "cost": "£1834.00",
-      "emailAddress": "cory.sawayn-fay@paradigms school.school.uk",
-      "phone": "573.306.5469 x152",
-      "website": "peppery-suede.org",
-      "address": {
-        "line1": "61534 Gibson Turnpike",
-        "town": "Sacramento",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "570354",
-      "claim": "Draft",
-      "provider": "Best Practice Network",
-      "uuid": "afbea602-a3c2-4cc0-b291-703301eb6da2",
-      "name": "initiatives school",
-      "ukprn": "93179352",
-      "urn": "795085",
-      "firstName": "Jazmyne",
-      "lastName": "Zemlak",
-      "date": "2024-05-10T22:40:35.093Z",
-      "region": "Borders",
-      "cost": "£1995.00",
-      "emailAddress": "jazmyne.zemlak@initiatives school.school.uk",
-      "phone": "1-921-446-5060 x527",
-      "website": "excited-series.net",
-      "address": {
-        "line1": "263 Konopelski Dam",
-        "town": "Fort Lorenza",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "439990",
-      "claim": "Sent for payment",
-      "provider": "National Institute of Teaching",
-      "uuid": "ebb76b0d-6c59-4d37-9da5-18f51196f554",
-      "name": "mindshare school",
-      "ukprn": "67566486",
-      "urn": "505234",
-      "firstName": "Brielle",
-      "lastName": "Kreiger",
-      "date": "2023-11-08T23:34:00.559Z",
-      "region": "Norfolk",
-      "cost": "£429.00",
-      "emailAddress": "brielle.kreiger@mindshare school.school.uk",
-      "phone": "1-605-931-9574",
-      "website": "agreeable-fairy.name",
-      "address": {
-        "line1": "92678 Heller Brooks",
-        "town": "Gleichnerview",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "660444",
-      "claim": "Sampling",
-      "provider": "National Institute of Teaching",
-      "uuid": "230e7fd8-c28e-465b-8937-99963a5e0537",
-      "name": "metrics school",
-      "ukprn": "28197724",
-      "urn": "827062",
-      "firstName": "Liam",
-      "lastName": "Marks",
-      "date": "2024-02-06T03:39:05.939Z",
-      "region": "Crawford County",
-      "cost": "£2741.00",
-      "emailAddress": "liam.marks@metrics school.school.uk",
-      "phone": "773-806-0043",
-      "website": "this-heater.name",
-      "address": {
-        "line1": "906 Padberg Lodge",
-        "town": "Lake Judah",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "171764",
-      "claim": "Information needed",
-      "provider": "Best Practice Network",
-      "uuid": "c831a51d-54e6-4885-847d-933b44bfe7dc",
-      "name": "content school",
-      "ukprn": "99592113",
-      "urn": "586963",
-      "firstName": "Jaycee",
-      "lastName": "Rodriguez",
-      "date": "2024-06-12T08:57:07.784Z",
-      "region": "Scott County",
-      "cost": "£8430.00",
-      "emailAddress": "jaycee.rodriguez@content school.school.uk",
-      "phone": "812-821-3066 x51255",
-      "website": "sleepy-pantology.biz",
-      "address": {
-        "line1": "80044 Lee Street",
-        "town": "Lilianemouth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "310627",
-      "claim": "Sampling",
-      "provider": "National Institute of Teaching",
-      "uuid": "821c71f4-16b3-4b27-b27c-276a4076c6a0",
-      "name": "users school",
-      "ukprn": "76706184",
-      "urn": "691304",
-      "firstName": "Colleen",
-      "lastName": "Wiza",
-      "date": "2024-06-07T17:24:13.152Z",
-      "region": "Humberside",
-      "cost": "£7974.00",
-      "emailAddress": "colleen.wiza@users school.school.uk",
-      "phone": "552.575.9104",
-      "website": "disloyal-misunderstand.org",
-      "address": {
-        "line1": "220 Jerald Court",
-        "town": "Aracelyfort",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "811786",
-      "claim": "Sampling",
-      "provider": "National Institute of Teaching",
-      "uuid": "896fae3f-d48a-47aa-aa6c-8e757d1bdd68",
-      "name": "initiatives school",
-      "ukprn": "52733652",
-      "urn": "865944",
-      "firstName": "Vito",
-      "lastName": "Skiles",
-      "date": "2023-11-25T16:27:22.537Z",
-      "region": "Grant County",
-      "cost": "£9596.00",
-      "emailAddress": "vito.skiles@initiatives school.school.uk",
-      "phone": "621.322.2235 x8176",
-      "website": "drafty-egghead.name",
-      "address": {
-        "line1": "8979 Greenholt Brook",
-        "town": "Markmouth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "778634",
-      "claim": "Information needed",
-      "provider": "Best Practice Network",
-      "uuid": "8bc82763-a021-4061-b6f0-e31474198a6e",
-      "name": "channels school",
-      "ukprn": "59675348",
-      "urn": "842269",
-      "firstName": "Camren",
-      "lastName": "Pfannerstill",
-      "date": "2024-03-02T04:08:13.491Z",
-      "region": "Clay County",
-      "cost": "£2643.00",
-      "emailAddress": "camren.pfannerstill@channels school.school.uk",
-      "phone": "370-810-4849",
-      "website": "frail-cheddar.name",
-      "address": {
-        "line1": "37955 Daniel Circle",
-        "town": "University",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "304168",
-      "claim": "Paid",
-      "provider": "Best Practice Network",
-      "uuid": "6d642a8f-d49e-4478-9183-507bc9d87002",
-      "name": "deliverables school",
-      "ukprn": "40076232",
-      "urn": "479526",
-      "firstName": "Keven",
-      "lastName": "Bailey-Lowe",
-      "date": "2024-06-14T04:15:58.399Z",
-      "region": "Suffolk",
-      "cost": "£8640.00",
-      "emailAddress": "keven.bailey-lowe@deliverables school.school.uk",
-      "phone": "806-655-8712 x9570",
-      "website": "vibrant-ice-cream.biz",
-      "address": {
-        "line1": "154 Daniela Pines",
-        "town": "Jailynstad",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "728708",
-      "claim": "Checking",
-      "provider": "Best Practice Network",
-      "uuid": "016a3e1c-2011-4da3-8978-2dd60ecd4743",
-      "name": "schemas school",
-      "ukprn": "20043302",
-      "urn": "964565",
-      "firstName": "Una",
-      "lastName": "Runolfsson",
-      "date": "2024-03-03T10:48:10.203Z",
-      "region": "Oxfordshire",
-      "cost": "£3359.00",
-      "emailAddress": "una.runolfsson@schemas school.school.uk",
-      "phone": "246.861.6473 x84915",
-      "website": "safe-scrambled.com",
-      "address": {
-        "line1": "29906 Maxime Extension",
-        "town": "South Melvinastad",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "153018",
-      "claim": "Checking",
-      "provider": "Best Practice Network",
-      "uuid": "4a07f0ad-d368-4809-9881-2435b47d7010",
-      "name": "paradigms school",
-      "ukprn": "61271660",
-      "urn": "223101",
-      "firstName": "Kameron",
-      "lastName": "Blanda",
-      "date": "2023-12-21T06:22:29.385Z",
-      "region": "Humberside",
-      "cost": "£5789.00",
-      "emailAddress": "kameron.blanda@paradigms school.school.uk",
-      "phone": "(927) 611-7856 x617",
-      "website": "uncommon-banjo.com",
-      "address": {
-        "line1": "777 Meredith Meadow",
-        "town": "New Garry",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "354658",
-      "claim": "Sampling",
-      "provider": "National Institute of Teaching",
-      "uuid": "dbc1056b-73ff-4b11-8a05-f493bad173bd",
-      "name": "blockchains school",
-      "ukprn": "76891075",
-      "urn": "757089",
-      "firstName": "Wiley",
-      "lastName": "Spencer",
-      "date": "2023-10-05T23:26:08.619Z",
-      "region": "Grampian",
-      "cost": "£3576.00",
-      "emailAddress": "wiley.spencer@blockchains school.school.uk",
-      "phone": "934.644.0374 x7474",
-      "website": "definitive-employer.com",
-      "address": {
-        "line1": "277 8th Avenue",
-        "town": "Castro Valley",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "557951",
-      "claim": "Information needed",
-      "provider": "National Institute of Teaching",
-      "uuid": "6fa9b204-941d-403d-bdae-f31441ea5025",
-      "name": "mindshare school",
-      "ukprn": "67099231",
-      "urn": "425768",
-      "firstName": "Kim",
-      "lastName": "Zemlak-Zemlak",
-      "date": "2024-04-14T16:26:53.516Z",
-      "region": "Scott County",
-      "cost": "£1101.00",
-      "emailAddress": "kim.zemlak-zemlak@mindshare school.school.uk",
-      "phone": "946-883-9246",
-      "website": "narrow-human.net",
-      "address": {
-        "line1": "124 Patience Greens",
-        "town": "Lake Luther",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "669404",
-      "claim": "Ineligible",
-      "provider": "National Institute of Teaching",
-      "uuid": "a47bb0e6-a318-4e6a-96d7-bb867af99eff",
-      "name": "schemas school",
-      "ukprn": "24589065",
-      "urn": "957210",
-      "firstName": "Glennie",
-      "lastName": "Yundt",
-      "date": "2024-05-04T22:30:25.098Z",
+      "uuid": "5a23e466-9e84-4fd7-a0c7-64bda5cfc18a",
+      "name": "world-class school",
+      "claimRef": "618189 - world-class school",
+      "ukprn": "76570727",
+      "urn": "605916",
+      "firstName": "Bernadine",
+      "lastName": "Wehner",
+      "date": "2023-10-19T13:54:04.191Z",
       "region": "Highlands and Islands",
-      "cost": "£5237.00",
-      "emailAddress": "glennie.yundt@schemas school.school.uk",
-      "phone": "467.985.3979 x37822",
-      "website": "mealy-mailer.info",
+      "cost": "£9857.00",
+      "emailAddress": "bernadine.wehner@world-class school.uk",
+      "phone": "686-835-9238 x859",
+      "website": "practical-skean.name",
       "address": {
-        "line1": "26849 Mason Falls",
-        "town": "San Bruno",
+        "line1": "12239 Mozelle Square",
+        "town": "Morarland",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "440472",
-      "claim": "Approved",
-      "provider": "Best Practice Network",
-      "uuid": "82cd3803-a2e2-4c1c-af9d-4964ab03f4ce",
-      "name": "experiences school",
-      "ukprn": "45984421",
-      "urn": "859470",
-      "firstName": "Nikko",
-      "lastName": "Greenholt",
-      "date": "2023-10-27T01:10:23.822Z",
-      "region": "Rutland",
-      "cost": "£9619.00",
-      "emailAddress": "nikko.greenholt@experiences school.school.uk",
-      "phone": "840.649.6456",
-      "website": "kindhearted-writer.org",
-      "address": {
-        "line1": "6968 Schultz Oval",
-        "town": "Port Bridget",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "951699",
-      "claim": "Draft",
-      "provider": "Best Practice Network",
-      "uuid": "f61405ac-a775-4374-a82a-47a957080afb",
-      "name": "mindshare school",
-      "ukprn": "96988607",
-      "urn": "564308",
-      "firstName": "Natasha",
-      "lastName": "King",
-      "date": "2023-11-07T06:56:13.840Z",
-      "region": "Montgomery County",
-      "cost": "£4375.00",
-      "emailAddress": "natasha.king@mindshare school.school.uk",
-      "phone": "239.669.8840 x45988",
-      "website": "unnatural-cricket.name",
-      "address": {
-        "line1": "56461 Alexandra Road",
-        "town": "North Kailey",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "893045",
-      "claim": "Sent for payment",
+      "id": "575082",
+      "claim": "Information needed",
       "provider": "National Institute of Teaching",
-      "uuid": "e5f34626-be4c-4b65-b440-49e2c82266c2",
-      "name": "markets school",
-      "ukprn": "33125326",
-      "urn": "095324",
-      "firstName": "Madie",
-      "lastName": "Stamm",
-      "date": "2024-06-02T21:25:33.068Z",
-      "region": "Cornwall",
-      "cost": "£3051.00",
-      "emailAddress": "madie.stamm@markets school.school.uk",
-      "phone": "930.610.0907 x534",
-      "website": "steel-definition.net",
+      "uuid": "00867cfd-2774-49e4-871f-8510cb063f99",
+      "name": "clicks-and-mortar school",
+      "claimRef": "955521 - clicks-and-mortar school",
+      "ukprn": "42359991",
+      "urn": "352046",
+      "firstName": "Kailee",
+      "lastName": "Baumbach",
+      "date": "2024-01-02T04:40:00.267Z",
+      "region": "Gwynedd County",
+      "cost": "£2057.00",
+      "emailAddress": "kailee.baumbach@clicks-and-mortar school.uk",
+      "phone": "1-736-792-6975",
+      "website": "trusting-father.info",
       "address": {
-        "line1": "222 Clark Street",
-        "town": "Fort Darrickstead",
+        "line1": "99580 Demario Common",
+        "town": "West Alexandra",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "291256",
+      "id": "636688",
+      "claim": "Sent for payment",
+      "provider": "Best Practice Network",
+      "uuid": "e0509f20-80d1-4e04-9d1d-d59e57b01acc",
+      "name": "visionary school",
+      "claimRef": "706780 - visionary school",
+      "ukprn": "48163331",
+      "urn": "278435",
+      "firstName": "Eladio",
+      "lastName": "Wehner",
+      "date": "2024-02-14T10:58:37.748Z",
+      "region": "Cleveland",
+      "cost": "£6508.00",
+      "emailAddress": "eladio.wehner@visionary school.uk",
+      "phone": "918.771.6210 x54103",
+      "website": "well-groomed-milestone.name",
+      "address": {
+        "line1": "38764 E Bridge Street",
+        "town": "West Brendonhaven",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "566522",
       "claim": "Sampling",
       "provider": "Best Practice Network",
-      "uuid": "de3d3d41-f75b-4667-bf84-0243bf108784",
-      "name": "interfaces school",
-      "ukprn": "95634538",
-      "urn": "655402",
-      "firstName": "Emilie",
-      "lastName": "Swaniawski",
-      "date": "2024-03-07T11:42:39.450Z",
-      "region": "Lawrence County",
-      "cost": "£2148.00",
-      "emailAddress": "emilie.swaniawski@interfaces school.school.uk",
-      "phone": "984-892-0745 x505",
-      "website": "anxious-peer-to-peer.biz",
+      "uuid": "382f4e26-e429-42ab-985c-8986e60a7e70",
+      "name": "impactful school",
+      "claimRef": "528307 - impactful school",
+      "ukprn": "94803598",
+      "urn": "707587",
+      "firstName": "Francesco",
+      "lastName": "Heathcote",
+      "date": "2024-03-02T00:08:00.619Z",
+      "region": "Franklin County",
+      "cost": "£1816.00",
+      "emailAddress": "francesco.heathcote@impactful school.uk",
+      "phone": "1-904-680-2953",
+      "website": "giving-smuggling.com",
       "address": {
-        "line1": "94971 8th Street",
-        "town": "Hershelmouth",
+        "line1": "9294 Howard Road",
+        "town": "East Crystelberg",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "919406",
-      "claim": "Paid",
-      "provider": "National Institute of Teaching",
-      "uuid": "08b73f37-debb-43a4-8b98-9fdce0f8552b",
-      "name": "methodologies school",
-      "ukprn": "86614955",
-      "urn": "956832",
-      "firstName": "Trycia",
-      "lastName": "Lakin",
-      "date": "2024-02-22T02:53:25.646Z",
-      "region": "Strathclyde",
-      "cost": "£3368.00",
-      "emailAddress": "trycia.lakin@methodologies school.school.uk",
-      "phone": "319-716-7187",
-      "website": "masculine-damage.net",
-      "address": {
-        "line1": "40398 Schowalter Lakes",
-        "town": "West Hollybury",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "720796",
-      "claim": "Ineligible",
-      "provider": "Best Practice Network",
-      "uuid": "75f88a68-c2dc-481f-975a-8236b11f2f44",
-      "name": "synergies school",
-      "ukprn": "87973231",
-      "urn": "865443",
-      "firstName": "Luella",
-      "lastName": "Harris",
-      "date": "2023-10-16T13:07:36.630Z",
-      "region": "Central",
-      "cost": "£8937.00",
-      "emailAddress": "luella.harris@synergies school.school.uk",
-      "phone": "532-692-9001",
-      "website": "outlandish-equinox.org",
-      "address": {
-        "line1": "3249 Ondricka Lake",
-        "town": "Purdyside",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "342999",
-      "claim": "Submitted",
-      "provider": "National Institute of Teaching",
-      "uuid": "c276b3f1-a7a7-4e72-bed5-47e79a9bab96",
-      "name": "architectures school",
-      "ukprn": "49339705",
-      "urn": "493512",
-      "firstName": "Luciano",
-      "lastName": "Kozey",
-      "date": "2024-02-19T14:59:06.890Z",
-      "region": "Monroe County",
-      "cost": "£1311.00",
-      "emailAddress": "luciano.kozey@architectures school.school.uk",
-      "phone": "(531) 941-1003 x2591",
-      "website": "empty-edible.name",
-      "address": {
-        "line1": "3369 Grange Road",
-        "town": "Hayesmouth",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "436649",
-      "claim": "Submitted",
-      "provider": "Best Practice Network",
-      "uuid": "1892aa17-ad54-47bf-be3b-96d3d54200e8",
-      "name": "mindshare school",
-      "ukprn": "96683342",
-      "urn": "662936",
-      "firstName": "Shaina",
-      "lastName": "Deckow",
-      "date": "2024-04-17T05:54:16.375Z",
-      "region": "Mid Glamorgan",
-      "cost": "£8928.00",
-      "emailAddress": "shaina.deckow@mindshare school.school.uk",
-      "phone": "601.990.7483",
-      "website": "dismal-cynic.org",
-      "address": {
-        "line1": "6871 The Maltings",
-        "town": "North Cristopher",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "414048",
-      "claim": "Checking",
-      "provider": "Best Practice Network",
-      "uuid": "530f9dc6-73aa-4353-8687-44d5e312e73f",
-      "name": "deliverables school",
-      "ukprn": "40193499",
-      "urn": "771751",
-      "firstName": "Derick",
-      "lastName": "Thiel",
-      "date": "2024-02-26T08:23:16.782Z",
-      "region": "Cheshire",
-      "cost": "£8864.00",
-      "emailAddress": "derick.thiel@deliverables school.school.uk",
-      "phone": "1-636-202-1270 x812",
-      "website": "known-limb.name",
-      "address": {
-        "line1": "7942 E 6th Avenue",
-        "town": "Buckeye",
-        "postcode": "W9 1ST"
-      }
-    }
-  },
-  {
-    "details": {
-      "id": "304705",
+      "id": "830115",
       "claim": "Clawback complete",
       "provider": "National Institute of Teaching",
-      "uuid": "034ffad5-d569-4c0c-bd10-dbf99cc114a0",
-      "name": "mindshare school",
-      "ukprn": "61124331",
-      "urn": "393823",
-      "firstName": "Darion",
-      "lastName": "Ward",
-      "date": "2024-05-09T11:38:47.804Z",
-      "region": "Greater Manchester",
-      "cost": "£155.00",
-      "emailAddress": "darion.ward@mindshare school.school.uk",
-      "phone": "(553) 230-7492 x6052",
-      "website": "sardonic-swimsuit.biz",
+      "uuid": "4fac6e5a-d284-4e81-9e53-0bee27fad5da",
+      "name": "back-end school",
+      "claimRef": "774866 - back-end school",
+      "ukprn": "36203119",
+      "urn": "694991",
+      "firstName": "Elise",
+      "lastName": "Schulist",
+      "date": "2023-11-12T18:07:03.475Z",
+      "region": "Lee County",
+      "cost": "£1137.00",
+      "emailAddress": "elise.schulist@back-end school.uk",
+      "phone": "(201) 238-9046 x759",
+      "website": "grim-shearling.info",
       "address": {
-        "line1": "908 Bradly Hill",
-        "town": "Fort Domenica",
+        "line1": "31774 Murphy Lake",
+        "town": "North Cleomouth",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "755384",
+      "id": "475311",
+      "claim": "Approved",
+      "provider": "National Institute of Teaching",
+      "uuid": "f53d4539-f261-4757-95e0-c795cffec07b",
+      "name": "viral school",
+      "claimRef": "580906 - viral school",
+      "ukprn": "66431596",
+      "urn": "840737",
+      "firstName": "Marcelina",
+      "lastName": "Glover",
+      "date": "2024-07-25T20:01:52.052Z",
+      "region": "Isle of Wight",
+      "cost": "£1114.00",
+      "emailAddress": "marcelina.glover@viral school.uk",
+      "phone": "766-220-1477 x95825",
+      "website": "bumpy-cirrus.info",
+      "address": {
+        "line1": "2794 Glennie Mews",
+        "town": "Raufurt",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "960600",
+      "claim": "Ineligible",
+      "provider": "National Institute of Teaching",
+      "uuid": "121e5fb7-fea5-450b-bdb7-cc46c1ac9eb8",
+      "name": "front-end school",
+      "claimRef": "875507 - front-end school",
+      "ukprn": "36045801",
+      "urn": "477996",
+      "firstName": "Myrtie",
+      "lastName": "Monahan",
+      "date": "2024-03-12T10:10:55.581Z",
+      "region": "Lancashire",
+      "cost": "£4312.00",
+      "emailAddress": "myrtie.monahan@front-end school.uk",
+      "phone": "(934) 321-7050 x415",
+      "website": "educated-info.org",
+      "address": {
+        "line1": "41491 Torphy Court",
+        "town": "Waukegan",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "698382",
+      "claim": "Ineligible",
+      "provider": "Best Practice Network",
+      "uuid": "b7e5b645-55aa-4560-a95a-0f44fe047511",
+      "name": "real-time school",
+      "claimRef": "378250 - real-time school",
+      "ukprn": "36068755",
+      "urn": "693331",
+      "firstName": "Mireille",
+      "lastName": "Upton",
+      "date": "2023-10-10T03:26:38.023Z",
+      "region": "County Londonderry",
+      "cost": "£3278.00",
+      "emailAddress": "mireille.upton@real-time school.uk",
+      "phone": "(499) 505-4828 x45178",
+      "website": "skeletal-hatchling.net",
+      "address": {
+        "line1": "18362 Nikki Manors",
+        "town": "Port Tito",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "319132",
+      "claim": "Sent for payment",
+      "provider": "National Institute of Teaching",
+      "uuid": "9c66b21b-7df0-4bc4-bd57-30a517321a76",
+      "name": "interactive school",
+      "claimRef": "767135 - interactive school",
+      "ukprn": "72223962",
+      "urn": "804284",
+      "firstName": "Stella",
+      "lastName": "Hoppe",
+      "date": "2024-06-16T22:31:29.553Z",
+      "region": "Perry County",
+      "cost": "£1158.00",
+      "emailAddress": "stella.hoppe@interactive school.uk",
+      "phone": "850-830-1200 x5301",
+      "website": "pastel-buddy.net",
+      "address": {
+        "line1": "61565 Cartwright Corner",
+        "town": "West Charleyfurt",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "316190",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "c8b43d00-5471-469e-a79a-7f1972054bef",
+      "name": "cutting-edge school",
+      "claimRef": "500798 - cutting-edge school",
+      "ukprn": "54135220",
+      "urn": "369741",
+      "firstName": "Lizzie",
+      "lastName": "Price",
+      "date": "2024-05-19T12:33:05.336Z",
+      "region": "Bedfordshire",
+      "cost": "£6068.00",
+      "emailAddress": "lizzie.price@cutting-edge school.uk",
+      "phone": "515-603-7729 x93136",
+      "website": "murky-cation.org",
+      "address": {
+        "line1": "5016 Baumbach Lodge",
+        "town": "West Kayley",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "371308",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "3c307dd4-a666-4f1f-b3d3-1bb89f6ab102",
+      "name": "visionary school",
+      "claimRef": "377524 - visionary school",
+      "ukprn": "47594182",
+      "urn": "380519",
+      "firstName": "Verona",
+      "lastName": "Hudson",
+      "date": "2024-03-25T10:33:25.492Z",
+      "region": "South Yorkshire",
+      "cost": "£8791.00",
+      "emailAddress": "verona.hudson@visionary school.uk",
+      "phone": "(369) 398-1731 x7959",
+      "website": "medical-concert.net",
+      "address": {
+        "line1": "1268 Floy Meadow",
+        "town": "Bethesda",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "202259",
+      "claim": "Sent for payment",
+      "provider": "National Institute of Teaching",
+      "uuid": "d81fdb5e-efe7-4cf2-ac13-4a9b642a2b8a",
+      "name": "turn-key school",
+      "claimRef": "307162 - turn-key school",
+      "ukprn": "34321031",
+      "urn": "118514",
+      "firstName": "Kelley",
+      "lastName": "Hettinger",
+      "date": "2024-02-08T20:32:00.265Z",
+      "region": "Greater Manchester",
+      "cost": "£663.00",
+      "emailAddress": "kelley.hettinger@turn-key school.uk",
+      "phone": "809.212.6708 x5536",
+      "website": "disastrous-clinic.info",
+      "address": {
+        "line1": "71082 Albany Road",
+        "town": "Reichelton",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "385888",
+      "claim": "Sent for payment",
+      "provider": "Best Practice Network",
+      "uuid": "533fdfb6-d6b6-4565-85df-0c769fc192ac",
+      "name": "compelling school",
+      "claimRef": "240768 - compelling school",
+      "ukprn": "74249104",
+      "urn": "414993",
+      "firstName": "Bernhard",
+      "lastName": "O'Keefe",
+      "date": "2024-01-27T21:31:25.716Z",
+      "region": "Scott County",
+      "cost": "£7059.00",
+      "emailAddress": "bernhard.o'keefe@compelling school.uk",
+      "phone": "282-820-3045 x5110",
+      "website": "focused-conscience.biz",
+      "address": {
+        "line1": "59264 Neal Extension",
+        "town": "Port Daren",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "373368",
+      "claim": "Information needed",
+      "provider": "National Institute of Teaching",
+      "uuid": "26520675-2ceb-4293-8463-b39cdd479cfa",
+      "name": "world-class school",
+      "claimRef": "645155 - world-class school",
+      "ukprn": "71458563",
+      "urn": "234442",
+      "firstName": "Raven",
+      "lastName": "MacGyver",
+      "date": "2024-02-16T03:39:37.243Z",
+      "region": "Tayside",
+      "cost": "£5380.00",
+      "emailAddress": "raven.macgyver@world-class school.uk",
+      "phone": "446-440-7935",
+      "website": "intent-mill.com",
+      "address": {
+        "line1": "4881 Lakin Viaduct",
+        "town": "Fort Adellboro",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "407414",
+      "claim": "Awaiting clawback",
+      "provider": "Best Practice Network",
+      "uuid": "020b0393-59b6-46f8-8ce2-797e98a032cf",
+      "name": "next-generation school",
+      "claimRef": "425049 - next-generation school",
+      "ukprn": "97985934",
+      "urn": "701628",
+      "firstName": "Marta",
+      "lastName": "Romaguera-Lynch",
+      "date": "2024-02-11T19:27:02.008Z",
+      "region": "Herefordshire",
+      "cost": "£3249.00",
+      "emailAddress": "marta.romaguera-lynch@next-generation school.uk",
+      "phone": "(996) 627-8927 x9642",
+      "website": "circular-salami.com",
+      "address": {
+        "line1": "65136 Cristopher Garden",
+        "town": "Lenexa",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "663187",
+      "claim": "Clawback complete",
+      "provider": "Best Practice Network",
+      "uuid": "ae9309cb-7a0f-4c28-98a3-e614b291121e",
+      "name": "rich school",
+      "claimRef": "751840 - rich school",
+      "ukprn": "78514786",
+      "urn": "217709",
+      "firstName": "Cristian",
+      "lastName": "Bergnaum",
+      "date": "2024-07-07T06:44:31.341Z",
+      "region": "Greene County",
+      "cost": "£7827.00",
+      "emailAddress": "cristian.bergnaum@rich school.uk",
+      "phone": "(483) 488-1203 x9190",
+      "website": "vain-drake.com",
+      "address": {
+        "line1": "3121 Ephraim Turnpike",
+        "town": "Taniabury",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "138689",
+      "claim": "Paid",
+      "provider": "Best Practice Network",
+      "uuid": "7a09ff7d-2003-47e6-8f9c-824766e5962a",
+      "name": "strategic school",
+      "claimRef": "588010 - strategic school",
+      "ukprn": "22308109",
+      "urn": "856530",
+      "firstName": "Lacey",
+      "lastName": "McGlynn",
+      "date": "2024-07-23T18:48:36.443Z",
+      "region": "Lincoln County",
+      "cost": "£3147.00",
+      "emailAddress": "lacey.mcglynn@strategic school.uk",
+      "phone": "205.927.9078",
+      "website": "orange-mouse.name",
+      "address": {
+        "line1": "874 Cherry Close",
+        "town": "Encinitas",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "790456",
+      "claim": "Clawback complete",
+      "provider": "Best Practice Network",
+      "uuid": "2cefdf15-a7d3-42a6-bd01-3d628a077364",
+      "name": "sexy school",
+      "claimRef": "191468 - sexy school",
+      "ukprn": "49247947",
+      "urn": "137108",
+      "firstName": "Hayden",
+      "lastName": "Bahringer",
+      "date": "2024-01-03T12:54:17.021Z",
+      "region": "Oxfordshire",
+      "cost": "£6446.00",
+      "emailAddress": "hayden.bahringer@sexy school.uk",
+      "phone": "(581) 261-9975 x92224",
+      "website": "gaseous-representative.com",
+      "address": {
+        "line1": "32879 Prosacco Mall",
+        "town": "Dangelocester",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "938515",
+      "claim": "Submitted",
+      "provider": "Best Practice Network",
+      "uuid": "aa89e187-e1f8-4b9b-8a10-3c1ca3abb682",
+      "name": "sexy school",
+      "claimRef": "618191 - sexy school",
+      "ukprn": "33970936",
+      "urn": "959892",
+      "firstName": "Josiah",
+      "lastName": "Larkin",
+      "date": "2024-04-02T21:45:53.989Z",
+      "region": "Jefferson County",
+      "cost": "£8515.00",
+      "emailAddress": "josiah.larkin@sexy school.uk",
+      "phone": "768-813-7350 x5222",
+      "website": "cloudy-relief.com",
+      "address": {
+        "line1": "1057 N 3rd Street",
+        "town": "North Richland Hills",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "718432",
+      "claim": "Submitted",
+      "provider": "Best Practice Network",
+      "uuid": "4d369f34-52df-402f-9656-696e32bed90f",
+      "name": "world-class school",
+      "claimRef": "345187 - world-class school",
+      "ukprn": "12514754",
+      "urn": "917877",
+      "firstName": "Leila",
+      "lastName": "Boyle",
+      "date": "2023-12-04T09:55:55.583Z",
+      "region": "Logan County",
+      "cost": "£8651.00",
+      "emailAddress": "leila.boyle@world-class school.uk",
+      "phone": "939-634-1502",
+      "website": "repulsive-museum.biz",
+      "address": {
+        "line1": "104 Dare Loaf",
+        "town": "Kulasfort",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "482478",
+      "claim": "Information needed",
+      "provider": "National Institute of Teaching",
+      "uuid": "0d64abfa-c02c-45bb-b65a-f9e9748a6f7f",
+      "name": "best-of-breed school",
+      "claimRef": "739578 - best-of-breed school",
+      "ukprn": "59835675",
+      "urn": "089600",
+      "firstName": "Brook",
+      "lastName": "Stoltenberg",
+      "date": "2023-12-19T00:50:52.551Z",
+      "region": "Essex",
+      "cost": "£2112.00",
+      "emailAddress": "brook.stoltenberg@best-of-breed school.uk",
+      "phone": "1-683-368-5647 x22041",
+      "website": "subdued-shirt.org",
+      "address": {
+        "line1": "701 Adams Avenue",
+        "town": "Bradtkeview",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "425665",
+      "claim": "Checking",
+      "provider": "Best Practice Network",
+      "uuid": "55a529d9-0245-4def-950f-dece384ebd42",
+      "name": "proactive school",
+      "claimRef": "781679 - proactive school",
+      "ukprn": "35811376",
+      "urn": "315260",
+      "firstName": "Naomie",
+      "lastName": "Kuphal",
+      "date": "2024-07-01T08:06:55.148Z",
+      "region": "Leicestershire",
+      "cost": "£7913.00",
+      "emailAddress": "naomie.kuphal@proactive school.uk",
+      "phone": "1-508-952-1147 x45064",
+      "website": "pleasing-fantasy.name",
+      "address": {
+        "line1": "1460 Frankie Forges",
+        "town": "Tamiami",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "354595",
+      "claim": "Sent for payment",
+      "provider": "National Institute of Teaching",
+      "uuid": "5a5a9ef8-f03e-4bf5-af4d-cf57a94b232b",
+      "name": "interactive school",
+      "claimRef": "444177 - interactive school",
+      "ukprn": "61661566",
+      "urn": "115594",
+      "firstName": "Alfred",
+      "lastName": "Batz",
+      "date": "2023-12-08T12:01:58.983Z",
+      "region": "Fife",
+      "cost": "£6434.00",
+      "emailAddress": "alfred.batz@interactive school.uk",
+      "phone": "421-731-1296 x449",
+      "website": "monthly-external.biz",
+      "address": {
+        "line1": "302 Church Lane",
+        "town": "East Leilaniview",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "906803",
+      "claim": "Checking",
+      "provider": "National Institute of Teaching",
+      "uuid": "52ec9025-1554-4ca5-ac3d-42b6ef6116a4",
+      "name": "sticky school",
+      "claimRef": "413189 - sticky school",
+      "ukprn": "01598313",
+      "urn": "218424",
+      "firstName": "Cecelia",
+      "lastName": "Borer-Daniel",
+      "date": "2024-06-22T00:09:32.889Z",
+      "region": "Dumfries and Galloway",
+      "cost": "£5232.00",
+      "emailAddress": "cecelia.borer-daniel@sticky school.uk",
+      "phone": "(574) 578-9174 x5079",
+      "website": "trusty-nothing.name",
+      "address": {
+        "line1": "53449 Blind Lane",
+        "town": "New Camille",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "198444",
+      "claim": "Clawback complete",
+      "provider": "Best Practice Network",
+      "uuid": "2f0664a9-9d69-435c-af35-603794b0f806",
+      "name": "sticky school",
+      "claimRef": "547081 - sticky school",
+      "ukprn": "96783941",
+      "urn": "720397",
+      "firstName": "Maybell",
+      "lastName": "MacGyver",
+      "date": "2024-03-01T11:54:33.039Z",
+      "region": "Marion County",
+      "cost": "£4372.00",
+      "emailAddress": "maybell.macgyver@sticky school.uk",
+      "phone": "963-407-5765 x16059",
+      "website": "woozy-pressurisation.biz",
+      "address": {
+        "line1": "186 Kemmer Tunnel",
+        "town": "Lake Maximo",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "268304",
       "claim": "Information needed",
       "provider": "Best Practice Network",
-      "uuid": "242be5ac-f7a5-41c4-b296-eb128efb1f89",
-      "name": "platforms school",
-      "ukprn": "13589998",
-      "urn": "607343",
-      "firstName": "Jacky",
-      "lastName": "Heaney",
-      "date": "2023-12-20T02:06:43.718Z",
-      "region": "Nottinghamshire",
-      "cost": "£312.00",
-      "emailAddress": "jacky.heaney@platforms school.school.uk",
-      "phone": "936-572-2692 x46363",
-      "website": "mediocre-grab-bag.biz",
+      "uuid": "a9f63086-d025-45cc-8c20-297f8fa5568c",
+      "name": "synergistic school",
+      "claimRef": "662295 - synergistic school",
+      "ukprn": "18925138",
+      "urn": "717833",
+      "firstName": "Tavares",
+      "lastName": "Waelchi",
+      "date": "2024-03-20T22:36:27.217Z",
+      "region": "Montgomery County",
+      "cost": "£4067.00",
+      "emailAddress": "tavares.waelchi@synergistic school.uk",
+      "phone": "(775) 272-4542 x999",
+      "website": "simple-millstone.org",
       "address": {
-        "line1": "8275 Helen Crossroad",
-        "town": "Catalina Foothills",
+        "line1": "9682 Kristopher Gardens",
+        "town": "West Chrisboro",
         "postcode": "W9 1ST"
       }
     }
   },
   {
     "details": {
-      "id": "524131",
+      "id": "345689",
+      "claim": "Awaiting clawback",
+      "provider": "Best Practice Network",
+      "uuid": "4f6022f3-cdae-4da6-b6b3-9a3af8efe650",
+      "name": "seamless school",
+      "claimRef": "232766 - seamless school",
+      "ukprn": "62773309",
+      "urn": "184358",
+      "firstName": "Audie",
+      "lastName": "Cummings",
+      "date": "2024-04-03T05:49:01.061Z",
+      "region": "Montgomery County",
+      "cost": "£5846.00",
+      "emailAddress": "audie.cummings@seamless school.uk",
+      "phone": "(574) 587-9925 x65830",
+      "website": "thirsty-underwear.com",
+      "address": {
+        "line1": "49598 Blind Lane",
+        "town": "Alberthaworth",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "874092",
+      "claim": "Draft",
+      "provider": "Best Practice Network",
+      "uuid": "7e74d464-daf2-47b3-ac2f-6b03693ee7bc",
+      "name": "viral school",
+      "claimRef": "318331 - viral school",
+      "ukprn": "84578693",
+      "urn": "184017",
+      "firstName": "Brandt",
+      "lastName": "Volkman",
+      "date": "2024-02-25T14:13:04.177Z",
+      "region": "Fayette County",
+      "cost": "£2204.00",
+      "emailAddress": "brandt.volkman@viral school.uk",
+      "phone": "504.679.6266 x4250",
+      "website": "tender-apricot.info",
+      "address": {
+        "line1": "1207 Rosalyn Ridges",
+        "town": "Favianchester",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "533452",
+      "claim": "Checking",
+      "provider": "National Institute of Teaching",
+      "uuid": "2201c23d-8c13-4bb6-bdcd-e5b2f1c21fb0",
+      "name": "distributed school",
+      "claimRef": "813967 - distributed school",
+      "ukprn": "58725821",
+      "urn": "922272",
+      "firstName": "Rocky",
+      "lastName": "Murray",
+      "date": "2023-11-17T04:19:14.604Z",
+      "region": "Grant County",
+      "cost": "£745.00",
+      "emailAddress": "rocky.murray@distributed school.uk",
+      "phone": "(976) 827-2807 x4926",
+      "website": "puzzling-monkey.net",
+      "address": {
+        "line1": "935 South Avenue",
+        "town": "Lindmouth",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "966807",
+      "claim": "Paid",
+      "provider": "National Institute of Teaching",
+      "uuid": "c9e9150d-ece3-43c9-9054-aa3f0a3d3bce",
+      "name": "sexy school",
+      "claimRef": "995316 - sexy school",
+      "ukprn": "63794168",
+      "urn": "699270",
+      "firstName": "Etha",
+      "lastName": "Wilkinson",
+      "date": "2023-12-22T02:09:24.591Z",
+      "region": "Isle of Wight",
+      "cost": "£5625.00",
+      "emailAddress": "etha.wilkinson@sexy school.uk",
+      "phone": "1-244-286-0316",
+      "website": "grumpy-conservative.com",
+      "address": {
+        "line1": "7815 Lincoln Highway",
+        "town": "Port Porterstead",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "258967",
+      "claim": "Approved",
+      "provider": "National Institute of Teaching",
+      "uuid": "4d788779-cb32-44b7-8ef2-21c6fb4df630",
+      "name": "collaborative school",
+      "claimRef": "128098 - collaborative school",
+      "ukprn": "45199482",
+      "urn": "462577",
+      "firstName": "Martine",
+      "lastName": "Schowalter",
+      "date": "2023-12-30T08:54:11.093Z",
+      "region": "County Armagh",
+      "cost": "£7309.00",
+      "emailAddress": "martine.schowalter@collaborative school.uk",
+      "phone": "1-307-690-6558 x0200",
+      "website": "terrible-breadfruit.biz",
+      "address": {
+        "line1": "473 Sabryna Court",
+        "town": "South Lukasfield",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "862000",
+      "claim": "Awaiting clawback",
+      "provider": "Best Practice Network",
+      "uuid": "573c42dc-7af8-4421-88bc-32798d98581d",
+      "name": "rich school",
+      "claimRef": "950422 - rich school",
+      "ukprn": "58970823",
+      "urn": "042697",
+      "firstName": "Marcellus",
+      "lastName": "Swift",
+      "date": "2024-06-03T15:50:05.803Z",
+      "region": "Morgan County",
+      "cost": "£912.00",
+      "emailAddress": "marcellus.swift@rich school.uk",
+      "phone": "(413) 706-5014 x14797",
+      "website": "ornery-arithmetic.biz",
+      "address": {
+        "line1": "64707 Sycamore Street",
+        "town": "West Doristown",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "340006",
+      "claim": "Information needed",
+      "provider": "Best Practice Network",
+      "uuid": "22bc437d-fdc0-438a-bac6-570d4a3eb56f",
+      "name": "24/365 school",
+      "claimRef": "395683 - 24/365 school",
+      "ukprn": "64405152",
+      "urn": "048652",
+      "firstName": "Fritz",
+      "lastName": "Emmerich",
+      "date": "2024-07-15T07:57:54.252Z",
+      "region": "Gwynedd County",
+      "cost": "£4467.00",
+      "emailAddress": "fritz.emmerich@24/365 school.uk",
+      "phone": "1-227-986-6401",
+      "website": "harmful-mangrove.name",
+      "address": {
+        "line1": "21459 Cedar Grove",
+        "town": "Daretown",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "729620",
+      "claim": "Awaiting clawback",
+      "provider": "National Institute of Teaching",
+      "uuid": "8f091a8e-2ff7-4729-b245-4b18f40439f1",
+      "name": "killer school",
+      "claimRef": "330430 - killer school",
+      "ukprn": "57474397",
+      "urn": "136650",
+      "firstName": "Vilma",
+      "lastName": "Hessel",
+      "date": "2024-06-03T09:26:58.687Z",
+      "region": "Nottinghamshire",
+      "cost": "£8747.00",
+      "emailAddress": "vilma.hessel@killer school.uk",
+      "phone": "750-225-1472",
+      "website": "decimal-curd.name",
+      "address": {
+        "line1": "31930 Rosenbaum Drive",
+        "town": "Lawton",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "814011",
+      "claim": "Draft",
+      "provider": "Best Practice Network",
+      "uuid": "43870028-e6fa-4b23-8592-c7992c20f036",
+      "name": "holistic school",
+      "claimRef": "967856 - holistic school",
+      "ukprn": "00163687",
+      "urn": "506322",
+      "firstName": "Garett",
+      "lastName": "Runte",
+      "date": "2024-02-16T10:43:42.265Z",
+      "region": "County Fermanagh",
+      "cost": "£5403.00",
+      "emailAddress": "garett.runte@holistic school.uk",
+      "phone": "(307) 952-5499 x95451",
+      "website": "dazzling-tremor.biz",
+      "address": {
+        "line1": "3407 O'Conner Ville",
+        "town": "Fort Vivianne",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "562367",
+      "claim": "Sampling",
+      "provider": "National Institute of Teaching",
+      "uuid": "987a8e46-8673-48ad-bc97-895af91fa942",
+      "name": "cross-media school",
+      "claimRef": "787080 - cross-media school",
+      "ukprn": "87531287",
+      "urn": "927495",
+      "firstName": "Sadie",
+      "lastName": "Satterfield",
+      "date": "2024-04-09T11:26:43.761Z",
+      "region": "Powys",
+      "cost": "£2289.00",
+      "emailAddress": "sadie.satterfield@cross-media school.uk",
+      "phone": "814-656-7983 x433",
+      "website": "chilly-pomegranate.info",
+      "address": {
+        "line1": "1220 Grand Avenue",
+        "town": "Port Rosemarie",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "166441",
+      "claim": "Draft",
+      "provider": "Best Practice Network",
+      "uuid": "93f4198c-cf03-49e0-90ff-eb38f0e86578",
+      "name": "open-source school",
+      "claimRef": "619979 - open-source school",
+      "ukprn": "53309406",
+      "urn": "507669",
+      "firstName": "Kristian",
+      "lastName": "Kunze",
+      "date": "2024-02-12T00:38:13.277Z",
+      "region": "Rutland",
+      "cost": "£5568.00",
+      "emailAddress": "kristian.kunze@open-source school.uk",
+      "phone": "1-883-558-6466 x8831",
+      "website": "worrisome-pipeline.biz",
+      "address": {
+        "line1": "5388 W North Street",
+        "town": "Fresno",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "537304",
+      "claim": "Checking",
+      "provider": "National Institute of Teaching",
+      "uuid": "9c6fc97c-f80a-4ebb-ace5-2b73a1e1caeb",
+      "name": "world-class school",
+      "claimRef": "601611 - world-class school",
+      "ukprn": "40762609",
+      "urn": "100317",
+      "firstName": "Wyatt",
+      "lastName": "Wehner",
+      "date": "2023-11-01T19:29:13.113Z",
+      "region": "Nottinghamshire",
+      "cost": "£4513.00",
+      "emailAddress": "wyatt.wehner@world-class school.uk",
+      "phone": "251-312-6811 x84464",
+      "website": "buoyant-sponsor.name",
+      "address": {
+        "line1": "34662 Runolfsson Avenue",
+        "town": "Manteborough",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "876687",
+      "claim": "Clawback complete",
+      "provider": "National Institute of Teaching",
+      "uuid": "5e57d211-25a5-4dd6-aa84-35622e73e0eb",
+      "name": "world-class school",
+      "claimRef": "430826 - world-class school",
+      "ukprn": "68358246",
+      "urn": "904815",
+      "firstName": "Dell",
+      "lastName": "DuBuque",
+      "date": "2024-02-04T14:20:31.213Z",
+      "region": "Wiltshire",
+      "cost": "£9543.00",
+      "emailAddress": "dell.dubuque@world-class school.uk",
+      "phone": "(805) 366-4981 x0258",
+      "website": "tender-monocle.com",
+      "address": {
+        "line1": "2606 DuBuque Forest",
+        "town": "Masonchester",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "703128",
       "claim": "Draft",
       "provider": "National Institute of Teaching",
-      "uuid": "fccdfe33-125e-4aad-bea5-1a41d4562f65",
-      "name": "communities school",
-      "ukprn": "41836071",
-      "urn": "926399",
-      "firstName": "Pierre",
-      "lastName": "Sipes",
-      "date": "2024-05-26T06:16:49.965Z",
-      "region": "Douglas County",
-      "cost": "£6158.00",
-      "emailAddress": "pierre.sipes@communities school.school.uk",
-      "phone": "(538) 224-2440 x113",
-      "website": "cluttered-gain.info",
+      "uuid": "13ef2484-eb43-4927-a068-395f8c4c089e",
+      "name": "dynamic school",
+      "claimRef": "158013 - dynamic school",
+      "ukprn": "35888890",
+      "urn": "778650",
+      "firstName": "Alek",
+      "lastName": "Boyle",
+      "date": "2024-03-26T02:30:48.890Z",
+      "region": "Cambridgeshire",
+      "cost": "£9784.00",
+      "emailAddress": "alek.boyle@dynamic school.uk",
+      "phone": "1-292-287-0613",
+      "website": "nervous-mutt.name",
       "address": {
-        "line1": "2116 Nelda Cape",
-        "town": "Spring Hill",
+        "line1": "125 Pietro Expressway",
+        "town": "Centennial",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "419707",
+      "claim": "Clawback complete",
+      "provider": "Best Practice Network",
+      "uuid": "c3f32173-acf5-4f1f-86fa-e40816c288f3",
+      "name": "24/7 school",
+      "claimRef": "507314 - 24/7 school",
+      "ukprn": "24316333",
+      "urn": "181623",
+      "firstName": "Kellen",
+      "lastName": "Grady",
+      "date": "2023-12-01T06:53:06.233Z",
+      "region": "Gwent",
+      "cost": "£1918.00",
+      "emailAddress": "kellen.grady@24/7 school.uk",
+      "phone": "502.786.1746 x7475",
+      "website": "steep-regard.name",
+      "address": {
+        "line1": "280 Kulas Glens",
+        "town": "Germantown",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "554345",
+      "claim": "Checking",
+      "provider": "Best Practice Network",
+      "uuid": "979f89b0-6092-4ebb-9b99-8842b08a91ed",
+      "name": "robust school",
+      "claimRef": "537568 - robust school",
+      "ukprn": "25734860",
+      "urn": "476266",
+      "firstName": "Gabriel",
+      "lastName": "Keebler",
+      "date": "2024-02-13T20:08:16.515Z",
+      "region": "Grampian",
+      "cost": "£9025.00",
+      "emailAddress": "gabriel.keebler@robust school.uk",
+      "phone": "(226) 428-2557 x9556",
+      "website": "lazy-tailbud.biz",
+      "address": {
+        "line1": "5795 Francis Union",
+        "town": "Nolanboro",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "510087",
+      "claim": "Ineligible",
+      "provider": "Best Practice Network",
+      "uuid": "7ee76cb3-8e4b-43f6-9366-eabbd9121cf8",
+      "name": "collaborative school",
+      "claimRef": "523341 - collaborative school",
+      "ukprn": "84292836",
+      "urn": "102936",
+      "firstName": "Alexandra",
+      "lastName": "Effertz",
+      "date": "2024-07-16T14:55:41.822Z",
+      "region": "Gloucestershire",
+      "cost": "£8168.00",
+      "emailAddress": "alexandra.effertz@collaborative school.uk",
+      "phone": "1-907-785-0238 x171",
+      "website": "plain-continuity.com",
+      "address": {
+        "line1": "5548 Nolan Junction",
+        "town": "East Lorena",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "899898",
+      "claim": "Sent for payment",
+      "provider": "National Institute of Teaching",
+      "uuid": "04ebfd4b-8005-4aaf-9f45-320d4b1bec0a",
+      "name": "web-enabled school",
+      "claimRef": "910127 - web-enabled school",
+      "ukprn": "54139734",
+      "urn": "737920",
+      "firstName": "Darby",
+      "lastName": "Marks",
+      "date": "2023-12-09T09:57:11.522Z",
+      "region": "West Midlands",
+      "cost": "£5092.00",
+      "emailAddress": "darby.marks@web-enabled school.uk",
+      "phone": "527.297.4161 x564",
+      "website": "rich-reason.org",
+      "address": {
+        "line1": "4725 The Hawthorns",
+        "town": "Lake Lois",
+        "postcode": "W9 1ST"
+      }
+    }
+  },
+  {
+    "details": {
+      "id": "725141",
+      "claim": "Draft",
+      "provider": "National Institute of Teaching",
+      "uuid": "8c284e59-02ce-4c86-8076-ca5fd7103a7a",
+      "name": "user-centric school",
+      "claimRef": "213986 - user-centric school",
+      "ukprn": "79984147",
+      "urn": "973651",
+      "firstName": "Watson",
+      "lastName": "Hudson",
+      "date": "2024-07-06T16:47:11.804Z",
+      "region": "County Antrim",
+      "cost": "£1847.00",
+      "emailAddress": "watson.hudson@user-centric school.uk",
+      "phone": "389-895-5275 x235",
+      "website": "colorful-state.org",
+      "address": {
+        "line1": "2549 Reilly Turnpike",
+        "town": "Spring Valley",
         "postcode": "W9 1ST"
       }
     }
