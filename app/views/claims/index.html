@@ -20,62 +20,16 @@
         </div>
         <div class="app-filter-layout__content">
 
-          {% include "_includes/search-form.njk" %}
+          {% include "_includes/search-form-claims.njk" %}
 
           <div class="app-action-bar">
             <div class="app-action-bar__filter"></div>
           </div>
 
           {{ data | log }}
-          {% if data.organisations.length %}
-          {# Taken from current proto for styling #}
-          <div class="app-claim-cards">
-            {% for organisation in data.organisations %}
-              <section class="app-claim-card">
-                <header class="app-claim-card__header">
-                  <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-                    <a href="/organisations/{{organisation.details.id}}" class="govuk-link govuk-link--no-visited-state">
-                      {{organisation.details.name}}
-                    </a>
-                  </h3>
-                  {{ govukTag({
-                    text: organisation.details.claim,
-                    classes: organisation.details.claim | statusColour
-                  }) }}
-                </header>
-  
-                <div class="govuk-grid-row">
-                  <div class="govuk-grid-column-two-thirds">
-                    <dl class="app-claim-card__list">
-                      <dt class="govuk-visually-hidden">Accredited provider</dt>
-                      <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                        {{ organisation.details.provider }}
-                      </dd>
-                    </dl>
-                  </div>
-  
-                  <div class="govuk-grid-column-one-third">
-                    <dl class="app-claim-card__list app-claim-card__list--secondary">
-                      <dt class="govuk-visually-hidden">Submitted on</dt>
-                      <dd class="govuk-body-s govuk-!-margin-bottom-1">
-                        {{ organisation.details.date }}
-                      </dd>
-                      <dt class="govuk-visually-hidden">Total amount</dt>
-                      <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                        {{ organisation.details.cost  }}
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-              </section>
-            {% endfor %}
-          </div>
-          {% else %}
-        <p>There are no results.</p>
-      {% endif %}
         
-      </div>
-
+          
+          {% include "_includes/claim-card.njk" %}
 {% endblock %}
 
 {% block scripts %}

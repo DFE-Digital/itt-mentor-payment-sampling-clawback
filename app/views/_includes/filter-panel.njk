@@ -47,6 +47,8 @@
     values: data.filters.statuses
   }) }}
 
+    <input id="filter-school-checkbox-filter__filter-input" class="app-checkbox-filter__filter-input govuk-input __text_mode_custom_bg__ __web-inspector-hide-shortcut__" type="text" aria-describedby="filter-school-checkboxes-status" aria-controls="filter-school-checkboxes" autocomplete="off" spellcheck="false">
+
   {{ govukCheckboxes({
     idPrefix: "filters[school]",
     name: "filters[school]",
@@ -69,6 +71,8 @@
     }],
     values: data.filters.school
   }) }}
+
+  <input id="filter-provider-checkbox-filter__filter-input" class="app-checkbox-filter__filter-input govuk-input __text_mode_custom_bg__" type="text" aria-describedby="filter-provider-checkboxes-status" aria-controls="filter-provider-checkboxes" autocomplete="off" spellcheck="false">
 
   {{ govukCheckboxes({
     idPrefix: "filters[accreditedProvider]",

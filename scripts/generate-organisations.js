@@ -52,7 +52,7 @@ const generateOrganisation = () => {
   organisation.details.firstName = faker.person.firstName()
   organisation.details.lastName = faker.person.lastName()
 
-  //Agreed on
+  //DAte
   organisation.details.date = faker.date.recent({ days: 300 })
 
   //Region
