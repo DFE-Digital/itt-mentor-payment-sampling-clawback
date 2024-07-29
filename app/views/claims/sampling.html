@@ -6,9 +6,25 @@
 
 {% block content %}
 
-    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+    {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
 
-    <div class="govuk-button-group">
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Mark complete",
+        href: 'sampling-mark-complete',
+        classes: 'govuk-button--primary'
+      }, {
+        text: "Mark clawback pending",
+        href: 'sampling-mark-clawback',
+        classes: 'govuk-button--secondary'
+      }]
+    }) }}
+
+    {# <div class="govuk-button-group">
       {{ govukButton({
         text: "Mark as complete",
         href: 'sampling-mark-complete'
@@ -19,7 +35,7 @@
         href: 'sampling-mark-clawback',
         classes: "govuk-button--secondary"
       }) }}
-    </div>
+    </div> #}
 
     {% include "_includes/secondary-navigation-claims.njk" %}
 

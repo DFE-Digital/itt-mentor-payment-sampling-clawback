@@ -1,7 +1,7 @@
 {% if data.organisations.length %}
   <div class="app-list app-list--checkboxes">
     {% for organisation in data.organisations %}
-    {% if organisation.details.claim == 'Sampling' %}
+    {% if organisation.claim == 'Sampling' %}
       <div class="app-list__item">
 
         <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
@@ -16,32 +16,32 @@
         <div class="app-list__contents">
 
           <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-            <a href="/organisations/{{organisation.details.id}}" class="govuk-link govuk-link--no-visited-state">
-              {{organisation.details.claimRef}}
+            <a href="/organisations/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
+              {{organisation.claimRef}}
             </a>
           </h3>
 
           {{ govukTag({
-            text: organisation.details.claim,
-            classes: organisation.details.claim | statusColour
+            text: organisation.claim,
+            classes: organisation.claim | statusColour
           }) }}
 
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
                 <dt class="govuk-visually-hidden">Accredited provider</dt>
                   <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{ organisation.details.provider }}
+                    {{ organisation.provider }}
                   </dd>
             </div>
 
             <div class="govuk-grid-column-one-third">
               <dt class="govuk-visually-hidden">Submitted on</dt>
                 <dd class="govuk-body-s govuk-!-margin-bottom-1">
-                  {{ organisation.details.date | govukDate  }}
+                  {{ organisation.date | govukDate  }}
                 </dd>
               <dt class="govuk-visually-hidden">Total amount</dt>
                 <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                  {{ organisation.details.cost  }}
+                  {{ organisation.cost  }}
                 </dd>
           </div>
         </div>

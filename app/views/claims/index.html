@@ -7,29 +7,72 @@
 
 {% block content %}
 
+<h1 class="govuk-heading-l">{{ pageName }}</h1>
 
+{% include "_includes/secondary-navigation-claims.njk" %}
 
+<div class="app-filter-layout">
+  <div class="app-filter-layout__filter">
+    {% include "_includes/filter-panel.njk" %}
+  </div>
+  <div class="app-filter-layout__content">
 
-    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+    {% include "_includes/search-form-claims.njk" %}
 
-    {% include "_includes/secondary-navigation-claims.njk" %}
+    <div class="app-action-bar">
+      <div class="app-action-bar__filter"></div>
+    </div>
 
-      <div class="app-filter-layout">
-        <div class="app-filter-layout__filter">
-          {% include "_includes/filter-panel.njk" %}
-        </div>
-        <div class="app-filter-layout__content">
+    {# {{ organisations | log }} #}
 
-          {% include "_includes/search-form-claims.njk" %}
-
-          <div class="app-action-bar">
-            <div class="app-action-bar__filter"></div>
-          </div>
-
-          {{ data | log }}
+    
+    {# Claim card layout here #}
+    {# {% include "_includes/claim-card.njk" %} #}
+    {% if data.organisations.length %}
+      <div class="app-list app-list--checkboxes">
+        {% for organisation in data.organisations %}
         
-          
-          {% include "_includes/claim-card.njk" %}
+        <div class="app-list__item">
+
+          <div class="app-list__contents">
+
+            <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+              <a href="/organisations/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
+                {{organisation.claimRef}}
+              </a>
+            </h3>
+
+            {{ govukTag({
+              text: organisation.claim,
+              classes: organisation.claim | statusColour
+            }) }}
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                  <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                    {{organisation.provider }}
+                  </dd>
+              </div>
+
+              <div class="govuk-grid-column-one-third">
+                <dt class="govuk-visually-hidden">Submitted on</dt>
+                  <dd class="govuk-body-s govuk-!-margin-bottom-1">
+                    {{ organisation.date | govukDate  }}
+                  </dd>
+                <dt class="govuk-visually-hidden">Total amount</dt>
+                  <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                    {{ organisation.cost  }}
+                  </dd>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+  {% else %}
+      <p>There are no results.</p>
+  {% endif %}
+
 {% endblock %}
 
 {% block scripts %}

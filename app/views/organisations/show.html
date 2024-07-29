@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = organisation.details.name %}
+{% set pageName = organisation.name %}
 {% set primaryNavId = "organisations" %}
 {% set secondaryNavId = "details" %}
 
@@ -28,7 +28,7 @@
 
       {# pass this to contact details include #}
       {% set address %}
-        {{appAddress({ address: organisation.details.address })}}
+        {{appAddress({ address: organisation.address })}}
       {% endset %}
       
 

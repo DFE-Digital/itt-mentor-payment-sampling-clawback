@@ -4,8 +4,8 @@
       id: "search[name]",
       name: "search[name]",
       label: {
-        text: "Search by organisation name or (postcode)",
-        classes: "govuk-label--s app-search-form__label"
+        text: "Search by organisation name or postcode",
+        classes: "govuk-label--m app-search-form__label"
       },
       value: data.search.name
     }) }}
@@ -17,6 +17,6 @@
   </form>
 
   {% if data.search.name %}
-    <p class="govuk-!-margin-top-2 govuk-!-margin-bottom-0"><a class="govuk-link--no-visited-state" href="/organisations/clear-search">Clear search</a></p>
+    <p class="govuk-!-margin-top-2 govuk-!-margin-bottom-0"><a class="govuk-link--no-visited-state" href="#">Clear search</a></p>
   {% endif %}
 </div>
