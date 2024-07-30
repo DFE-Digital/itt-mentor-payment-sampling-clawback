@@ -1,0 +1,120 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "all-claims" %}
+
+{% set html %}
+  <h3 class="govuk-notification-banner__heading">
+    Claims [marked as complete] or  [marked for clawback]
+  </h3>
+{% endset %}
+
+
+
+{% block content %}
+
+{{ govukNotificationBanner({
+  html: html,
+  type: "success"
+}) }}
+{{ mojPageHeaderActions({
+  heading: {
+    text: pageName + " (383)",
+    classes: 'govuk-heading-l'
+  },
+  items: [{
+    text: "Download CSV",
+    href: '#',
+    classes: 'govuk-button--primary'
+  }]
+}) }}
+{# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
+
+{% include "_includes/secondary-navigation-claims.njk" %}
+
+<div class="app-filter-layout">
+<div class="app-filter-layout__filter">
+  {% include "_includes/filter-panel.njk" %}
+</div>
+<div class="app-filter-layout__content">
+
+  {% include "_includes/search-form-claims.njk" %}
+
+  <div class="app-action-bar">
+    <div class="app-action-bar__filter"></div>
+  </div>
+
+  {{ data | log }}
+
+  
+  {# Claim card layout here #}
+  {# {% include "_includes/claim-card.njk" %} #}
+  {% if data.organisations.length %}
+    <div class="app-list">
+      {% for organisation in data.organisations %}
+      <div class="app-list__item">
+
+          <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+            <a href="/claims/show">
+              {{organisation.claimRefandNum}}
+            </a>
+          </h3>
+
+          {{ govukTag({
+            text: organisation.claim,
+            classes: organisation.claim | statusColour
+          }) }}
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <dt class="govuk-visually-hidden">Accredited provider</dt>
+                <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                  {{organisation.provider }}
+                </dd>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <dt class="govuk-visually-hidden">Submitted on</dt>
+                <dd class="govuk-body-s govuk-!-margin-bottom-1">
+                  {{ organisation.date | govukDate  }}
+                </dd>
+              <dt class="govuk-visually-hidden">Total amount</dt>
+                <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                  {{ organisation.cost  }}
+                </dd>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+{% else %}
+    <p>There are no results.</p>
+{% endif %}
+
+{% include "_includes/pagination.njk" %}
+
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script>
+  new AppFrontend.FilterToggleButton({
+    bigModeMediaQuery: '(min-width: 48.063em)',
+    startHidden: false,
+    toggleButton: {
+      container: $('.app-action-bar__filter'),
+      showText: 'Show filter',
+      hideText: 'Hide filter',
+      classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+    },
+    closeButton: {
+      container: $('.app-filter__header-action'),
+      text: 'Close'
+    },
+    filter: {
+      container: $('.app-filter-layout__filter')
+    }
+  })
+</script>
+{% endblock %}

@@ -1,42 +1,48 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Sampling complete" %}
+{% set pageName = "Mark claims for clawback" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling-claims" %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6" 
+  }) }}
+{% endblock %}
 
 
 {% block content %}
 
-    {# <h1 class="govuk-heading-l">{{ pageName }}</h1>
+    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+
+    <p class="govuk-body">If you mark these claims for clawsback status will change, what happens next etc blah blah</p>
 
     <div class="govuk-button-group">
       {{ govukButton({
-        text: "Confirm and mark as complete",
+        text: "Confirm claims for clawback",
         href: 'sampling-success'
       }) }}
     
-      {{ govukButton({
+      {# {{ govukButton({
         text: "Cancel",
         href: 'sampling',
         classes: "govuk-button--secondary"
-      }) }}
-    </div> #}
+      }) }} #}
+    </div>
 
-    {{ mojPageHeaderActions({
+    {# {{ mojPageHeaderActions({
       heading: {
         text: pageName,
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Confirm completed claims",
+        text: "Confirm clawback",
         href: 'sampling-success',
         classes: 'govuk-button--primary'
-      }, {
-        text: "Cancel",
-        href: 'sampling',
-        classes: 'govuk-button--secondary'
       }]
-    }) }}
+    }) }} #}
 
     {# {{ govukWarningText({
       text: "If you mark these claims complete status will change etc blah blah.",
@@ -44,15 +50,15 @@
       classes: "govuk-!-margin-top-6"
     }) }} #}
 
-    <p class="govuk-body">If you mark these claims complete status will change etc blah blah</p>
+    
 
-    {% include "_includes/secondary-navigation-claims.njk" %}
+    {# {% include "_includes/secondary-navigation-claims.njk" %} #}
 
 
     {# {% include "_includes/claim-card.njk" %} #}
 
     <table class="govuk-!-margin-top-6 govuk-table govuk-table--small-text-until-tablet">
-      <caption class="govuk-table__caption govuk-table__caption--m">Claims to be marked complete</caption>
+      {# <caption class="govuk-table__caption govuk-table__caption--m">Claims to be marked complete</caption> #}
       <tbody class="govuk-table__body">
         
         <tr class="govuk-table__row">
