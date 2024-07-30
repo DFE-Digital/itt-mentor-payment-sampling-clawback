@@ -23,22 +23,19 @@
       <div class="app-action-bar__filter"></div>
     </div>
 
-    {# {{ organisations | log }} #}
+    {{ data | log }}
 
     
     {# Claim card layout here #}
     {# {% include "_includes/claim-card.njk" %} #}
     {% if data.organisations.length %}
-      <div class="app-list app-list--checkboxes">
+      <div class="app-list">
         {% for organisation in data.organisations %}
-        
         <div class="app-list__item">
 
-          <div class="app-list__contents">
-
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              <a href="/organisations/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
-                {{organisation.claimRef}}
+              <a href="/claims/show">
+                {{organisation.claimRefandNum}}
               </a>
             </h3>
 

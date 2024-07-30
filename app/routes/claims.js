@@ -2,6 +2,14 @@ const _ = require('lodash')
 
 module.exports = router => {
 
+  router.get('/claims/show', (req, res) => {
+    let organisation = req.session.data.organisations
+  
+    res.render('claims/show', {
+      organisation
+    })
+  })
+
  router.get('/claims', (req, res) => {
   let organisations = req.session.data.organisations
   

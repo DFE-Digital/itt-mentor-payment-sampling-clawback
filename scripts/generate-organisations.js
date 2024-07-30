@@ -42,10 +42,13 @@ const generateOrganisation = () => {
 
   //School name
   organisation.name = faker.company.buzzAdjective() + " school"
+
+  //claim Ref number
+  organisation.claimRef = "" + faker.number.int({ min: 123456, max: 999999 })
   
 
   //Organisation Ref number append to school name
-  organisation.claimRef = faker.number.int({ min: 123456, max: 999999 }) + " - " + organisation.name
+  organisation.claimRefandNum = organisation.claimRef + " - " + organisation.name
 
   //UK provider reference number (UKPRN)
   organisation.ukprn = faker.string.numeric(8)
