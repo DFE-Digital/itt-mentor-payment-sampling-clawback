@@ -7,7 +7,18 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-l">{{ pageName }}</h1>
+  {{ mojPageHeaderActions({
+    heading: {
+      text: pageName + " (383)",
+      classes: 'govuk-heading-l'
+    },
+    items: [{
+      text: "Download CSV",
+      href: '#',
+      classes: 'govuk-button--primary'
+    }]
+  }) }}
+  {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
 
 {% include "_includes/secondary-navigation-claims.njk" %}
 
@@ -69,6 +80,8 @@
   {% else %}
       <p>There are no results.</p>
   {% endif %}
+
+  {% include "_includes/pagination.njk" %}
 
 {% endblock %}
 

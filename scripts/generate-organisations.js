@@ -97,7 +97,7 @@ const generateOrganisations = () => {
     
   const organisations = []
   
-    for(let i = 0; i < 100; i++) {
+    for(let i = 0; i < 20; i++) {
         organisations.push(generateOrganisation())
     }
 

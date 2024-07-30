@@ -1,16 +1,24 @@
-{% if pagination.pageCount > 1 %}
-  <p class="govuk-body">
-    Showing {{ pagination.firstResultNumber }} to {{ pagination.lastResultNumber }} of {{ pagination.totalCount }} results
-  </p>
+{{ govukPagination({
+  classes: "govuk-!-margin-top-4 govuk-!-margin-bottom-2",
 
-  {{ govukPagination({
-    classes: "govuk-!-margin-top-5",
-    previous: {
-      href: pagination.previousPage.href
+  next: {
+    href: "#"
+  },
+  items: [
+    {
+      number: 1,
+      current: true,
+      href: "#"
     },
-    next: {
-      href: pagination.nextPage.href
+    {
+      number: 2,
+      href: "#"
     },
-    items: pagination.pageItems
-  }) }}
-{% endif %}
+    {
+      number: 3,
+      href: "#"
+    }
+  ]
+}) }}
+
+<p class="govuk-body govuk-!-margin-top-0">Showing 1 to 20 of 383 results</p>

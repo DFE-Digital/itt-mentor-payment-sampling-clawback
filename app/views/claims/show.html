@@ -20,12 +20,25 @@
       {% if data.organisations.length %}
 
       <span class="govuk-caption-l">Claim - ESX9NE4F</span>
-      <h1 class="govuk-heading-l">Oasis Academy Woodview <span class="govuk-tag govuk-tag--">Sampling</span></h1>
+      <h1 class="govuk-heading-l">Oasis Academy Woodview <span class="govuk-tag govuk-tag--yellow">Sampling</span></h1>
       
 
       {# {% include "_includes/secondary-navigation-claims.njk" %} #}
 
       <p class="govuk-body">Submitted by Ivan Newton on 28 March 2024.</p>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Mark as complete",
+          href: 'sampling-success'
+        }) }}
+      
+        {{ govukButton({
+          text: "Mark clawback pending",
+          href: 'sampling',
+          classes: "govuk-button--secondary"
+        }) }}
+      </div>
 
 
       {{ data | log }}
@@ -73,7 +86,7 @@
               text: "Johan Smuddles"
             },
             value: {
-              text: "hours to go here"
+              text: "20 hours"
             }
           }
         ]
