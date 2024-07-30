@@ -14,27 +14,26 @@
 
 {% block content %}
 
-    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+    {# <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
     <div class="govuk-button-group">
       {{ govukButton({
         text: "Confirm claims as completed",
         href: 'sampling-success'
       }) }}
-    
-    </div>
+    </div> #}
 
-    {# {{ mojPageHeaderActions({
+    {{ mojPageHeaderActions({
       heading: {
         text: pageName,
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Confirm completed claims",
+        text: "Confirm claims as completed",
         href: 'sampling-success',
         classes: 'govuk-button--primary'
       }]
-    }) }} #}
+    }) }}
 
     {# {{ govukWarningText({
       text: "If you mark these claims complete status will change etc blah blah.",

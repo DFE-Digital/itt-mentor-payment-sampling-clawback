@@ -15,9 +15,7 @@
 
 {% block content %}
 
-    <h1 class="govuk-heading-l">{{ pageName }}</h1>
-
-    <p class="govuk-body">If you mark these claims for clawsback status will change, what happens next etc blah blah</p>
+    {# <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
     <div class="govuk-button-group">
       {{ govukButton({
@@ -25,19 +23,21 @@
         href: 'sampling-success'
       }) }}
     
-    </div>
+    </div> #}
 
-    {# {{ mojPageHeaderActions({
+    {{ mojPageHeaderActions({
       heading: {
         text: pageName,
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Confirm clawback",
+        text: "Confirm claims for clawback",
         href: 'sampling-success',
         classes: 'govuk-button--primary'
       }]
-    }) }} #}
+    }) }}
+
+    <p class="govuk-body">If you mark these claims for clawsback status will change, what happens next etc blah blah</p>
 
     {# {{ govukWarningText({
       text: "If you mark these claims complete status will change etc blah blah.",
