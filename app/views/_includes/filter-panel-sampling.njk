@@ -1,0 +1,168 @@
+{% set filterOptionsHtml %}
+
+
+
+    <input id="filter-school-checkbox-filter__filter-input" class="app-checkbox-filter__filter-input govuk-input __text_mode_custom_bg__ __web-inspector-hide-shortcut__" type="text" aria-describedby="filter-school-checkboxes-status" aria-controls="filter-school-checkboxes" autocomplete="off" spellcheck="false">
+
+  
+  {{ govukCheckboxes({
+    idPrefix: "filters[school]",
+    name: "filters[school]",
+    classes: "govuk-checkboxes--small app-checkbox-filter__container govuk-!-margin-bottom-4",
+    fieldset: {
+      legend: {
+      html: 'School<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+    },
+    items: [{
+      value: 'St Anthonys School',
+      text: 'St Anthonys School'
+    },{
+      value: 'Bathampton Primary School',
+      text: 'Bathampton Primary School'
+    },{
+      value: 'St John Fisher Catholic Primary School',
+      text: 'St John Fisher Catholic Primary School'
+    },{
+      value: 'Reigate Priory Community Junior School',
+      text: 'Reigate Priory Community Junior School'
+    },{
+      value: 'Box Hill School',
+      text: 'Box Hill School'
+    },{
+      value: 'Great Ponton Church of England School',
+      text: 'Great Ponton Church of England School'
+    },{
+      value: 'Exeter College',
+      text: 'Exeter College'
+    }],
+    values: data.filters.school
+  }) }}
+
+  <input id="filter-provider-checkbox-filter__filter-input" class="app-checkbox-filter__filter-input govuk-input __text_mode_custom_bg__" type="text" aria-describedby="filter-provider-checkboxes-status" aria-controls="filter-provider-checkboxes" autocomplete="off" spellcheck="false">
+
+  {{ govukCheckboxes({
+    idPrefix: "filters[accreditedProvider]",
+    name: "filters[accreditedProvider]",
+    classes: "govuk-checkboxes--small app-checkbox-filter__container",
+    fieldset: {
+      legend: {
+        html: 'Accredited providers<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+      }
+    },
+    items: [{
+      value: 'Best Practice Network',
+      text: 'Best Practice Network'
+    }, {
+      value: 'NIoT: National Institute of Teaching, founded by the School-Led Development Trust',
+      text: 'NIoT: National Institute of Teaching, founded by the School-Led Development Trust'
+    }],
+    values: data.filters.accreditedProvider
+  }) }}
+
+  {{ govukDateInput({
+  id: "filters[submittedAfter]",
+  namePrefix: "filters[submittedAfter]",
+  fieldset: {
+    legend: {
+      text: "Submitted after",
+      isPageHeading: false,
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  hint: {
+    text: "For example, 31 3 2024"
+  },
+  items: [
+    {
+      name: "day",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-day"
+    },
+    {
+      name: "month",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-month"
+    },
+    {
+      name: "year",
+      classes: "govuk-input--width-4",
+      autocomplete: "bday-year"
+    }
+  ]
+}) }}
+
+{{ govukDateInput({
+  id: "filters[submittedBefore]",
+  namePrefix: "filters[submittedBefore]",
+  fieldset: {
+    legend: {
+      text: "Submitted before",
+      isPageHeading: false,
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  hint: {
+    text: "For example, 31 3 2024"
+  },
+  items: [
+    {
+      name: "day",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-day"
+    },
+    {
+      name: "month",
+      classes: "govuk-input--width-2",
+      autocomplete: "bday-month"
+    },
+    {
+      name: "year",
+      classes: "govuk-input--width-4",
+      autocomplete: "bday-year"
+    }
+  ]
+}) }}
+
+{% endset %}
+
+<div class="app-filter">
+  <div class="app-filter__header">
+    <div class="app-filter__header-title">
+      <h2 class="govuk-heading-m">Filter</h2>
+    </div>
+    <div class="app-filter__header-action">
+
+    </div>
+  </div>
+  <div class="app-filter__content">
+    {% if selectedFilters.categories.length %}
+      <div class="app-filter__selected">
+        <div class="app-filter__selected-heading">
+          <div class="app-filter__heading-title">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Selected filters</h2>
+            <p class="govuk-body"><a class="govuk-link govuk-link--no-visited-state" href="/applications/clear-filters">Clear filters</a></p>
+          </div>
+        </div>
+        {% for category in selectedFilters.categories %}
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">{{ category.heading.text }}</h3>
+          <ul class="app-filter-tags">
+            {% for item in category.items %}
+              <li><a class="app-filter__tag" href="{{item.href}}"><span class="govuk-visually-hidden">Remove this filter</span> {{item.text}}</a></li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="app-filter__options">
+      <form method="get" action="/claims" novalidate>
+        <button class="govuk-button" data-module="govuk-button">
+          Apply filters
+        </button>
+        {{filterOptionsHtml | safe}}
+      </form>
+    </div>
+  </div>
+</div>

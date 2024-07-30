@@ -12,22 +12,37 @@
 
 {% block content %}
 
+<span class="govuk-caption-l">Claim - ESX9NE4F</span>
 
+{{ mojPageHeaderActions({
+  heading: {
+    html: '<h1 class="govuk-heading-l">Wireless school <span class="govuk-tag govuk-tag--yellow"> Sampling</span></h1>',
+    classes: 'govuk-heading-l'
+  },
+  items: [{
+    text: "Mark as complete",
+    href: 'sampling-mark-complete',
+    classes: 'govuk-button--primary'
+  }, {
+    text: "Mark clawback pending",
+    href: 'sampling-mark-clawback',
+    classes: 'govuk-button--secondary'
+  }]
+}) }}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
       {% if data.organisations.length %}
 
-      <span class="govuk-caption-l">Claim - ESX9NE4F</span>
-      <h1 class="govuk-heading-l">Oasis Academy Woodview <span class="govuk-tag govuk-tag--yellow">Sampling</span></h1>
+      
       
 
       {# {% include "_includes/secondary-navigation-claims.njk" %} #}
 
       <p class="govuk-body">Submitted by Ivan Newton on 28 March 2024.</p>
 
-      <div class="govuk-button-group">
+      {# <div class="govuk-button-group">
         {{ govukButton({
           text: "Mark as complete",
           href: 'sampling-success'
@@ -38,7 +53,7 @@
           href: 'sampling',
           classes: "govuk-button--secondary"
         }) }}
-      </div>
+      </div> #}
 
 
       {{ data | log }}
@@ -52,7 +67,7 @@
               text: "Organisation"
             },
             value: {
-              html: '<p class="govuk-body"><a href="#" class="govuk-link">Oasis Academy Woodview</a></p>'
+              html: '<p class="govuk-body"><a href="/organisations/800770" class="govuk-link">wireless school</a></p>'
             }
           },
           {
@@ -60,7 +75,7 @@
               text: "Accredited provider"
             },
             value: {
-              text: "Best Practice Network"
+              text: "National Institute of Teaching"
             }
           },
           {

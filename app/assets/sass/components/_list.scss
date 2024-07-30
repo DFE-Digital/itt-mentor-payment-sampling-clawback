@@ -1,6 +1,18 @@
 
 .app-list {
 
+  dd {
+    display: block;
+    margin-inline-start: 0px;
+    unicode-bidi: isolate;
+  }
+
+  .dd-checkbox{
+    display: block;
+    margin-inline-start: 50px;
+    unicode-bidi: isolate;
+  }
+
   .app-list__item {
     border-bottom: 1px solid $govuk-border-colour;
     padding-top: govuk-spacing(3);
@@ -9,7 +21,7 @@
   }
 
   .app-list__contents {
-    border-bottom: 1px solid $govuk-border-colour;
+    // border-bottom: 1px solid $govuk-border-colour;
   }
 
   .govuk-grid-column-one-third {
@@ -54,9 +66,6 @@
     font-size: 0.5em;
   }
 
-  .app-list__item {
-    // display: flex;
-  }
 
   .govuk-checkboxes {
     float: left;

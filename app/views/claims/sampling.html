@@ -39,23 +39,23 @@
 
     {% include "_includes/secondary-navigation-claims.njk" %}
 
-      <div class="app-filter-layout">
-        <div class="app-filter-layout__filter">
-          {% include "_includes/filter-panel.njk" %}
+    <div class="app-filter-layout">
+      <div class="app-filter-layout__filter">
+        {% include "_includes/filter-panel-sampling.njk" %}
+      </div>
+
+      <div class="app-filter-layout__content">
+
+        {% include "_includes/search-form-claims.njk" %}
+
+        <div class="app-action-bar">
+          <div class="app-action-bar__filter"></div>
         </div>
 
-        <div class="app-filter-layout__content">
-
-          {% include "_includes/search-form-claims.njk" %}
-
-          <div class="app-action-bar">
-            <div class="app-action-bar__filter"></div>
-          </div>
-
-          {{ data | log }}
-          
-          {% include "_includes/samples-card.njk" %}
-          
+        {{ data | log }}
+        
+    {% include "_includes/samples-card.njk" %}
+        
 {% endblock %}
 
 {% block scripts %}
