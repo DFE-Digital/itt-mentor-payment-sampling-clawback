@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Sampling complete" %}
+{% set pageName = "Complete claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling-claims" %}
 
@@ -9,7 +9,7 @@
 
 
 
-    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+    {# <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
     <div class="govuk-button-group">
       {{ govukButton({
@@ -22,11 +22,80 @@
         href: 'sampling',
         classes: "govuk-button--secondary"
       }) }}
-    </div>
+    </div> #}
+
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Confirm claims completed",
+        href: 'sampling-success',
+        classes: 'govuk-button--primary'
+      }, {
+        text: "Cancel",
+        href: 'sampling',
+        classes: 'govuk-button--secondary'
+      }]
+    }) }}
+
+    {# {{ govukWarningText({
+      text: "If you mark these claims complete status will change etc blah blah.",
+      iconFallbackText: "Warning",
+      classes: "govuk-!-margin-top-6"
+    }) }} #}
+
+    <p class="govuk-body" govuk-!-margin-top-6>If you mark these claims complete status will change etc blah blah</p>
 
     {% include "_includes/secondary-navigation-claims.njk" %}
 
-    {% include "_includes/claim-card.njk" %}
+
+    {# {% include "_includes/claim-card.njk" %} #}
+
+    <table class="govuk-!-margin-top-6 govuk-table govuk-table--small-text-until-tablet">
+      <caption class="govuk-table__caption govuk-table__caption--m">Claims to be marked complete</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Organisation</th>
+          <th scope="col" class="govuk-table__header">Provider</th>
+          <th scope="col" class="govuk-table__header">Amount</th>
+          <th scope="col" class="govuk-table__header">Date</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td scope="govuk-table__cell">Name of school/org</td>
+          <td class="govuk-table__cell">National Institute of Teaching</td>
+          <td class="govuk-table__cell">£3,454.35</td>
+          <td class="govuk-table__cell">22 September 2023</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="govuk-table__cell">Name of school/org</td>
+          <td class="govuk-table__cell">National Institute of Teaching</td>
+          <td class="govuk-table__cell">£684.60</td>
+          <td class="govuk-table__cell">22 September 2023</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="govuk-table__cell">Name of school/org</td>
+          <td class="govuk-table__cell">National Institute of Teaching</td>
+          <td class="govuk-table__cell">£1,284.60</td>
+          <td class="govuk-table__cell">10 December 2023</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="govuk-table__cell">Name of school/org</td>
+          <td class="govuk-table__cell">National Institute of Teaching</td>
+          <td class="govuk-table__cell">£1,966.10</td>
+          <td class="govuk-table__cell">26 Jull 2023</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="govuk-table__cell">Name of school/org</td>
+          <td class="govuk-table__cell">National Institute of Teaching</td>
+          <td class="govuk-table__cell">£2,288.40</td>
+          <td class="govuk-table__cell">01 August 2023</td>
+        </tr>
+      </tbody>
+    </table>
 
     
 
