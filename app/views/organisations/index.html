@@ -15,17 +15,17 @@
         href: "#"
       }) }}
 
-    {{ data.organisations | log }}
+    {{ data.claims | log }}
 
     {% include "_includes/search-form.njk" %}
     {# {% include "./_sort-options.njk" %} #}
 
         <div class="app-list">
-          {% for organisation in data.organisations %}
+          {% for claim in data.claims %}
           <div class="app-list__item">
               <h2 class="govuk-heading-s">
-                <a href="/organisations/{{organisation.id}}">
-                  {{ organisation.name }}
+                <a href="/organisations/{{claim.id}}">
+                  {{ claim.orgName }}
                 </a>
               </h2>
           </div>

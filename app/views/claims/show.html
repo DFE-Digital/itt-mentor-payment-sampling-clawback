@@ -2,6 +2,8 @@
 {% set primaryNavId = "claims" %}
 
 
+{{ data.claims | log }}
+
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
@@ -12,11 +14,11 @@
 
 {% block content %}
 
-<span class="govuk-caption-l">Claim - ESX9NE4F</span>
+<span class="govuk-caption-l">{{ claims.claimRef }}</span>
 
 {{ mojPageHeaderActions({
   heading: {
-    html: '<h1 class="govuk-heading-l">Wireless school <span class="govuk-tag govuk-tag--yellow"> Sampling</span></h1>',
+    html: '<h1 class="govuk-heading-l">' + claim.orgName + '<span class="govuk-tag govuk-tag--yellow"> Sampling</span></h1>',
     classes: 'govuk-heading-l'
   },
   items: [{
@@ -33,7 +35,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      {% if data.organisations.length %}
+
 
       
       
@@ -149,7 +151,7 @@
 
       {# {% include "_includes/contact-details.njk" %} #}
 
-      {% endif %}
+
     </div>
   </div>
 {% endblock %}

@@ -1,15 +1,11 @@
 module.exports = router => {
 
-  router.get('/organisations/:organisationId', (req, res) => {
-    let organisation = req.session.data.organisations.find(organisation => organisation.id === req.params.organisationId)
+  router.get('/organisations/:claimId', (req, res) => {
+    let claim = req.session.data.claims.find(claim => claim.id === req.params.claimId)
 
     res.render('organisations/show', {
-      organisation
+      claim
     })
   })
-
-
-
-
   
 }

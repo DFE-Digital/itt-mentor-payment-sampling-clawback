@@ -1,28 +1,31 @@
-{{ govukSummaryList({
-        rows: [
-          {
-            key: {
-              text: "Organisation name"
-            },
-            value: {
-              text: organisation.name
-            }
-          },
-          {
-            key: {
-              text: "UK provider reference number (UKPRN)"
-            },
-            value: {
-              text: organisation.ukprn
-            }
-          },
-          {
-            key: {
-              text: "Unique reference number (URN)"
-            },
-            value: {
-              text: organisation.urn
-            }
-          }
-        ]
-      }) }}
+{% set orgName = claim.orgName %}
+{% set ukprn = claim.ukprn %}
+{% set urn = claim.urn %}
+  {{ govukSummaryList({
+    rows: [
+      {
+        key: {
+          text: "Organisation name"
+        },
+        value: {
+          text: orgName
+        }
+      },
+      {
+        key: {
+          text: "UK provider reference number (UKPRN)"
+        },
+        value: {
+          text: ukprn
+        }
+      },
+      {
+        key: {
+          text: "Unique reference number (URN)"
+        },
+        value: {
+          text: urn
+        }
+      }
+    ]
+  }) }}

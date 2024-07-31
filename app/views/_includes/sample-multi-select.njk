@@ -1,0 +1,39 @@
+{% if data.claims.length %}
+  <table class="govuk-table govuk-!-font-size-16" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col" id="select-all"></th>
+        <th class="govuk-table__header" scope="col">Claim reference</th>
+        <th class="govuk-table__header" scope="col">Provider</th>
+        <th class="govuk-table__header" scope="col">Days since claim</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Claim amount</th>
+      </tr>
+    </thead>
+    
+    <tbody class="govuk-table__body">
+      {% for claim in data.claims %}
+      {% if claim.status == 'Sampling' %}
+      <tr class="govuk-table__row govuk-!-font-size-16">
+        <td class="govuk-table__cell">
+          <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+            <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
+            <label class="govuk-label govuk-checkboxes__label" for="mountain-aconcagua">
+              <span class="govuk-visually-hidden">Select</span>
+            </label>
+          </div>
+        </td>
+        <td class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-16"><a href="#" class="govuk-link">{{ claim.claimRefandNum }}</a></p></td>
+        <td class="govuk-table__cell">{{ claim.provider }}</td>
+        <td class="govuk-table__cell">{{ claim.daysSinceClaim }}</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">{{ claim.cost }}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+    
+  
+{% else %}
+      <p>There are no results.</p>
+{% endif %}

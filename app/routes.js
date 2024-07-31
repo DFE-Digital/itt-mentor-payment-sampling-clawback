@@ -10,3 +10,4 @@ const router = govukPrototypeKit.requests.setupRouter()
 
 require('./routes/account')(router)
 require('./routes/organisations')(router)
+require('./routes/claims')(router)

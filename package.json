@@ -3,7 +3,7 @@
     "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
     "start": "govuk-prototype-kit start",
-    "generate-data": "node ./scripts/generate-organisations.js"
+    "generate-data": "node ./scripts/generate-claims.js"
   },
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "2.0.1",
@@ -12,7 +12,8 @@
     "@x-govuk/govuk-prototype-filters": "^1.4.1",
     "govuk-frontend": "5.4.1",
     "govuk-prototype-kit": "13.16.2",
-    "jquery": "3.7.1"
+    "jquery": "3.7.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1"

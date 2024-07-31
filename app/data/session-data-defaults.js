@@ -1,5 +1,5 @@
-const organisations = require('./organisations.json')
+const claims = require('./claims.json')
 
 module.exports = {
-  organisations
+  claims
 }

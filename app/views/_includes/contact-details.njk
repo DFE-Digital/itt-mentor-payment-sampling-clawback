@@ -1,3 +1,7 @@
+{% set orgEmailAddress = claim.orgEmailAddress %}
+{% set orgPhone = claim.orgPhone %}
+{% set orgWebsite = claim.orgWebsite %}
+
 <h2 class="govuk-heading-m govuk-!-margin-top-9">
   Contact details
 </h2>
@@ -10,8 +14,8 @@
         text: "Email address"
       },
       value: {
-        text: organisation.emailAddress if organisation.emailAddress.length else "Not entered",
-        classes: "govuk-hint" if not organisation.emailAddress.length
+        text: orgEmailAddress if orgEmailAddress.length else "Not entered",
+        classes: "govuk-hint" if not orgEmailAddress.length
       }
     },
     {
@@ -19,8 +23,8 @@
         text: "Telephone number"
       },
       value: {
-        text: organisation.phone if organisation.phone.length else "Not entered",
-        classes: "govuk-hint" if not organisation.phone.length
+        text: claim.orgPhone if claim.orgPhone.length else "Not entered",
+        classes: "govuk-hint" if not claim.orgPhone.length
       }
     },
     {
@@ -28,8 +32,8 @@
         text: "Website"
       },
       value: {
-        text: (organisation.website | urlize | safe) if organisation.website.length else "Not entered",
-        classes: "govuk-hint" if not organisation.website.length
+        text: (claim.orgWebsite | urlize | safe) if claim.orgWebsite.length else "Not entered",
+        classes: "govuk-hint" if not claim.orgWebsite.length
       }
     },
     {

@@ -34,43 +34,43 @@
       <div class="app-action-bar__filter"></div>
     </div>
 
-    {{ data | log }}
+    {{ data.claims | log }}
 
     
     {# Claim card layout here #}
     {# {% include "_includes/claim-card.njk" %} #}
-    {% if data.organisations.length %}
+    {% if data.claims.length %}
       <div class="app-list">
-        {% for organisation in data.organisations %}
+        {% for claim in data.claims %}
         <div class="app-list__item">
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              <a href="/claims/show">
-                {{organisation.claimRefandNum}}
+              <a href="/organisations/{{claim.id}}">
+                {{ claim.claimRefandNum }}
               </a>
             </h3>
 
             {{ govukTag({
-              text: organisation.claim,
-              classes: organisation.claim | statusColour
+              text: claim.status,
+              classes: claim.status | statusColour
             }) }}
 
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-two-thirds">
                   <dt class="govuk-visually-hidden">Accredited provider</dt>
                   <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{organisation.provider }}
+                    {{claim.provider }}
                   </dd>
               </div>
 
               <div class="govuk-grid-column-one-third">
                 <dt class="govuk-visually-hidden">Submitted on</dt>
                   <dd class="govuk-body-s govuk-!-margin-bottom-1">
-                    {{ organisation.date | govukDate  }}
+                    {{ claim.date | govukDate  }}
                   </dd>
                 <dt class="govuk-visually-hidden">Total amount</dt>
                   <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{ organisation.cost  }}
+                    {{ claim.cost  }}
                   </dd>
             </div>
           </div>

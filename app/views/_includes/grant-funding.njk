@@ -1,3 +1,6 @@
+{% set region = claim.region %}
+{% set hourlyRate = "£43.18" %}
+
 <h2 class="govuk-heading-m govuk-!-margin-top-9">
   Grant funding
 </h2>
@@ -9,7 +12,7 @@
         text: "Region"
       },
       value: {
-        text: organisation.region
+        text: region
       }
     },
     {
@@ -17,7 +20,7 @@
         text: "Hourly rate"
       },
       value: {
-        text: "£20"
+        text: hourlyRate
       }
     }
   ]

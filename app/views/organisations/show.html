@@ -1,8 +1,9 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = organisation.name %}
+{% set pageName = claim.orgName %}
 {% set primaryNavId = "organisations" %}
 {% set secondaryNavId = "details" %}
+{% set orgAddress = claim.orgAddress %}
 
 
 
@@ -17,8 +18,8 @@
 
       {% include "_includes/secondary-navigation.njk" %}
 
+      {{ data.claims | log }}
 
-      {{ data.pageName | log }}
 
       {% include "_includes/organisation-details.njk" %}
 
@@ -28,7 +29,7 @@
 
       {# pass this to contact details include #}
       {% set address %}
-        {{appAddress({ address: organisation.address })}}
+        {{ appAddress ({ address: orgAddress }) }}
       {% endset %}
       
 

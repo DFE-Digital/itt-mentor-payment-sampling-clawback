@@ -2,7 +2,7 @@
 
 {% set pageName = "Sampling claims (2)" %}
 {% set primaryNavId = "claims" %}
-{% set secondaryNavId = "sampling-claims" %}
+{% set secondaryNavId = "sampling" %}
 
 {% block content %}
 
@@ -18,24 +18,12 @@
         href: 'sampling-mark-complete',
         classes: 'govuk-button--primary'
       }, {
-        text: "Mark clawback pending",
-        href: 'sampling-mark-clawback',
+        text: "Create CSV for provider",
+        href: '#',
         classes: 'govuk-button--secondary'
       }]
     }) }}
 
-    {# <div class="govuk-button-group">
-      {{ govukButton({
-        text: "Mark as complete",
-        href: 'sampling-mark-complete'
-      }) }}
-    
-      {{ govukButton({
-        text: "Mark as clawback pending",
-        href: 'sampling-mark-clawback',
-        classes: "govuk-button--secondary"
-      }) }}
-    </div> #}
 
     {% include "_includes/secondary-navigation-claims.njk" %}
 
@@ -54,7 +42,8 @@
 
         {{ data | log }}
         
-    {% include "_includes/samples-card.njk" %}
+    {# {% include "_includes/samples-card.njk" %} #}
+    {% include "_includes/sample-multi-select.njk" %}
         
 {% endblock %}
 
