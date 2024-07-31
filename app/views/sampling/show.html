@@ -1,0 +1,131 @@
+{% extends "layouts/main.html" %}
+{% set primaryNavId = "claims" %}
+
+
+
+
+{{ data.claims | log }}
+
+
+{% block content %}
+
+<span class="govuk-caption-l">{{ claims.claimRef }}</span>
+
+{{ mojPageHeaderActions({
+  heading: {
+    text: data.orgName,
+    classes: 'govuk-heading-l'
+  },
+  items: [{
+    text: "Mark as complete",
+    href: 'sampling-mark-complete',
+    classes: 'govuk-button--primary'
+  }, {
+    text: "sammmplees",
+    href: 'sampling-mark-clawback',
+    classes: 'govuk-button--secondary'
+  }]
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body">Submitted by Ivan Newton on 28 March 2024.</p>
+
+      {{ data | log }}
+
+
+      {# claim details #}
+      {{ govukSummaryList({
+        rows: [
+          {
+            key: {
+              text: "Organisation"
+            },
+            value: {
+              html: '<p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">' + claim.orgName + '</a></p>'
+            }
+          },
+          {
+            key: {
+              text: "Accredited provider"
+            },
+            value: {
+              text: "National Institute of Teaching"
+            }
+          },
+          {
+            key: {
+              text: "Mentors"
+            },
+            value: {
+              text: "Johan Smuddles"
+            }
+          }
+        ]
+      }) }}
+      
+      {# Hours of training #}
+      <h2 class="govuk-heading-m govuk-!-margin-top-9">
+        Hours of training
+      </h2>
+      
+      {{ govukSummaryList({
+        rows: [
+          {
+            key: {
+              text: "Johan Smuddles"
+            },
+            value: {
+              text: "20 hours"
+            }
+          }
+        ]
+      }) }}
+
+      {# Grant funding   #}
+      <h2 class="govuk-heading-m govuk-!-margin-top-9">
+        Grant funding
+      </h2>
+      
+      {{ govukSummaryList({
+        rows: [
+          {
+            key: {
+              text: "Total hours"
+            },
+            value: {
+              text: "20 hours"
+            }
+          },
+          {
+            key: {
+              text: "Hourly rate"
+            },
+            value: {
+              text: "	£43.18"
+            }
+          },
+          {
+            key: {
+              text: "Claim amount"
+            },
+            value: {
+              text: "	£863.60"
+            }
+          }
+        ]
+      }) }}
+
+      {# pass this to contact details include #}
+      {% set address %}
+        {{appAddress({ address: organisation.address })}}
+      {% endset %}
+      
+
+      {# {% include "_includes/contact-details.njk" %} #}
+
+
+    </div>
+  </div>
+{% endblock %}
