@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Sampling claims (2)" %}
+{% set pageName = "Sampling claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
 
@@ -14,12 +14,12 @@
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Mark as complete",
-        href: 'sampling-mark-complete',
+        text: "Export for provider",
+        href: '/sampling/export',
         classes: 'govuk-button--primary'
       }, {
-        text: "Export CSV for provider",
-        href: '#',
+        text: "Review samples",
+        href: '/sampling/review',
         classes: 'govuk-button--secondary'
       }]
     }) }}
