@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Export for provider" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Export CSV",
+        href: 'sampling-success',
+        classes: 'govuk-button--primary'
+      }]
+    }) }}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        {% include "_includes/secondary-navigation-claims.njk" %}
+
+        {% include "_includes/export.njk" %}
+
+      </div>
+    </div>
+
+  
+{% endblock %}
+
+

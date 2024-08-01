@@ -46,7 +46,7 @@ const generateClaim = () => {
 
   //days since claim
 
-  claim.daysSinceClaim = "" + faker.number.int({ min: 30, max: 250 })
+  claim.daysSinceClaim = "" + faker.number.int({ min: 30, max: 250 }) + " days ago"
   
 
   //claim Ref number append to school name

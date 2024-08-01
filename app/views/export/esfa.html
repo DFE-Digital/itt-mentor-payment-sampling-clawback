@@ -1,0 +1,41 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Export for ESFA" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6" 
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+
+
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Export CSV",
+        href: 'sampling-success',
+        classes: 'govuk-button--primary'
+      }]
+    }) }}
+
+    {# <p class="govuk-body">If you mark these claims for clawsback status will change, what happens next etc blah blah</p> #}
+
+    {% include "_includes/secondary-navigation-claims.njk" %}
+
+    {% include "_includes/export.njk" %}
+
+
+{% endblock %}
+
+
