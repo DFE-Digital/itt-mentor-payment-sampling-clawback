@@ -1,11 +1,11 @@
 {% if data.claims.length %}
-  <table class="govuk-table govuk-!-font-size-16" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
+  <table class="govuk-table">
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col">Claim reference</th>
         <th class="govuk-table__header" scope="col">Provider</th>
         <th class="govuk-table__header" scope="col">Sent to provider</th>
-        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Claim amount</th>
+        <th class="govuk-table__header" scope="col">Claim amount</th>
         <th class="govuk-table__header" scope="col">Action</th>
       </tr>
     </thead>
@@ -17,7 +17,7 @@
         <td class="govuk-table__cell">{{ claim.claimRefandNum }}</td>
         <td class="govuk-table__cell">{{ claim.provider }}</td>
         <td class="govuk-table__cell">{{ claim.daysSinceClaim }}</td>
-        <td class="govuk-table__cell govuk-table__cell--numeric">{{ claim.cost }}</td>
+        <td class="govuk-table__cell">{{ claim.cost }}</td>
         <td class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">Review claim</a></p></td>
       </tr>
       {% endif %}

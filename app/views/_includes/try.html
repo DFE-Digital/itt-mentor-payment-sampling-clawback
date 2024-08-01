@@ -1,0 +1,26 @@
+<table class="govuk-table" data-module="moj-sortable-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col" aria-sort="ascending">Claim reference</th>
+        <th class="govuk-table__header" scope="col" aria-sort="none">Provider</th>
+        <th class="govuk-table__header" scope="col" aria-sort="none">Sent to provider</th>
+        <th class="govuk-table__header" scope="col" aria-sort="none">Claim amount</th>
+        <th class="govuk-table__header" scope="col" aria-sort="none">Action</th>
+      </tr>
+    </thead>
+  
+    <tbody class="govuk-table__body">
+        {% for claim in data.claims %}
+        {% if claim.status == 'Sampling' %}
+        <tr class="govuk-table__row govuk-!-font-size-16">
+          <td class="govuk-table__cell">{{ claim.claimRefandNum }}</td>
+          <td class="govuk-table__cell">{{ claim.provider }}</td>
+          <td class="govuk-table__cell">{{ claim.daysSinceClaim }}</td>
+          <td class="govuk-table__cell">{{ claim.cost }}</td>
+          <td class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">Review claim</a></p></td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+  </table>
+  
