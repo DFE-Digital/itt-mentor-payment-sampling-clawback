@@ -4,7 +4,6 @@
 
 
 
-{{ data.claims | log }}
 
 
 {% block content %}
@@ -21,7 +20,7 @@
     href: 'sampling-mark-complete',
     classes: 'govuk-button--primary'
   }, {
-    text: "sammmplees",
+    text: "Export csv for provider",
     href: 'sampling-mark-clawback',
     classes: 'govuk-button--secondary'
   }]
@@ -43,7 +42,7 @@
               text: "Organisation"
             },
             value: {
-              html: '<p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">' + claim.orgName + '</a></p>'
+              text: [claims][orgName]
             }
           },
           {
