@@ -2,11 +2,12 @@
 {% set primaryNavId = "claims" %}
 
 
+
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
     href: "javascript:window.history.back()",
-    classes: "govuk-!-margin-top-6" 
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
   }) }}
 {% endblock %}
 
@@ -106,7 +107,16 @@
               text: "Total hours"
             },
             value: {
-              text: "20 hours"
+              text: claimDetails.hoursOfTraining
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "name"
+                }
+              ]
             }
           },
           {
@@ -114,7 +124,7 @@
               text: "Hourly rate"
             },
             value: {
-              text: "	£43.18"
+              text: claimDetails.hourlyRate
             }
           },
           {
@@ -122,7 +132,16 @@
               text: "Claim amount"
             },
             value: {
-              text: "	£863.60"
+              text: claimDetails.amount | currency
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "name"
+                }
+              ]
             }
           }
         ]
@@ -133,8 +152,6 @@
         {{appAddress({ address: organisation.address })}}
       {% endset %}
       
-
-      {# {% include "_includes/contact-details.njk" %} #}
 
 
     </div>

@@ -44,11 +44,9 @@ const generateClaim = () => {
   //claim Ref number
   claim.claimRef = "" + faker.number.int({ min: 123456, max: 999999 })
 
-  //days since claim
-
+  //days since sent to provider
   claim.daysSinceClaim = "" + faker.number.int({ min: 30, max: 250 }) + " days ago"
   
-
   //claim Ref number append to school name
   claim.claimRefandNum = claim.claimRef + " - " + claim.orgName
 
@@ -61,13 +59,18 @@ const generateClaim = () => {
   //Agreed by
   claim.firstName = faker.person.firstName()
   claim.lastName = faker.person.lastName()
-
-  //mentors
+  ////////////////////////
+  // MENTOR
+  ///////////////////////////
   claim.mentor = faker.person.firstName() + " " + faker.person.lastName()
+  //hours of training
+  claim.hoursOfTraining = "" + faker.number.int({ min: 1, max: 20 })
+
+  //Claim Amount
+  claim.amount = "" +  (43.80 * claim.hoursOfTraining)
 
   //claim submitted by
   claim.submittedBy = faker.person.firstName() + " " + faker.person.lastName()
-  
   
   
 
@@ -77,8 +80,7 @@ const generateClaim = () => {
   //Region
   claim.region = faker.location.county()
 
-  //Cost
-  claim.cost = faker.commerce.price({ min: 100, max: 10000, symbol: '£' })
+  
 
   //Hourly rate £43.80
   claim.hourlyRate = "£43.80"

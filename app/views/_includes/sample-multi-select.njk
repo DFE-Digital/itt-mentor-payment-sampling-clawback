@@ -25,7 +25,7 @@
         <td class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">{{ claim.claimRefandNum }}</a></p></td>
         <td class="govuk-table__cell">{{ claim.provider }}</td>
         <td class="govuk-table__cell">{{ claim.daysSinceClaim }}</td>
-        <td class="govuk-table__cell">{{ claim.cost }}</td>
+        <td class="govuk-table__cell">{{ claim.amount | currency }}</td>
       </tr>
       {% endif %}
       {% endfor %}
