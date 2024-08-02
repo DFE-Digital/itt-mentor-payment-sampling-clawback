@@ -3,10 +3,9 @@
 {% set pageName = "Sampling claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
+{% set filters = req.session.data.filters %}
 
 {% block content %}
-
-    {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
 
     {{ mojPageHeaderActions({
       heading: {
@@ -16,10 +15,10 @@
       items: [{
         text: "Export for provider",
         href: '/export/provider',
-        classes: 'govuk-button--secondary'
-      }, {
-        text: "Export for ESFA",
-        href: '/export/esfa',
+        classes: 'govuk-button--primary'
+      },{
+        text: "Import resample",
+        href: '/sampling/import-sample',
         classes: 'govuk-button--secondary'
       }]
     }) }}

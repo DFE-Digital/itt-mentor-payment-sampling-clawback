@@ -3,6 +3,7 @@
 {% set pageName = "Claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "all-claims" %}
+{% set filters = req.session.data.filters %}
 
 
 {% block content %}
@@ -14,10 +15,6 @@
     },
     items: [{
       text: "Download CSV",
-      href: '#',
-      classes: 'govuk-button--primary'
-    },{
-      text: "Upload resample",
       href: '#',
       classes: 'govuk-button--primary'
     }]

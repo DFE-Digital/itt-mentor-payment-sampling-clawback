@@ -62,6 +62,15 @@ const generateClaim = () => {
   claim.firstName = faker.person.firstName()
   claim.lastName = faker.person.lastName()
 
+  //mentors
+  claim.mentor = faker.person.firstName() + " " + faker.person.lastName()
+
+  //claim submitted by
+  claim.submittedBy = faker.person.firstName() + " " + faker.person.lastName()
+  
+  
+  
+
   //DAte
   claim.date = faker.date.recent({ days: 300 })
 

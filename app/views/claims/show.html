@@ -2,8 +2,6 @@
 {% set primaryNavId = "claims" %}
 
 
-{{ data.claims | log }}
-
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
@@ -13,21 +11,21 @@
 {% endblock %}
 
 {% block content %}
-
-<span class="govuk-caption-l">{{ claims.claimRef }}</span>
+{{ data | log }}
+<span class="govuk-caption-l">Claim - {{ claimDetails.claimRef }}</span>
 
 {{ mojPageHeaderActions({
   heading: {
-    html: '<h1 class="govuk-heading-l">' + claim.orgName + '<span class="govuk-tag govuk-tag--yellow"> Sampling</span></h1>',
+    html: claimDetails.orgName + " " + '<strong class="govuk-tag">' + claimDetails.status + '</strong>',
     classes: 'govuk-heading-l'
   },
   items: [{
-    text: "Mark as complete",
-    href: 'sampling-mark-complete',
+    text: "Export for provider",
+    href: '/export/provider',
     classes: 'govuk-button--primary'
-  }, {
-    text: "Mark clawback pending",
-    href: 'sampling-mark-clawback',
+  },{
+    text: "Import resample",
+    href: '/sampling/import-sample',
     classes: 'govuk-button--secondary'
   }]
 }) }}
@@ -36,29 +34,7 @@
     <div class="govuk-grid-column-two-thirds">
 
 
-
-      
-      
-
-      {# {% include "_includes/secondary-navigation-claims.njk" %} #}
-
-      <p class="govuk-body">Submitted by Ivan Newton on 28 March 2024.</p>
-
-      {# <div class="govuk-button-group">
-        {{ govukButton({
-          text: "Mark as complete",
-          href: 'sampling-success'
-        }) }}
-      
-        {{ govukButton({
-          text: "Mark clawback pending",
-          href: 'sampling',
-          classes: "govuk-button--secondary"
-        }) }}
-      </div> #}
-
-
-      {{ data | log }}
+      <p class="govuk-body">Submitted by Jim Newton on 28 March 2024.</p>
 
 
       {# claim details #}
@@ -69,7 +45,7 @@
               text: "Organisation"
             },
             value: {
-              html: '<p class="govuk-body"><a href="/organisations/800770" class="govuk-link">wireless school</a></p>'
+              text: claimDetails.orgName 
             }
           },
           {
@@ -77,7 +53,7 @@
               text: "Accredited provider"
             },
             value: {
-              text: "National Institute of Teaching"
+              text: claimDetails.provider
             }
           },
           {
@@ -85,7 +61,7 @@
               text: "Mentors"
             },
             value: {
-              text: "Johan Smuddles"
+              text: claimDetails.mentor
             }
           }
         ]
@@ -100,7 +76,7 @@
         rows: [
           {
             key: {
-              text: "Johan Smuddles"
+              text: claimDetails.mentor
             },
             value: {
               text: "20 hours"

@@ -1,0 +1,33 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "xxxxxxxx" %}
+{% set primaryNavId = "#" %}
+{% set secondaryNavId = "#" %}
+
+{% block content %}
+
+    {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
+
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Export for provider",
+        href: '/export/provider',
+        classes: 'govuk-button--primary'
+      },{
+        text: "Import resample",
+        href: '#',
+        classes: 'govuk-button--secondary'
+      }]
+    }) }}
+
+
+    {% include "_includes/secondary-navigation-claims.njk" %}
+
+    
+        
+{% endblock %}
+
