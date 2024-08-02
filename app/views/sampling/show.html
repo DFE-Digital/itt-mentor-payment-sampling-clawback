@@ -7,31 +7,26 @@
 
 
 {% block content %}
-
-<span class="govuk-caption-l">{{ claims.claimRef }}</span>
+{{ data | log }}
+<span class="govuk-caption-l">Claim - {{ sample.claimRef }}</span>
 
 {{ mojPageHeaderActions({
   heading: {
-    text: data.orgName,
+    html: sample.orgName + " " + '<strong class="govuk-tag">' + sample.status + '</strong>',
     classes: 'govuk-heading-l'
   },
   items: [{
-    text: "Mark as complete",
-    href: 'sampling-mark-complete',
+    text: "Export for provider",
+    href: '/export/provider',
     classes: 'govuk-button--primary'
-  }, {
-    text: "Export csv for provider",
-    href: 'sampling-mark-clawback',
-    classes: 'govuk-button--secondary'
   }]
 }) }}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <p class="govuk-body">Submitted by Ivan Newton on 28 March 2024.</p>
 
-      {{ data | log }}
+      <p class="govuk-body">Submitted by Jim Newton on 28 March 2024.</p>
 
 
       {# claim details #}
@@ -42,7 +37,7 @@
               text: "Organisation"
             },
             value: {
-              text: [claims][orgName]
+              text: sample.orgName 
             }
           },
           {
@@ -50,7 +45,7 @@
               text: "Accredited provider"
             },
             value: {
-              text: "National Institute of Teaching"
+              text: sample.provider
             }
           },
           {
@@ -58,7 +53,7 @@
               text: "Mentors"
             },
             value: {
-              text: "Johan Smuddles"
+              text: sample.mentor
             }
           }
         ]
@@ -73,7 +68,7 @@
         rows: [
           {
             key: {
-              text: "Johan Smuddles"
+              text: sample.mentor
             },
             value: {
               text: "20 hours"
