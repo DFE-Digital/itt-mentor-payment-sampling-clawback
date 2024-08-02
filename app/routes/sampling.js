@@ -10,4 +10,11 @@ module.exports = router => {
         })
     })
 
+    router.get('/provider', (req, res) => {
+        
+        //status logic in here
+
+        res.redirect('/claims')
+    })
+
 }

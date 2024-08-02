@@ -12,7 +12,7 @@
     
     <tbody class="govuk-table__body">
       {% for claim in data.claims %}
-      {% if claim.status == 'Sampling' and claim.provider == 'Best Practice Network' %}
+      {% if claim.status == 'Sampling' and claim.provider == 'National Institute of Teaching' %}
       <tr class="govuk-table__row govuk-!-font-size-16">
         <td class="govuk-table__cell">{{ claim.claimRefandNum }}</td>
         <td class="govuk-table__cell">{{ claim.provider }}</td>
