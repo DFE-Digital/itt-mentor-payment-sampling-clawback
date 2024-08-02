@@ -1,8 +1,8 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Import resample" %}
-{% set primaryNavId = "#" %}
-{% set secondaryNavId = "#" %}
+{% set pageName = "Upload sample file" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
 
 {% block beforeContent %}
   {{ govukBackLink({
@@ -14,21 +14,21 @@
 
 
 {% block content %}
-
+{% include "_includes/secondary-navigation-claims.njk" %}
 
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">{{pageName}}</h1>
+    <h1 class="govuk-heading-l govuk-!-margin-top-6">{{pageName}}</h1>
 
     <div id="file-upload-1-hint" class="govuk-hint">
-        You can upload your receipt as a scanned copy or photo of the original. The selected file must be smaller than 100MB.
+        The selected file must be smaller than 100MB.
     </div>
 
-    <p class="govuk-body" aria-live="polite">1 of 2 files uploaded</p>
+    <p class="govuk-body" aria-live="polite">1 file uploaded</p>
 
     {{ govukButton({
-      text: "Upload another receipt",
+      text: "Upload sample",
       classes: "govuk-button--secondary"
     }) }}
 
