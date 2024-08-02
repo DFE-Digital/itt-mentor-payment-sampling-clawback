@@ -5,7 +5,9 @@
         <th class="govuk-table__header" scope="col">Claim reference</th>
         <th class="govuk-table__header" scope="col">Provider</th>
         <th class="govuk-table__header" scope="col">Sent to provider</th>
+        <th class="govuk-table__header" scope="col">Total hours</th>
         <th class="govuk-table__header" scope="col">Claim amount</th>
+        <th class="govuk-table__header" scope="col">Mentors</th>
         <th class="govuk-table__header" scope="col">Action</th>
       </tr>
     </thead>
@@ -17,7 +19,9 @@
         <td class="govuk-table__cell">{{ claim.claimRefandNum }}</td>
         <td class="govuk-table__cell">{{ claim.provider }}</td>
         <td class="govuk-table__cell">{{ claim.daysSinceClaim }}</td>
+        <td class="govuk-table__cell">{{ claim.hoursOfTraining }}</td>
         <td class="govuk-table__cell">{{ claim.amount | currency }}</td>
+        <td class="govuk-table__cell">{{ claim.mentor }}</td>
         <td class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">Review claim</a></p></td>
       </tr>
       {% endif %}
@@ -28,3 +32,4 @@
 {% else %}
       <p>There are no results.</p>
 {% endif %}
+ 

@@ -14,14 +14,16 @@
 
 
 {% block content %}
-{% include "_includes/secondary-navigation-claims.njk" %}
+
 
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l govuk-!-margin-top-6">{{pageName}}</h1>
+    <h1 class="govuk-heading-l">{{pageName}}</h1>
 
-    <div id="file-upload-1-hint" class="govuk-hint">
+    {% include "_includes/secondary-navigation-claims.njk" %}
+
+    <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
         The selected file must be smaller than 100MB.
     </div>
 
