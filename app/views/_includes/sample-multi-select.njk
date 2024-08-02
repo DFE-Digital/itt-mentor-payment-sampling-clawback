@@ -1,5 +1,5 @@
 {% if data.claims.length %}
-  <table class="govuk-table govuk-!-font-size-16" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
+  <table class="govuk-table" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col" id="select-all"></th>
@@ -13,11 +13,11 @@
     <tbody class="govuk-table__body">
       {% for claim in data.claims %}
       {% if claim.status == 'Sampling' %}
-      <tr class="govuk-table__row govuk-!-font-size-16">
-        <td class="govuk-table__cell">
-          <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
-            <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
-            <label class="govuk-label govuk-checkboxes__label" for="mountain-aconcagua">
+      <tr class="govuk-table__row govuk-table__row--selected">
+      <td class="govuk-table__cell">
+        <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+          <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
+          <label class="govuk-label govuk-checkboxes__label" for="mountain-aconcagua">
               <span class="govuk-visually-hidden">Select</span>
             </label>
           </div>

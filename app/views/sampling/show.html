@@ -43,7 +43,7 @@
               text: "Organisation"
             },
             value: {
-              text: sample.orgName 
+              html: '<a href="/organisations/{{claim.id}}">' + sample.orgName + '</a>'
             }
           },
           {
@@ -95,7 +95,7 @@
               text: "Total hours"
             },
             value: {
-              text: "20 hours"
+              text: sample.hoursOfTraining
             }
           },
           {
@@ -103,7 +103,7 @@
               text: "Hourly rate"
             },
             value: {
-              text: "	£43.18"
+              text: sample.hourlyRate
             }
           },
           {
@@ -111,7 +111,7 @@
               text: "Claim amount"
             },
             value: {
-              text: "	£863.60"
+              text: sample.amount | currency
             }
           }
         ]

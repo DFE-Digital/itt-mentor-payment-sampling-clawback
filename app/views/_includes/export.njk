@@ -12,12 +12,12 @@
     
     <tbody class="govuk-table__body">
       {% for claim in data.claims %}
-      {% if claim.status == 'Sampling' %}
+      {% if claim.status == 'Sampling' and claim.provider == 'Best Practice Network' %}
       <tr class="govuk-table__row govuk-!-font-size-16">
         <td class="govuk-table__cell">{{ claim.claimRefandNum }}</td>
         <td class="govuk-table__cell">{{ claim.provider }}</td>
         <td class="govuk-table__cell">{{ claim.daysSinceClaim }}</td>
-        <td class="govuk-table__cell">{{ claim.cost }}</td>
+        <td class="govuk-table__cell">{{ claim.amount | currency }}</td>
         <td class="govuk-table__cell"><p class="govuk-body govuk-!-font-size-16"><a href="/sampling/{{claim.id}}" class="govuk-link">Review claim</a></p></td>
       </tr>
       {% endif %}

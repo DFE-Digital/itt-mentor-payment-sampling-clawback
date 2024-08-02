@@ -1,11 +1,17 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = claim.orgName %}
+{% set pageName = organisation.orgName %}
 {% set primaryNavId = "organisations" %}
 {% set secondaryNavId = "details" %}
-{% set orgAddress = claim.orgAddress %}
 
 
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
 
 {% block content %}
 
@@ -20,7 +26,6 @@
 
       {{ data.claims | log }}
 
-
       {% include "_includes/organisation-details.njk" %}
 
       {% include "_includes/grant-conditions.njk" %}
@@ -29,7 +34,7 @@
 
       {# pass this to contact details include #}
       {% set address %}
-        {{ appAddress ({ address: orgAddress }) }}
+        {{ appAddress ({ address: organisation.orgAddress }) }}
       {% endset %}
       
 

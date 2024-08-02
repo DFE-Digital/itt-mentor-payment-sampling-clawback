@@ -1,6 +1,4 @@
-{% set orgName = claim.orgName %}
-{% set ukprn = claim.ukprn %}
-{% set urn = claim.urn %}
+
   {{ govukSummaryList({
     rows: [
       {
@@ -8,7 +6,7 @@
           text: "Organisation name"
         },
         value: {
-          text: orgName
+          text: organisation.orgName
         }
       },
       {
@@ -16,7 +14,7 @@
           text: "UK provider reference number (UKPRN)"
         },
         value: {
-          text: ukprn
+          text: organisation.ukprn
         }
       },
       {
@@ -24,7 +22,7 @@
           text: "Unique reference number (URN)"
         },
         value: {
-          text: urn
+          text: organisation.urn
         }
       }
     ]

@@ -14,8 +14,8 @@
         text: "Email address"
       },
       value: {
-        text: orgEmailAddress if orgEmailAddress.length else "Not entered",
-        classes: "govuk-hint" if not orgEmailAddress.length
+        text: organisation.orgEmailAddress if organisation.orgEmailAddress.length else "Not entered",
+        classes: "govuk-hint" if not organisation.orgEmailAddress.length
       }
     },
     {
@@ -23,8 +23,8 @@
         text: "Telephone number"
       },
       value: {
-        text: claim.orgPhone if claim.orgPhone.length else "Not entered",
-        classes: "govuk-hint" if not claim.orgPhone.length
+        text: organisation.orgPhone if organisation.orgPhone.length else "Not entered",
+        classes: "govuk-hint" if not organisation.orgPhone.length
       }
     },
     {
@@ -32,8 +32,8 @@
         text: "Website"
       },
       value: {
-        text: (claim.orgWebsite | urlize | safe) if claim.orgWebsite.length else "Not entered",
-        classes: "govuk-hint" if not claim.orgWebsite.length
+        text: (organisation.orgWebsite | urlize | safe) if organisation.orgWebsite.length else "Not entered",
+        classes: "govuk-hint" if not organisation.orgWebsite.length
       }
     },
     {
