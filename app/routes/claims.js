@@ -56,12 +56,6 @@ module.exports = router => {
     })
   })
 
-  ///variable is called claim
-  // router.get('/claims/:claimId', (req, res) => {
-  //   res.locals.claim = req.session.data.claims.find(claim => claim.id === req.params.claimId)
-
-  //   res.render('claims/show')
-  // })
 
 
 }
