@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Upload sample file" %}
+{% set pageName = "Upload CSV" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
 
@@ -21,7 +21,7 @@
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">{{pageName}}</h1>
 
-    {% include "_includes/secondary-navigation-claims.njk" %}
+    {# {% include "_includes/secondary-navigation-claims.njk" %} #}
 
     <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
         The selected file must be smaller than 100MB.
@@ -30,7 +30,7 @@
     <p class="govuk-body" aria-live="polite">1 file uploaded</p>
 
     {{ govukButton({
-      text: "Upload sample",
+      text: "Upload file",
       classes: "govuk-button--secondary"
     }) }}
 
@@ -41,7 +41,7 @@
       rows: [
         {
           key: {
-            html: '<a class="govuk-link" href="#">receipt1.jpg</a>'
+            html: '<a class="govuk-link" href="#">Provider1.csv</a>'
           },
           value: {
             text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })
