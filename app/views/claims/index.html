@@ -8,7 +8,23 @@
 
 {% block content %}
 
-  <h1 class="govuk-heading-l">{{ pageName }}</h1>
+  {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
+
+  {{ mojPageHeaderActions({
+    heading: {
+      text: pageName,
+      classes: 'govuk-heading-l'
+    },
+    items: [{
+      text: "Download all claims",
+      href: '/export',
+      classes: 'govuk-button--secondary'
+    },{
+      text: "Upload claims",
+      href: '/export',
+      classes: 'govuk-button--secondary'
+    }]
+  }) }}
 
 {% include "_includes/secondary-navigation.njk" %}
 

@@ -22,46 +22,47 @@
     <h1 class="govuk-heading-l">{{pageName}}</h1>
 
     {# {% include "_includes/secondary-navigation-claims.njk" %} #}
+    <form method="post">
+        <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
+            The selected file must be smaller than 100MB.
+        </div>
 
-    <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
-        The selected file must be smaller than 100MB.
-    </div>
+        <p class="govuk-body" aria-live="polite">1 file uploaded</p>
 
-    <p class="govuk-body" aria-live="polite">1 file uploaded</p>
+        {{ govukButton({
+          text: "Upload file",
+          classes: "govuk-button--secondary"
+        }) }}
 
-    {{ govukButton({
-      text: "Upload file",
-      classes: "govuk-button--secondary"
-    }) }}
+        <p class="govuk-body govuk-!-display-none" id="refreshPageProgress"><a href="#" class="govuk-link">Refresh page to update file upload progress</a></p>
 
-    <p class="govuk-body govuk-!-display-none" id="refreshPageProgress"><a href="#" class="govuk-link">Refresh page to update file upload progress</a></p>
-
-    {{ govukSummaryList({
-      classes: 'govuk-summary-list--long-key',
-      rows: [
-        {
-          key: {
-            html: '<a class="govuk-link" href="#">Provider1.csv</a>'
-          },
-          value: {
-            text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })
-          },
-          actions: {
-            items: [
-              {
-                href: "#",
-                text: "Remove",
-                visuallyHiddenText: "receipt1.jpg"
+        {{ govukSummaryList({
+          classes: 'govuk-summary-list--long-key',
+          rows: [
+            {
+              key: {
+                html: '<a class="govuk-link" href="#">Provider1.csv</a>'
+              },
+              value: {
+                text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })
+              },
+              actions: {
+                items: [
+                  {
+                    href: "#",
+                    text: "Remove",
+                    visuallyHiddenText: "receipt1.jpg"
+                  }
+                ]
               }
-            ]
-          }
-        }
-      ]
-    }) }}
+            }
+          ]
+        }) }}
 
-    {{ govukButton({
-      text: "Continue"
-    }) }}
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
   </div>
 </div>
    

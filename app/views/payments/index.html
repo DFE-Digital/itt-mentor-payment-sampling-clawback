@@ -1,0 +1,56 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "payments" %}
+
+
+{% block content %}
+<h1 class="govuk-heading-l">{{pageName}}</h1>
+{% include "_includes/secondary-navigation.njk" %}
+<form method="post">
+  <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
+    <ol class="govuk-list govuk-list--number">
+      <li>Download the list of <a href="/claims">all claims</a>.</li>
+      <li>Send the CSV from the step above to ESFA.</li>
+      <li>When ESFA return the CSV, upload it.</li>
+    </ol>
+  </div>
+
+  <p class="govuk-body" aria-live="polite">1 file uploaded</p>
+
+  {{ govukButton({
+    text: "Upload claims from ESFA",
+    classes: "govuk-button--secondary"
+  }) }}
+
+  <p class="govuk-body govuk-!-display-none" id="refreshPageProgress"><a href="#" class="govuk-link">Refresh page to update file upload progress</a></p>
+
+  {{ govukSummaryList({
+    classes: 'govuk-summary-list--long-key',
+    rows: [
+      {
+        key: {
+          html: '<a class="govuk-link" href="#">esfa-claims-paid.csv</a>'
+        },
+        value: {
+          text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })
+        },
+        actions: {
+          items: [
+            {
+              href: "#",
+              text: "Remove",
+              visuallyHiddenText: "receipt1.jpg"
+            }
+          ]
+        }
+      }
+    ]
+  }) }}
+
+  {{ govukButton({
+    text: "Continue"
+  }) }}
+</form>
+{% endblock %}
