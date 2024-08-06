@@ -1,19 +1,22 @@
 
 {{ xGovukSecondaryNavigation({
   visuallyHiddenTitle: "Secondary menu",
+  classes: "govuk-!-margin-bottom-6",
   items: [{
-    text: "Details",
-    href: "#",
-    current: true,
-    classes: "govuk-!-margin-bottom-6"
-  }, {
-    text: "Users",
-    href: "#"
-  }, {
-    text: "Mentors",
-    href: "#"
-  }, {
-    text: "Claims",
-    href: "#"
+    text: "All claims",
+    href: "/claims",
+    current: (secondaryNavId == "all-claims")
+  },{
+    text: "Payments",
+    href: "/payments",
+    current: (secondaryNavId == "sampling")
+  },{
+    text: "Sampling",
+    href: "/sampling",
+    current: (secondaryNavId == "sampling")
+  },{
+    text: "Clawback",
+    href: "/clawback",
+    current: (secondaryNavId == "clawback")
   }]
 }) if data.user }}

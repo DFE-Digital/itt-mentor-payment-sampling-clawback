@@ -8,28 +8,9 @@
 
 {% block content %}
 
-  {{ mojPageHeaderActions({
-    heading: {
-      text: pageName + " (383)",
-      classes: 'govuk-heading-l'
-    },
-    items: [{
-      text: "Download claims",
-      href: '/download',
-      classes: 'govuk-button--primary'
-    },{
-      text: "Import from provider",
-      href: '/import',
-      classes: 'govuk-button--secondary'
-    },{
-      text: "Import from ESFA",
-      href: '/import',
-      classes: 'govuk-button--secondary'
-    }]
-  }) }}
-  {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
+  <h1 class="govuk-heading-l">{{ pageName }}</h1>
 
-{% include "_includes/secondary-navigation-claims.njk" %}
+{% include "_includes/secondary-navigation.njk" %}
 
 <div class="app-filter-layout">
   <div class="app-filter-layout__filter">
