@@ -1,0 +1,68 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Download claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+    
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+        <form method="post">
+        {{ govukRadios({
+          name: "signIn",
+          fieldset: {
+            legend: {
+              text: "Download claims",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          hint: {
+            text: "You will need to pick a type of a CSV download from the options below."
+          },
+          items: [
+            {
+              value: "download-provider",
+              text: "Provider",
+              hint: {
+                text: "This will change the status of the claim to 'Sent to provider'."
+              }
+            },
+            {
+              value: "download-provider",
+              text: "ESFA",
+              hint: {
+                text: "This will change the status of the claim to 'Sent to ESFA'."
+              }
+            }
+          ]
+        }) }}
+      
+        {{ govukButton({
+          text: "Download CSV"
+        }) }}
+      </form>
+
+      </div>
+    </div>
+
+  
+{% endblock %}
+
+

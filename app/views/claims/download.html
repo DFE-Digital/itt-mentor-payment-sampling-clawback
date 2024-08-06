@@ -1,0 +1,39 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "all-claims" %}
+{% set filters = req.session.data.filters %}
+
+
+{% block content %}
+
+  {{ mojPageHeaderActions({
+    heading: {
+      text: pageName + " (383)",
+      classes: 'govuk-heading-l'
+    },
+    items: [{
+      text: "Download CSV",
+      href: 'download',
+      classes: 'govuk-button--primary'
+    },{
+      text: "Import from provider",
+      href: '/import',
+      classes: 'govuk-button--secondary'
+    },{
+      text: "Import from ESFA",
+      href: '/import',
+      classes: 'govuk-button--secondary'
+    }]
+  }) }}
+  {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
+
+{% include "_includes/secondary-navigation-claims.njk" %}
+
+
+
+  {% include "_includes/pagination.njk" %}
+
+{% endblock %}
+
