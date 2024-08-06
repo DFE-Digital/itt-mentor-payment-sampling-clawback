@@ -1,8 +1,8 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Sampling claims" %}
+{% set pageName = "Claims" %}
 {% set primaryNavId = "claims" %}
-{% set secondaryNavId = "sampling" %}
+{% set secondaryNavId = "clawback" %}
 {% set filters = req.session.data.filters %}
 
 {% block content %}
@@ -13,61 +13,19 @@
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Export for provider",
-        href: '/export',
+        text: "Begin clawback",
+        href: '#',
         classes: 'govuk-button--primary'
-      },{
-        text: "Export for ESFA",
-        href: '/export',
-        classes: 'govuk-button--secondary'
-      },{
-        text: "More information needed",
-        href: '/#',
-        classes: 'govuk-button--secondary'
       }]
     }) }}
 
 
-    {% include "_includes/secondary-navigation-claims.njk" %}
+    {% include "_includes/secondary-navigation.njk" %}
+    {% include "_includes/export.njk" %}
 
-    <div class="app-filter-layout">
-      <div class="app-filter-layout__filter">
-        {% include "_includes/filter-panel-sampling.njk" %}
-      </div>
-
-      <div class="app-filter-layout__content">
-
-        {% include "_includes/search-form-claims.njk" %}
-
-        <div class="app-action-bar">
-          <div class="app-action-bar__filter"></div>
-        </div>
+  
 
         {{ data | log }}
         
-    {% include "_includes/sample-multi-select.njk" %}
-        
 {% endblock %}
 
-{% block scripts %}
-  {{super()}}
-  <script>
-    new AppFrontend.FilterToggleButton({
-      bigModeMediaQuery: '(min-width: 48.063em)',
-      startHidden: false,
-      toggleButton: {
-        container: $('.app-action-bar__filter'),
-        showText: 'Show filter',
-        hideText: 'Hide filter',
-        classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
-      },
-      closeButton: {
-        container: $('.app-filter__header-action'),
-        text: 'Close'
-      },
-      filter: {
-        container: $('.app-filter-layout__filter')
-      }
-    })
-  </script>
-{% endblock %}

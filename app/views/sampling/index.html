@@ -1,73 +1,56 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Sampling claims" %}
+{% set pageName = "Claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
-{% set filters = req.session.data.filters %}
+
 
 {% block content %}
-
-    {{ mojPageHeaderActions({
-      heading: {
-        text: pageName,
-        classes: 'govuk-heading-l'
-      },
-      items: [{
-        text: "Export for provider",
-        href: '/export',
-        classes: 'govuk-button--primary'
-      },{
-        text: "Export for ESFA",
-        href: '/export',
-        classes: 'govuk-button--secondary'
-      },{
-        text: "More information needed",
-        href: '/#',
-        classes: 'govuk-button--secondary'
-      }]
-    }) }}
-
-
-    {% include "_includes/secondary-navigation-claims.njk" %}
-
-    <div class="app-filter-layout">
-      <div class="app-filter-layout__filter">
-        {% include "_includes/filter-panel-sampling.njk" %}
+<h1 class="govuk-heading-l">{{pageName}}</h1>
+{% include "_includes/secondary-navigation.njk" %}
+    <form method="post" action="/sampling">
+      <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
+        <ol class="govuk-list govuk-list--number">
+          <li>Get the CSV from Arjun</li>
+          <li>Upload that mutha</li>
+        </ol>
       </div>
 
-      <div class="app-filter-layout__content">
+      <p class="govuk-body" aria-live="polite">1 file uploaded</p>
 
-        {% include "_includes/search-form-claims.njk" %}
+      {{ govukButton({
+        text: "Upload samples",
+        classes: "govuk-button--secondary"
+      }) }}
 
-        <div class="app-action-bar">
-          <div class="app-action-bar__filter"></div>
-        </div>
+      <p class="govuk-body govuk-!-display-none" id="refreshPageProgress"><a href="#" class="govuk-link">Refresh page to update file upload progress</a></p>
 
-        {{ data | log }}
-        
-    {% include "_includes/sample-multi-select.njk" %}
-        
-{% endblock %}
+      {{ govukSummaryList({
+        classes: 'govuk-summary-list--long-key',
+        rows: [
+          {
+            key: {
+              html: '<a class="govuk-link" href="#">sample-claims.csv</a>'
+            },
+            value: {
+              text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Remove",
+                  visuallyHiddenText: "receipt1.jpg"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
 
-{% block scripts %}
-  {{super()}}
-  <script>
-    new AppFrontend.FilterToggleButton({
-      bigModeMediaQuery: '(min-width: 48.063em)',
-      startHidden: false,
-      toggleButton: {
-        container: $('.app-action-bar__filter'),
-        showText: 'Show filter',
-        hideText: 'Hide filter',
-        classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
-      },
-      closeButton: {
-        container: $('.app-filter__header-action'),
-        text: 'Close'
-      },
-      filter: {
-        container: $('.app-filter-layout__filter')
-      }
-    })
-  </script>
+      {{ govukButton({
+        text: "Continue",
+        href: "/sampling/list"
+      }) }}
+    </form>
 {% endblock %}

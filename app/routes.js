@@ -12,4 +12,5 @@ require('./routes/account')(router)
 require('./routes/organisations')(router)
 require('./routes/claims')(router)
 require('./routes/sampling')(router)
+require('./routes/payments')(router)
 
