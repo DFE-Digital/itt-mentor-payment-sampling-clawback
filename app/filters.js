@@ -14,23 +14,27 @@ addFilter('statusColour', status => {
       return 'govuk-tag--blue'
     case 'Draft':
       return 'govuk-tag--grey'
-    case 'Checking':
+    case 'Paid':
       return 'govuk-tag--orange'
-    case 'Sent for payment':
+    case 'Not paid':
       return 'govuk-tag--turquoise'
     case 'Sampling':
       return 'govuk-tag--yellow'
-    case 'Information needed':
+    case 'Information required':
       return 'govuk-tag--purple'
-    case 'Ineligible':
-      return 'govuk-tag--red'
-    case 'Paid':
-      return 'govuk-tag--green'
     case 'Approved':
-      return 'govuk-tag--light-blue'
-    case 'Awaiting clawback':
-      return 'govuk-tag--pink'
-    case 'Clawback complete':
       return 'govuk-tag--red'
+    case 'Not approved':
+      return 'govuk-tag--green'
+    case 'Sampled and paid':
+      return 'govuk-tag--light-blue'
+    case 'Clawback required':
+      return 'govuk-tag--pink'
+    case 'Clawback revision':
+      return 'govuk-tag--yellow'
+    case 'Clawback started':
+      return 'govuk-tag--turquoise'
+    case 'Clawback complete':
+      return 'govuk-tag--orange'
   }
 })

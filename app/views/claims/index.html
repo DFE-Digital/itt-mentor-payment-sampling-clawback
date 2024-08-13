@@ -16,13 +16,9 @@
       classes: 'govuk-heading-l'
     },
     items: [{
-      text: "Send to provider",
-      href: '/export',
+      text: "Download CSV",
+      href: '/#',
       classes: 'govuk-button--primary'
-    },{
-      text: "Upload CSV",
-      href: '/export',
-      classes: 'govuk-button--secondary'
     }]
   }) }}
 
@@ -76,7 +72,7 @@
                   </dd>
                 <dt class="govuk-visually-hidden">Total amount</dt>
                   <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{ claim.cost  }}
+                    {{ claim.amount | currency }}
                   </dd>
             </div>
           </div>

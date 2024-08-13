@@ -18,21 +18,24 @@ const generateClaim = () => {
   claim.status = faker.helpers.arrayElement([
     'Submitted',
     'Draft',
-    'Checking',
-    'Sent to ESFA',
-    'Sampling',
-    'Sent to provider',
-    'Ineligible',
     'Paid',
+    'Not paid',
+    'Sampling',
+    'Information required',
     'Approved',
-    'Awaiting clawback',
-    'Clawback complete'
+    'Not approved',
+    'Sampled and paid',
+    'Clawback required',
+    'Clawback revision',
+    'Clawback started',
+    'Clawback complete',
+    'Clawback incomplete'
   ])
 
   //Providers
   claim.provider = faker.helpers.arrayElement([
     'Best Practice Network',
-    'National Institute of Teaching'
+    'NIoT: National Institute of Teaching, founded by the School-Led Development Trust'
   ])
   
   //claim uuid
