@@ -11,7 +11,7 @@
 
   <div class="app-list app-list--checkboxes">
       {% for claim in data.claims %}
-      {% if claim.status == 'Sampling' %}
+      {% if claim.status == 'Clawback required' %}
         <div class="app-list__item">
 
           <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
