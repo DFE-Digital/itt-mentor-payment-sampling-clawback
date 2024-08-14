@@ -13,13 +13,13 @@
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Send to provider",
+        text: "Download CSV",
         href: '/export',
         classes: 'govuk-button--primary'
       },{
-        text: "Upload from provider",
+        text: "Upload CSV",
         href: '/export',
-        classes: 'govuk-button--primary'
+        classes: 'govuk-button--secondary'
       }]
     }) }}
 
@@ -41,19 +41,10 @@
 
         {{ data | log }}
     
-        <div class="govuk-button-group flex-right">
-          {{ govukButton({
-            text: "Mark as complete",
-            classes: "govuk-button--secondary"
-          }) }}
         
-          {{ govukButton({
-            text: "Review for clawback",
-            classes: "govuk-button--secondary"
-          }) }}
-        </div>
        {# {% include "_includes/sample-multi-select.njk" %} #}
        {% include "_includes/samples-card.njk" %}
+       {% include "_includes/pagination.njk" %}
         
 {% endblock %}
 
