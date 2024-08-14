@@ -33,7 +33,7 @@
 
       <div class="app-filter-layout__content">
 
-        {# {% include "_includes/search-form-claims.njk" %} #}
+        {% include "_includes/search-form-claims.njk" %}
 
         <div class="app-action-bar">
           <div class="app-action-bar__filter"></div>
@@ -41,8 +41,6 @@
 
         {{ data | log }}
     
-        
-       {# {% include "_includes/sample-multi-select.njk" %} #}
        {% include "_includes/samples-card.njk" %}
        {% include "_includes/pagination.njk" %}
         

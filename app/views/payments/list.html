@@ -25,63 +25,21 @@
       <div class="app-filter-layout__filter">
         {% include "_includes/filter-panel.njk" %}
       </div>
+
       <div class="app-filter-layout__content">
-    
+
         {% include "_includes/search-form-claims.njk" %}
-    
+
         <div class="app-action-bar">
           <div class="app-action-bar__filter"></div>
         </div>
 
-    {% if data.claims.length %}
-
-      <div class="app-list">
-        {% for claim in data.claims %}
-        {% if claim.status == 'Information required' %}
-        <div class="app-list__item">
-
-          <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-            <a href="/claims/{{claim.id}}">
-              {{ claim.claimRefandNum }}
-            </a>
-          </h3>
-
-          {{ govukTag({
-            text: claim.status,
-            classes: claim.status | statusColour
-          }) }}
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-                <dt class="govuk-visually-hidden">Accredited provider</dt>
-                <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                  {{claim.provider }}
-                </dd>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-              <dt class="govuk-visually-hidden">Submitted on</dt>
-                <dd class="govuk-body-s govuk-!-margin-bottom-1">
-                  {{ claim.date | govukDate  }}
-                </dd>
-              <dt class="govuk-visually-hidden">Total amount</dt>
-                <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                  {{ claim.amount | currency }}
-                </dd>
-          </div>
-        </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-  {% else %}
-      <p>There are no results.</p>
-  {% endif %}
+        {{ data | log }}
     
+       {% include "_includes/payments-card.njk" %}
+       {% include "_includes/pagination.njk" %}
         
-  {% include "_includes/pagination.njk" %}
-
-  {% endblock %}
+{% endblock %}
   
   {% block scripts %}
     {{super()}}

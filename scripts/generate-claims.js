@@ -22,6 +22,7 @@ const generateClaim = () => {
     'Not paid',
     'Sampling',
     'Information required',
+    'Information sent',
     'Approved',
     'Not approved',
     'Sampled and paid',

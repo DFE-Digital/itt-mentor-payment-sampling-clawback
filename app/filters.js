@@ -22,6 +22,8 @@ addFilter('statusColour', status => {
       return 'govuk-tag--yellow'
     case 'Information required':
       return 'govuk-tag--purple'
+    case 'Information sent':
+      return 'govuk-tag--grey'
     case 'Approved':
       return 'govuk-tag--red'
     case 'Not approved':
