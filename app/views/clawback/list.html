@@ -1,0 +1,31 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "clawback" %}
+{% set filters = req.session.data.filters %}
+
+{% block content %}
+
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Begin clawback",
+        href: '#',
+        classes: 'govuk-button--primary'
+      }]
+    }) }}
+
+
+    {% include "_includes/secondary-navigation.njk" %}
+    {% include "_includes/clawback-card.njk" %}
+
+  
+
+        {{ data | log }}
+        
+{% endblock %}
+
