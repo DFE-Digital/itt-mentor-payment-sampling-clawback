@@ -1,4 +1,14 @@
 {% if data.claims.length %}
+  <div class="govuk-checkboxes govuk-checkboxes--small govuk-!-margin-top-4" data-module="govuk-checkboxes">
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="#">
+      <label class="govuk-label govuk-label--s govuk-checkboxes__label" for="organisation">
+        <span >Select all</span>
+      </label>
+    </div>
+  </div>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
   <div class="app-list app-list--checkboxes">
       {% for claim in data.claims %}
       {% if claim.status == 'Sampling' %}
