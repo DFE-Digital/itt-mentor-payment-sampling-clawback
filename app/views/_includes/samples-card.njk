@@ -1,7 +1,7 @@
-{% if data.organisations.length %}
+{% if data.claims.length %}
   <div class="app-list app-list--checkboxes">
-    {% for organisation in data.organisations %}
-      {% if organisation.claim == 'Sampling' %}
+      {% for claim in data.claims %}
+      {% if claim.status == 'Sampling' %}
         <div class="app-list__item">
 
           <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
@@ -17,31 +17,31 @@
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
               <a href="/show/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
-                {{organisation.claimRefandNum}}
+                {{ claim.claimRefandNum }}
               </a>
             </h3>
 
             {{ govukTag({
-              text: organisation.claim,
-              classes: organisation.claim | statusColour
+              text: claim.status,
+              classes: claim.status | statusColour
             }) }}
 
               <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
                     <dt class="govuk-visually-hidden">Accredited provider</dt>
                       <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                        {{ organisation.provider }}
+                        {{ claim.provider }}
                       </dd>
                 </div>
 
                 <div class="govuk-grid-column-one-third">
                   <dt class="govuk-visually-hidden">Submitted on</dt>
                     <dd class="govuk-body-s govuk-!-margin-bottom-1 dd-checkbox">
-                      {{ organisation.date | govukDate  }}
+                      {{ claim.date | govukDate  }}
                     </dd>
                   <dt class="govuk-visually-hidden">Total amount</dt>
                     <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                      {{ organisation.cost  }}
+                      {{ claim.amount | currency  }}
                     </dd>
                 </div>
               </div>

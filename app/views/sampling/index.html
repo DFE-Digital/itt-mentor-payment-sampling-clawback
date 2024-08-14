@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Claims" %}
+{% set pageName = "Upload sample claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
 
@@ -11,15 +11,16 @@
     <form method="post" action="/sampling">
       <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
         <ol class="govuk-list govuk-list--number">
-          <li>Get the CSV from Arjun</li>
-          <li>Upload that mutha</li>
+          <li>Fetch the download CSV of sample claims</li>
+          <li>Upload it</li>
+          <li>Do we need any other instructions for the user here????</li>
         </ol>
       </div>
 
       <p class="govuk-body" aria-live="polite">1 file uploaded</p>
 
       {{ govukButton({
-        text: "Upload samples",
+        text: "Upload CSV",
         classes: "govuk-button--secondary"
       }) }}
 
@@ -49,7 +50,7 @@
       }) }}
 
       {{ govukButton({
-        text: "Continue",
+        text: "Save and continue",
         href: "/sampling/list"
       }) }}
     </form>

@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Claims" %}
+{% set pageName = "Upload payments" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "payments" %}
 
@@ -33,7 +33,7 @@
     rows: [
       {
         key: {
-          html: '<a class="govuk-link" href="#">claims-paid-esfa.csv</a>'
+          html: '<a class="govuk-link" href="#">returned-claims-from-esfa.csv</a>'
         },
         value: {
           text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })

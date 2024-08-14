@@ -13,7 +13,7 @@
         classes: 'govuk-heading-l'
       },
       items: [{
-        text: "Upload claims from ESFA",
+        text: "Mark as not paid",
     classes: "govuk-button--primary"
       }]
     }) }}
@@ -21,43 +21,55 @@
 
     {% include "_includes/secondary-navigation.njk" %}
 
+    <div class="app-filter-layout">
+      <div class="app-filter-layout__filter">
+        {% include "_includes/filter-panel.njk" %}
+      </div>
+      <div class="app-filter-layout__content">
+    
+        {% include "_includes/search-form-claims.njk" %}
+    
+        <div class="app-action-bar">
+          <div class="app-action-bar__filter"></div>
+        </div>
+
     {% if data.claims.length %}
 
       <div class="app-list">
         {% for claim in data.claims %}
-        {% if claim.status == 'Paid' %}
+        {% if claim.status == 'Information required' %}
         <div class="app-list__item">
 
-            <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              <a href="/claims/{{claim.id}}">
-                {{ claim.claimRefandNum }}
-              </a>
-            </h3>
+          <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+            <a href="/claims/{{claim.id}}">
+              {{ claim.claimRefandNum }}
+            </a>
+          </h3>
 
-            {{ govukTag({
-              text: claim.status,
-              classes: claim.status | statusColour
-            }) }}
+          {{ govukTag({
+            text: claim.status,
+            classes: claim.status | statusColour
+          }) }}
 
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds">
-                  <dt class="govuk-visually-hidden">Accredited provider</dt>
-                  <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{claim.provider }}
-                  </dd>
-              </div>
-
-              <div class="govuk-grid-column-one-third">
-                <dt class="govuk-visually-hidden">Submitted on</dt>
-                  <dd class="govuk-body-s govuk-!-margin-bottom-1">
-                    {{ claim.date | govukDate  }}
-                  </dd>
-                <dt class="govuk-visually-hidden">Total amount</dt>
-                  <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{ claim.cost  }}
-                  </dd>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <dt class="govuk-visually-hidden">Accredited provider</dt>
+                <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                  {{claim.provider }}
+                </dd>
             </div>
+
+            <div class="govuk-grid-column-one-third">
+              <dt class="govuk-visually-hidden">Submitted on</dt>
+                <dd class="govuk-body-s govuk-!-margin-bottom-1">
+                  {{ claim.date | govukDate  }}
+                </dd>
+              <dt class="govuk-visually-hidden">Total amount</dt>
+                <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                  {{ claim.amount | currency }}
+                </dd>
           </div>
+        </div>
         </div>
         {% endif %}
         {% endfor %}
@@ -67,4 +79,29 @@
   {% endif %}
     
         
-{% endblock %}
+  {% include "_includes/pagination.njk" %}
+
+  {% endblock %}
+  
+  {% block scripts %}
+    {{super()}}
+    <script>
+      new AppFrontend.FilterToggleButton({
+        bigModeMediaQuery: '(min-width: 48.063em)',
+        startHidden: false,
+        toggleButton: {
+          container: $('.app-action-bar__filter'),
+          showText: 'Show filter',
+          hideText: 'Hide filter',
+          classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+        },
+        closeButton: {
+          container: $('.app-filter__header-action'),
+          text: 'Close'
+        },
+        filter: {
+          container: $('.app-filter-layout__filter')
+        }
+      })
+    </script>
+  {% endblock %}
