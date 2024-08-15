@@ -11,51 +11,54 @@
 
   <div class="app-list app-list--checkboxes">
       {% for claim in data.claims %}
-      {% if claim.status == 'Sampling' %}
-        <div class="app-list__item">
+      {# {% if claim.status == 'Sampling in progress' %} #}
+      {% if claim.provider == 'Best Practice Network'%}
+        {% if claim.status == 'Request information' %}
+          <div class="app-list__item">
 
-          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="#">
-              <label class="govuk-label govuk-checkboxes__label" for="organisation">
-                <span class="govuk-visually-hidden">Select</span>
-              </label>
-            </div>
-          </div>
-
-          
-
-            <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              <a href="/show/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
-                {{ claim.claimRefandNum }}
-              </a>
-            </h3>
-
-            {{ govukTag({
-              text: claim.status,
-              classes: claim.status | statusColour
-            }) }}
-
-              <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-                    <dt class="govuk-visually-hidden">Accredited provider</dt>
-                      <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                        {{ claim.provider }}
-                      </dd>
-                </div>
-
-                <div class="govuk-grid-column-one-third">
-                  <dt class="govuk-visually-hidden">Submitted on</dt>
-                    <dd class="govuk-body-s govuk-!-margin-bottom-1 dd-checkbox">
-                      {{ claim.date | govukDate  }}
-                    </dd>
-                  <dt class="govuk-visually-hidden">Total amount</dt>
-                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                      {{ claim.amount | currency  }}
-                    </dd>
-                </div>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="#">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                  <span class="govuk-visually-hidden">Select</span>
+                </label>
               </div>
-        </div>
+            </div>
+
+            
+
+              <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+                <a href="/show/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
+                  {{ claim.claimRefandNum }}
+                </a>
+              </h3>
+
+              {{ govukTag({
+                text: claim.status,
+                classes: claim.status | statusColour
+              }) }}
+
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-two-thirds">
+                      <dt class="govuk-visually-hidden">Accredited provider</dt>
+                        <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                          {{ claim.provider }}
+                        </dd>
+                  </div>
+
+                  <div class="govuk-grid-column-one-third">
+                    <dt class="govuk-visually-hidden">Submitted on</dt>
+                      <dd class="govuk-body-s govuk-!-margin-bottom-1 dd-checkbox">
+                        {{ claim.date | govukDate  }}
+                      </dd>
+                    <dt class="govuk-visually-hidden">Total amount</dt>
+                      <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                        {{ claim.amount | currency  }}
+                      </dd>
+                  </div>
+                </div>
+          </div>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>

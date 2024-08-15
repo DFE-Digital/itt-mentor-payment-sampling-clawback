@@ -38,10 +38,18 @@
 
               <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <dt class="govuk-visually-hidden">Accredited provider</dt>
-                      <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                        {{ claim.provider }}
-                      </dd>
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Provider: </b> {{ claim.provider }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Sent to provider: </b> {{ claim.daysSinceClaim }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Mentors: </b> {{ claim.mentor }}
+                    </dd>
                 </div>
 
                 <div class="govuk-grid-column-one-third">
@@ -51,8 +59,16 @@
                     </dd>
                   <dt class="govuk-visually-hidden">Total amount</dt>
                     <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                      {{ claim.amount | currency  }}
+                      <b>Total hours: </b> {{ claim.hoursOfTraining }}
                     </dd>
+                  <dt class="govuk-visually-hidden">Total amount</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Total amount: </b> {{ claim.amount | currency  }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Total amount</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <a href="clawback/update" class="govuk-link govuk-!-font-size-19">Update claim</a>
+                    </dd>    
                 </div>
               </div>
         </div>

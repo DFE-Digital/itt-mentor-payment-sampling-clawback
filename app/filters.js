@@ -23,9 +23,9 @@ addFilter('statusColour', status => {
     case 'Sampling in progress':
       return 'govuk-tag--yellow'
     case 'Sampled and processed':
-      return 'govuk-tag--grey'
+      return 'govuk-tag--green'
     case 'Clawback required':
-      return 'govuk-tag--turquoise'
+      return 'govuk-tag--light-blue'
     case 'Clawback review':
       return 'govuk-tag--yellow'
     case 'Claim updated':
