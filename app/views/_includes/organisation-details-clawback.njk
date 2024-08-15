@@ -1,0 +1,37 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+  {{ govukSummaryList({
+    rows: [
+      {
+        key: {
+          text: "Organisation name"
+        },
+        value: {
+          text: organisation.orgName
+        }
+      },
+      {
+        key: {
+          text: "UK provider reference number (UKPRN)"
+        },
+        value: {
+          text: organisation.ukprn
+        }
+      },
+      {
+        key: {
+          text: "Unique reference number (URN)"
+        },
+        value: {
+          text: organisation.urn
+        }
+      }
+    ]
+  }) }}
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">One-third column</h2>
+    <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
+  </div>
+</div>
