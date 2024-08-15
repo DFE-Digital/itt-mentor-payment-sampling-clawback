@@ -17,20 +17,18 @@ const generateClaim = () => {
   //Stautuses
   claim.status = faker.helpers.arrayElement([
     'Submitted',
-    'Draft',
-    'Paid',
-    'Not paid',
-    'Sampling',
-    'Information required',
-    'Information sent',
-    'Approved',
-    'Not approved',
-    'Sampled and paid',
+    'Request information',
+    'Pending ESFA check',
+    'Processed',
+    'Payment not approved',
+    'Sampling in progress',
+    'Sampled and processed',
     'Clawback required',
-    'Clawback revision',
-    'Clawback started',
+    'Clawback review',
+    'Claim updated',
+    'Clawback pending',
     'Clawback complete',
-    'Clawback incomplete'
+    'Draft'
   ])
 
   //Providers

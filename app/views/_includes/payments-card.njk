@@ -11,7 +11,7 @@
 
   <div class="app-list app-list--checkboxes">
       {% for claim in data.claims %}
-      {% if claim.status == 'Information required' or claim.status == 'Information sent' %}
+      {% if claim.status == 'Request information' or claim.status == 'Pending ESFA check' %}
         <div class="app-list__item">
 
           <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
