@@ -3,7 +3,6 @@
 {% set pageName = "Update claim" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "clawback" %}
-{% set filters = req.session.data.filters %}
 
 {% block beforeContent %}
   {{ govukBackLink({
@@ -14,33 +13,135 @@
 
 {% block content %}
 
-    {# {{ mojPageHeaderActions({
-      heading: {
-        text: pageName,
-        classes: 'govuk-heading-l'
-      },
-      items: [{
-        text: "Start clawback",
-        href: '#',
-        classes: 'govuk-button--primary'
-      },{
-        text: "Download CSV",
-        href: '#',
-        classes: 'govuk-button--secondary'
-      },{
-        text: "Upload CSV",
-        href: '#',
-        classes: 'govuk-button--secondary'
-      }]
-    }) }} #}
-
-
     {% include "_includes/secondary-navigation.njk" %}
-  
 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+        <span class="govuk-caption-l">Claim - {{ clawbacks.claimRef }}</span>
+        <h1 class="govuk-heading-l">{{ data.clawbacks.orgName }}</h1><strong class="govuk-tag">{{ clawbacks.status }}</strong>       
   
-
-        {{ data | log }}
+        <p class="govuk-body">Submitted by Jim Newton on 28 March 2024.</p>
+  
+  
+        {# claim details #}
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: "Organisation"
+              },
+              value: {
+                html: '<a href="/organisations/{{claim.id}}">' + claimDetails.orgName + '</a>'
+              }
+            },
+            {
+              key: {
+                text: "Accredited provider"
+              },
+              value: {
+                text: claimDetails.provider
+              }
+            },
+            {
+              key: {
+                text: "Mentors"
+              },
+              value: {
+                text: claimDetails.mentor
+              },
+              actions: {
+                items: [
+                  {
+                    href: "#",
+                    text: "Change",
+                    visuallyHiddenText: "name"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
+        
+        {# Hours of training #}
+        <h2 class="govuk-heading-m govuk-!-margin-top-9">
+          Hours of training
+        </h2>
+        
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: claimDetails.mentor
+              },
+              value: {
+                text: "20 hours"
+              }
+            }
+          ]
+        }) }}
+  
+        {# Grant funding   #}
+        <h2 class="govuk-heading-m govuk-!-margin-top-9">
+          Grant funding
+        </h2>
+        
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: "Total hours"
+              },
+              value: {
+                text: claimDetails.hoursOfTraining
+              },
+              actions: {
+                items: [
+                  {
+                    href: "#",
+                    text: "Change",
+                    visuallyHiddenText: "name"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Hourly rate"
+              },
+              value: {
+                text: claimDetails.hourlyRate
+              }
+            },
+            {
+              key: {
+                text: "Claim amount"
+              },
+              value: {
+                text: claimDetails.amount | currency
+              },
+              actions: {
+                items: [
+                  {
+                    href: "#",
+                    text: "Change",
+                    visuallyHiddenText: "name"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
+  
+        {# pass this to contact details include #}
+        {% set address %}
+          {{appAddress({ address: organisation.address })}}
+        {% endset %}
+        
+      </div>
+    </div>
+  
+    {{ data | log }}
         
 {% endblock %}
 

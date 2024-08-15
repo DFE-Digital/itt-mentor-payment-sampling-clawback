@@ -26,9 +26,7 @@
           
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              <a href="/show/{{organisation.id}}" class="govuk-link govuk-link--no-visited-state">
-                {{ claim.claimRefandNum }}
-              </a>
+              {{ claim.claimRefandNum }}
             </h3>
 
             {{ govukTag({
@@ -67,7 +65,7 @@
                     </dd>
                   <dt class="govuk-visually-hidden">Total amount</dt>
                     <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
-                      <a href="clawback/update" class="govuk-link govuk-!-font-size-19">Update claim</a>
+                      <a href="/clawback/{{claim.id}}" class="govuk-link govuk-!-font-size-19">Update claim</a>
                     </dd>    
                 </div>
               </div>

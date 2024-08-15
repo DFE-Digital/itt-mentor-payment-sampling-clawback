@@ -13,4 +13,5 @@ require('./routes/organisations')(router)
 require('./routes/claims')(router)
 require('./routes/sampling')(router)
 require('./routes/payments')(router)
+require('./routes/clawback')(router)
 
