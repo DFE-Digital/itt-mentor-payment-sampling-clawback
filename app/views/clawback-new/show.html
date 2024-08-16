@@ -1,8 +1,16 @@
 {% extends "layouts/main.html" %}
-
-{% set pageName = "Update claim" %}
+{% set pageName = "Updated clawback" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "clawback" %}
+
+{% set html %}
+  <h3 class="govuk-notification-banner__heading">
+    Claim updated
+  </h3>
+{% endset %}
+
+
+
 
 {% block beforeContent %}
   {{ govukBackLink({
@@ -13,42 +21,41 @@
 {% endblock %}
 
 {% block content %}
+{{ data | log}}
 
-    {# {% include "_includes/secondary-navigation.njk" %} #}
+{# {% include "_includes/secondary-navigation.njk" %} #}
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        
-        <span class="govuk-caption-l">Claim - {{ clawbackDetails.claimRef }}</span>
-        <h1 class="govuk-heading-l">{{ clawbackDetails.orgName }}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">     
+    {{ govukNotificationBanner({
+      html: html,
+      type: "success"
+    }) }} 
+  </div>
+</div>  
 
-        {{ govukTag({
-          text: clawbackDetails.status,
-          classes: clawbackDetails.status | statusColour
-        }) }}
-
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">     
+    <span class="govuk-caption-l">Claim - 265831</span>
+        <h1 class="govuk-heading-l">plug-and-play school  
+          {{ govukTag({
+            text: 'Claim updated',
+            classes: "govuk-tag--red"
+          }) }}
         </h1>
-  
-        <p class="govuk-body">Submitted by Jim Newton on 28 March 2024.</p>
-  
-  
+        
+        <p class="govuk-body">Submitted by Jim Newton on 16 August 2024.</p>
+
+
         {# claim details #}
         {{ govukSummaryList({
           rows: [
             {
               key: {
-                text: "Organisation"
-              },
-              value: {
-                html: '<a href="/organisations/{{claim.id}}">' + clawbackDetails.orgName + '</a>'
-              }
-            },
-            {
-              key: {
                 text: "Accredited provider"
               },
               value: {
-                text: clawbackDetails.provider
+                text: 'Best Practice Network'
               }
             },
             {
@@ -56,7 +63,7 @@
                 text: "Mentors"
               },
               value: {
-                text: clawbackDetails.mentor
+                text: 'Phoebe Reichel-Cormier'
               },
               actions: {
                 items: [
@@ -70,7 +77,7 @@
             }
           ]
         }) }}
-        
+
         {# Hours of training #}
         <h2 class="govuk-heading-m govuk-!-margin-top-9">
           Hours of training
@@ -80,7 +87,7 @@
           rows: [
             {
               key: {
-                text: clawbackDetails.mentor
+                text: 'Phoebe Reichel-Cormier'
               },
               value: {
                 text: "20 hours"
@@ -88,7 +95,7 @@
             }
           ]
         }) }}
-  
+
         {# Grant funding   #}
         <h2 class="govuk-heading-m govuk-!-margin-top-9">
           Grant funding
@@ -101,7 +108,7 @@
                 text: "Total hours"
               },
               value: {
-                text: clawbackDetails.hoursOfTraining
+                text: '20 hours'
               },
               actions: {
                 items: [
@@ -118,7 +125,7 @@
                 text: "Hourly rate"
               },
               value: {
-                text: clawbackDetails.hourlyRate
+                text: '£43.80'
               }
             },
             {
@@ -126,7 +133,7 @@
                 text: "Claim amount"
               },
               value: {
-                text: clawbackDetails.amount | currency
+                text: '£876.00'
               },
               actions: {
                 items: [
@@ -140,22 +147,18 @@
             }
           ]
         }) }}
+
+        <form method="post" action="revise-clawback">
+          {{ govukButton({
+            text: "Save and continue"
+          }) }}
+        </form>
+  </div>
   
-        {# pass this to contact details include #}
-        {% set address %}
-          {{appAddress({ address: organisation.address })}}
-        {% endset %}
-        
-      </div>
-    </div>
+  <div class="govuk-grid-column-one-third">      
+    {% include "_includes/clawback-update.njk" %}
+  </div>
 
-    <form method="post" action="revise-clawback">
-      {{ govukButton({
-        text: "Save and continue"
-      }) }}
-    </form>
-
-    {{ data | log }}
-        
+</div> 
+ 
 {% endblock %}
-

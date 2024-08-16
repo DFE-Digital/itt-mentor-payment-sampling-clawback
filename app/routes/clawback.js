@@ -7,10 +7,4 @@ module.exports = router => {
       clawbackDetails
     })
   })
-
-  router.post('/revise-clawback', (req, res) => {
-    //status logic in
-    res.redirect('clawback/revised')
-})    
-  
 }
