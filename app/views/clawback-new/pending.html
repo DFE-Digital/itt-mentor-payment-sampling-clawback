@@ -1,0 +1,117 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims - clawback" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "clawback" %}
+{% set filters = req.session.data.filters %}
+
+{% block content %}
+
+    {{ mojPageHeaderActions({
+      heading: {
+        text: pageName,
+        classes: 'govuk-heading-l'
+      },
+      items: [{
+        text: "Start clawback",
+        href: '#',
+        classes: 'govuk-button--primary'
+      },{
+        text: "Download CSV",
+        href: '#',
+        classes: 'govuk-button--secondary'
+      },{
+        text: "Upload CSV",
+        href: '#',
+        classes: 'govuk-button--secondary'
+      }]
+    }) }}
+
+
+    {% include "_includes/secondary-navigation.njk" %}
+    {% if data.claims.length %}
+  <div class="govuk-checkboxes govuk-checkboxes--small govuk-!-margin-top-4" data-module="govuk-checkboxes">
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="#">
+      <label class="govuk-label govuk-label--s govuk-checkboxes__label" for="organisation">
+        <span >Select all</span>
+      </label>
+    </div>
+  </div>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <div class="app-list app-list--checkboxes">
+      {% for claim in data.claims %}
+      {% if claim.status == 'Clawback required' %}
+        <div class="app-list__item">
+
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="#">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                <span class="govuk-visually-hidden">Select</span>
+              </label>
+            </div>
+          </div>
+
+          
+
+            <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+              {{ claim.claimRefandNum }}
+            </h3>
+
+            {{ govukTag({
+              text: 'Clawback pending',
+              classes: 'govuk-tag--yellow'
+            }) }}
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Provider: </b> {{ claim.provider }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Sent to provider: </b> {{ claim.daysSinceClaim }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Mentors: </b> {{ claim.mentor }}
+                    </dd>
+                </div>
+
+                <div class="govuk-grid-column-one-third">
+                  <dt class="govuk-visually-hidden">Submitted on</dt>
+                    <dd class="govuk-body-s govuk-!-margin-bottom-1 dd-checkbox">
+                      {{ claim.date | govukDate  }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Total amount</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Total hours: </b> {{ claim.hoursOfTraining }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Total amount</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <b>Total amount: </b> {{ claim.amount | currency  }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Total amount</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
+                      <a href="/clawback/{{claim.id}}" class="govuk-link govuk-!-font-size-19">Update claim</a>
+                    </dd>    
+                </div>
+              </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% else %}
+        <p>There are no results.</p>
+{% endif %}
+
+
+  
+
+        {{ data | log }}
+        
+{% endblock %}
+
