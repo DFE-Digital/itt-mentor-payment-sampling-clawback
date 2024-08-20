@@ -12,3 +12,18 @@
     flex-wrap: wrap;
     align-items: center;
 }
+
+.govuk-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -4px;
+    left: -2px;
+    background: transparent;
+}
+
+.moj-button-menu__toggle-button[aria-expanded=true]:after {
+    background-image: url(../images/icon-arrow-white-up.svg);
+}

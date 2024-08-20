@@ -7,21 +7,47 @@
 
 {% block content %}
 
-    {{ mojPageHeaderActions({
-      heading: {
-        text: pageName,
-        classes: 'govuk-heading-l'
-      },
-      items: [{
-        text: "Download CSV",
-        href: '/export',
-        classes: 'govuk-button--primary'
-      },{
-        text: "Upload CSV",
-        href: '/export',
-        classes: 'govuk-button--secondary'
-      }]
-    }) }}
+
+
+  
+<div class="moj-page-header-actions">
+
+  <div class="moj-page-header-actions__title">
+    <h1 class="govuk-heading-xl">Claims - Sampling</h1>
+  </div>
+
+  <div class="moj-page-header-actions__actions">
+
+    <div class="moj-button-menu">
+      <div class="moj-button-menu__wrapper">
+
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
+          Download CSV
+        </button>
+
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
+          Upload CSV
+        </button>
+
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
+          Sampled and processed
+        </button>
+
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
+          Clawback required
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+    
 
 
     {% include "_includes/secondary-navigation.njk" %}
@@ -66,5 +92,13 @@
         container: $('.app-filter-layout__filter')
       }
     })
+
+
+    new MOJFrontend.ButtonMenu({
+      container: document.querySelector(".moj-button-menu"),
+      mq: "(min-width: 200em)",
+      buttonText: "Actions",
+      menuClasses: "moj-button-menu__wrapper--right",
+    });
   </script>
 {% endblock %}
