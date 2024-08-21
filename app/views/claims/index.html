@@ -8,21 +8,18 @@
 
 {% block content %}
 
-  {# <h1 class="govuk-heading-l">{{ pageName }}</h1> #}
-
-  {{ mojPageHeaderActions({
-    heading: {
-      text: pageName,
-      classes: 'govuk-heading-l'
-    },
-    items: [{
-      text: "Download CSV",
-      href: '#',
-      classes: 'govuk-button--primary'
-    }]
-  }) }}
+<h1 class="govuk-heading-xl">{{ pageName }}</h1>
 
 {% include "_includes/secondary-navigation.njk" %}
+
+<h2 class="govuk-heading-l">All claims</h2>
+
+<div class="govuk-button-group">
+  {{ govukButton({
+    text: "Download CSV",
+    classes: "govuk-button--secondary"
+  }) }}
+</div>
 
 <div class="app-filter-layout">
   <div class="app-filter-layout__filter">
