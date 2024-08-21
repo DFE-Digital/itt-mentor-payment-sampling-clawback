@@ -7,22 +7,22 @@
 
 {% block content %}
 
-    {{ mojPageHeaderActions({
-      heading: {
-        text: pageName,
-        classes: 'govuk-heading-l'
-      },
-      items: [{
-        text: "Payment not approved",
-        classes: "govuk-button--primary"
-      },{
-        text: "Information sent to ESFA",
-        classes: "govuk-button--secondary"
-      }]
-    }) }}
-
+    <h1 class="govuk-heading-xl">{{ pageName }}</h1>
 
     {% include "_includes/secondary-navigation.njk" %}
+
+    <h2 class="govuk-heading-l">Payments</h2>
+
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Payment not approved",
+        classes: "govuk-button--primary"
+      }) }}
+      {{ govukButton({
+        text: "Information sent to ESFA",
+        classes: "govuk-button--secondary"
+      }) }}
+    </div>
 
     <div class="app-filter-layout">
       <div class="app-filter-layout__filter">
