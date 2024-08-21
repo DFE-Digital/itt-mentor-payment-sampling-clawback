@@ -19,37 +19,12 @@
     </ol>
   </div>
 
-  <p class="govuk-body" aria-live="polite">1 file uploaded</p>
-
-  {{ govukButton({
-    text: "Upload CSV",
-    classes: "govuk-button--secondary"
-  }) }}
-
-  <p class="govuk-body govuk-!-display-none" id="refreshPageProgress"><a href="#" class="govuk-link">Refresh page to update file upload progress</a></p>
-
-  {{ govukSummaryList({
-    classes: 'govuk-summary-list--long-key',
-    rows: [
-      {
-        key: {
-          html: '<a class="govuk-link" href="#">returned-claims-from-esfa.csv</a>'
-        },
-        value: {
-          text: govukTag({ text: "Uploaded", classes: "govuk-tag--green" })
-        },
-        actions: {
-          items: [
-            {
-              href: "#",
-              text: "Remove",
-              visuallyHiddenText: "receipt1.jpg"
-            }
-          ]
-        }
-      }
-    ]
-  }) }}
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="file-upload-1">
+      Upload a CSV
+    </label>
+    <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
+  </div>
 
   {{ govukButton({
     text: "Save and continue"
