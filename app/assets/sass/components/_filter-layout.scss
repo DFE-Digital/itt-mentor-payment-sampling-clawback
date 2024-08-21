@@ -7,7 +7,7 @@
 
   @include govuk-media-query($from: desktop) {
     float: left;
-    margin-top: govuk-spacing(6);
+    // margin-top: govuk-spacing(6);
     margin-right: govuk-spacing(6);
     max-width: 310px;
     min-width: 260px;

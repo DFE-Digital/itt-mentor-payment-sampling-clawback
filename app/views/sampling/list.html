@@ -7,50 +7,23 @@
 
 {% block content %}
 
-
-
-  
-<div class="moj-page-header-actions">
-
-  <div class="moj-page-header-actions__title">
-    <h1 class="govuk-heading-xl">Claims - Sampling</h1>
-  </div>
-
-  <div class="moj-page-header-actions__actions">
-
-    <div class="moj-button-menu">
-      <div class="moj-button-menu__wrapper">
-
-        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
-          Download CSV
-        </button>
-
-        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
-          Upload CSV
-        </button>
-
-        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
-          Sampled and processed
-        </button>
-
-        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" data-module="govuk-button">
-          Clawback required
-        </button>
-
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-
-
-    
-
+<h1 class="govuk-heading-xl">Claims</h1>
 
     {% include "_includes/secondary-navigation.njk" %}
+    <h2 class="govuk-heading-l">Sampling</h2>
+
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Sampled and processed",
+        classes: "govuk-button--primary"
+      }) }}
+      {{ govukButton({
+        text: "Clawback required",
+        classes: "govuk-button--secondary"
+      }) }}
+      <a class="govuk-link" href="#">Download CSV</a>
+      <a class="govuk-link" href="#">Upload CSV</a>
+    </div>
 
     <div class="app-filter-layout">
       <div class="app-filter-layout__filter">
