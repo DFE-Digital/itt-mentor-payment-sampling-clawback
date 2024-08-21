@@ -1,13 +1,17 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Upload sample claims" %}
+{% set pageName = "Claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
 
 
 {% block content %}
-<h1 class="govuk-heading-l">{{pageName}}</h1>
+<h1 class="govuk-heading-xl">{{ pageName }}</h1>
+
 {% include "_includes/secondary-navigation.njk" %}
+
+<h2 class="govuk-heading-l">Sampling</h2>
+
     <form method="post" action="/sampling">
       <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
         <ol class="govuk-list govuk-list--number">
