@@ -7,5 +7,13 @@ module.exports = router => {
       organisation
     })
   })
+
+  router.get('/organisations/:claimOrgName', (req, res) => {
+    let organisation = req.session.data.claims.find(claim => claim.orgName === req.params.claimOrgName)
+
+    res.render('organisations/show', {
+      organisation
+    })
+  })
   
 }
