@@ -14,13 +14,13 @@
 {% block content %}
 {{ data | log }}
 <span class="govuk-caption-l">Claim - {{ claimDetails.claimRef }}</span>
+<div class="flex-cont">
+<h1 class="govuk-heading-l govuk-!-margin-right-2">{{ claimDetails.orgName }} </h1>
+  <strong class="govuk-tag {{ claimDetails.status | statusColour }}">
+    {{ claimDetails.status }}
+  </strong>
+</div>
 
-{{ mojPageHeaderActions({
-  heading: {
-    html: claimDetails.orgName + " " + '<strong class="govuk-tag">' + claimDetails.status + '</strong>',
-    classes: 'govuk-heading-l'
-  }
-}) }}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
