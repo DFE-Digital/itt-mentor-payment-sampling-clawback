@@ -19,6 +19,7 @@
       }) }}
       {{ govukButton({
         text: "Clawback required",
+        href: "/cannot/clawback-required",
         classes: "govuk-button--secondary"
       }) }}
       <a class="govuk-link" href="#">Download CSV</a>
@@ -41,7 +42,7 @@
         {{ data | log }}
     
        {% include "_includes/samples-card.njk" %}
-       {% include "_includes/pagination.njk" %}
+       {# {% include "_includes/pagination.njk" %} #}
         
 {% endblock %}
 

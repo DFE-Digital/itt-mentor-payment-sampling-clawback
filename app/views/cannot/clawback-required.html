@@ -1,0 +1,32 @@
+{% extends "layouts/main.html" %}
+
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+{% set filters = req.session.data.filters %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">You cannot mark these claims as clawback required</h1>
+        <p class="govuk-body">You can mark them as clawback required once you have received an updated CSV back from your provider</p>
+        <div class="govuk-button-group">
+          <a class="govuk-link" href="javascript:window.history.back()">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+        
+{% endblock %}
