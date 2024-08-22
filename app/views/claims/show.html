@@ -26,7 +26,7 @@
     <div class="govuk-grid-column-two-thirds">
 
 
-      <p class="govuk-body">Submitted by Jim Newton on 28 March 2024.</p>
+      <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
 
 
       {# claim details #}
@@ -38,6 +38,14 @@
             },
             value: {
               html: '<a href="/organisations/{{claimDetails.orgName}}">' + claimDetails.orgName + '</a>'
+            }
+          },
+          {
+            key: {
+              text: "Academic year"
+            },
+            value: {
+              text: claimDetails.academicYear
             }
           },
           {
@@ -54,15 +62,6 @@
             },
             value: {
               text: claimDetails.mentor
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "Change",
-                  visuallyHiddenText: "name"
-                }
-              ]
             }
           }
         ]
@@ -99,15 +98,6 @@
             },
             value: {
               text: claimDetails.hoursOfTraining
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "Change",
-                  visuallyHiddenText: "name"
-                }
-              ]
             }
           },
           {
@@ -124,15 +114,6 @@
             },
             value: {
               text: claimDetails.amount | currency
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "Change",
-                  visuallyHiddenText: "name"
-                }
-              ]
             }
           }
         ]

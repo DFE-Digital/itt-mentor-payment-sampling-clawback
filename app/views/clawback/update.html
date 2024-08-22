@@ -29,7 +29,7 @@
 
         </h1>
   
-        <p class="govuk-body">Submitted by Jim Newton on 28 March 2024.</p>
+        <p class="govuk-body">Submitted by {{ clawbackDetails.submittedBy }} on 28 March 2024.</p>
   
   
         {# claim details #}
@@ -41,6 +41,14 @@
               },
               value: {
                 html: '<a href="/organisations/{{claim.id}}">' + clawbackDetails.orgName + '</a>'
+              }
+            },
+            {
+              key: {
+                text: "Academic year"
+              },
+              value: {
+                text: clawbackDetails.academicYear
               }
             },
             {

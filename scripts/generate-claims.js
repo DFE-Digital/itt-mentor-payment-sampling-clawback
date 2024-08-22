@@ -36,6 +36,12 @@ const generateClaim = () => {
     'Best Practice Network',
     'NIoT: National Institute of Teaching, founded by the School-Led Development Trust'
   ])
+
+   //Academic year
+   claim.academicYear = faker.helpers.arrayElement([
+    '2023 to 2024',
+    '2024 to 2025'
+  ])
   
   //claim uuid
   claim.uuid = faker.string.uuid()

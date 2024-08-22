@@ -1,6 +1,32 @@
 {% set filterOptionsHtml %}
 
   {{ govukCheckboxes({
+    idPrefix: "filters[academicYear]",
+    name: "filters[academicYear]",
+    classes: "govuk-checkboxes--small app-checkbox-filter__container govuk-!-padding-bottom-4",
+    fieldset: {
+      legend: {
+        html: 'Academic year<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+      }
+    },
+    items: [
+      {
+        value: '2022 to 2023',
+        text: '2022 to 2023'
+      },
+      {
+        value: '2023 to 2024',
+        text: '2023 to 2024'
+      },
+      {
+        value: '2024 to 2025',
+        text: '2024 to 2025'
+      }
+    ]
+  }) }}
+
+  {{ govukCheckboxes({
     idPrefix: "filters[statuses]",
     name: "filters[statuses]",
     classes: "govuk-checkboxes--small app-checkbox-filter__container",
