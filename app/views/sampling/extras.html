@@ -1,0 +1,79 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims - Sampling" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+{% set filters = req.session.data.filters %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Claims</h1>
+
+    {% include "_includes/secondary-navigation.njk" %}
+    <h2 class="govuk-heading-l">Sampling</h2>
+
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Sampled and processed",
+        href: "/cannot/sampled-processed",
+        classes: "govuk-button--secondary"
+      }) }}
+      {{ govukButton({
+        text: "Clawback required",
+        href: "/cannot/clawback-required",
+        classes: "govuk-button--secondary"
+      }) }}
+      <a class="govuk-link" href="#">Download CSV</a>
+      <a class="govuk-link" href="#">Upload CSV</a>
+    </div>
+
+    <div class="app-filter-layout">
+      <div class="app-filter-layout__filter">
+        {% include "_includes/filter-panel.njk" %}
+      </div>
+
+      <div class="app-filter-layout__content">
+
+        {% include "_includes/search-form-claims.njk" %}
+
+        <div class="app-action-bar">
+          <div class="app-action-bar__filter"></div>
+        </div>
+
+        {{ data | log }}
+    
+       {% include "_includes/samples-card.njk" %}
+       {# {% include "_includes/pagination.njk" %} #}
+        
+{% endblock %}
+
+{% block scripts %}
+  {{super()}}
+  <script>
+    new AppFrontend.FilterToggleButton({
+      bigModeMediaQuery: '(min-width: 48.063em)',
+      startHidden: false,
+      toggleButton: {
+        container: $('.app-action-bar__filter'),
+        showText: 'Show filter',
+        hideText: 'Hide filter',
+        classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+      },
+      closeButton: {
+        container: $('.app-filter__header-action'),
+        text: 'Close'
+      },
+      filter: {
+        container: $('.app-filter-layout__filter')
+      }
+    })
+
+
+    new MOJFrontend.ButtonMenu({
+      container: document.querySelector(".moj-button-menu"),
+      mq: "(min-width: 200em)",
+      buttonText: "Actions",
+      menuClasses: "moj-button-menu__wrapper--right",
+    });
+  </script>
+{% endblock %}
