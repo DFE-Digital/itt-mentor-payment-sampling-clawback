@@ -12,13 +12,12 @@
 
 {% include "_includes/secondary-navigation.njk" %}
 
-<h2 class="govuk-heading-l">All claims</h2>
+<div class="flex-button-h2-cont">
+  <h2 class="govuk-heading-l">All claims</h2>
 
-<div class="govuk-button-group">
-  {{ govukButton({
-    text: "Download CSV",
-    classes: "govuk-button--secondary"
-  }) }}
+  <div class="govuk-button-group flex-right">
+    <a class="govuk-link" href="#">Download CSV</a>
+  </div>
 </div>
 
 

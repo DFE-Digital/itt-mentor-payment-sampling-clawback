@@ -6,6 +6,17 @@
     padding: 0;
 }
 
+.flex-button-h2-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 .flex-right{
     display: flex;
     justify-content: end;
