@@ -13,16 +13,6 @@
 
     <h2 class="govuk-heading-l">Payments</h2>
 
-    <div class="govuk-button-group">
-      {{ govukButton({
-        text: "Payment not approved",
-        classes: "govuk-button--secondary"
-      }) }}
-      {{ govukButton({
-        text: "Information sent to ESFA",
-        classes: "govuk-button--secondary"
-      }) }}
-    </div>
 
     <div class="app-filter-layout">
       <div class="app-filter-layout__filter">
@@ -35,6 +25,17 @@
 
         <div class="app-action-bar">
           <div class="app-action-bar__filter"></div>
+        </div>
+
+        <div class="govuk-button-group">
+          {{ govukButton({
+            text: "Payment not approved",
+            classes: "govuk-button--secondary"
+          }) }}
+          {{ govukButton({
+            text: "Information sent to ESFA",
+            classes: "govuk-button--secondary"
+          }) }}
         </div>
 
         {{ data | log }}
