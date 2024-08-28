@@ -1,0 +1,41 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Do you want to send 99 submitted claims to ESFA for payment?" %}
+{% set primaryNavId = "claims" %}
+{# {% set secondaryNavId = "payments" %} #}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">{{ pageName }}</h1>
+
+      {# {% include "_includes/secondary-navigation.njk" %} #}
+
+      {# <h2 class="govuk-heading-l">Payments</h2> #}
+      {# <p class="govuk-body">Bit of info here on:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>what type of claims are being sent</li>
+        <li>who they are sent to</li>
+        <li>what to expect next - revised CSV back from ESFA etc</li>
+      </ul> #}
+
+      <form method="post" action="/payments/sent">
+        {{ govukButton({
+          text: "Send claims for payment"
+        }) }}
+      </form>
+  </div>
+</div>
+
+
+{% endblock %}

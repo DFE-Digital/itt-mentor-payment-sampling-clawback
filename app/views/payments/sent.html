@@ -1,0 +1,73 @@
+{% extends "layouts/main.html" %}
+{% set primaryNavId = "claims" %}
+{% set pageName = "Payments" %}
+
+{% set claimsUploaded %}
+  <h3 class="govuk-notification-banner__heading">
+    Claims uploaded
+  </h3>
+{% endset %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {{ govukNotificationBanner({
+      html: claimsUploaded,
+      type: "success"
+    }) }}
+
+    <h1 class="govuk-heading-xl">{{ pageName }}</h1>
+
+    {{ govukTable({
+      caption: "Claims sent for payment",
+      captionClasses: "govuk-table__caption--m",
+      firstCellIsHeader: true,
+      head: [
+        {
+          text: "Date"
+        },
+        {
+          text: "Sent by"
+        }
+      ],
+      rows: [
+        [
+          {
+            text: "28 August 2024"
+          },
+          {
+            text: "Bob Bobbins (can we play this back???)"
+          }
+        ]
+      ]
+    }) }}
+
+   <h2 class="govuk-heading-m govuk-!-margin-top-8">What happens next</h2>
+   <ol class="govuk-list govuk-list--number">
+    <li>ESFA will return a revised CSV to you.</li>
+    <li>Upload the CSV below.</li>
+  </ol>
+
+
+      <form method="post" action="/payments/list-info-required">
+        {{ govukFileUpload({
+          id: "file-upload-1",
+          name: "fileUpload1",
+          label: {
+            text: "Upload a file"
+          }
+        }) }}
+      </form>
+
+      {{ govukButton({
+        text: "Continue"
+      }) }}
+  </div>
+</div>
+
+
+{% endblock %}
