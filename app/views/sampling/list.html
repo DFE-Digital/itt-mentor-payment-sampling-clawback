@@ -1,31 +1,25 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Claims - Sampling" %}
+{% set pageName = "Claims" %}
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
 {% set filters = req.session.data.filters %}
 
 {% block content %}
 
-<h1 class="govuk-heading-xl">Claims</h1>
+<h1 class="govuk-heading-xl">{{ pageName }}</h1>
 
     {% include "_includes/secondary-navigation.njk" %}
-    <h2 class="govuk-heading-l">Sampling</h2>
 
-    <div class="govuk-button-group">
-      {{ govukButton({
-        text: "Sampled and processed",
-        href: "/cannot/sampled-processed",
-        classes: "govuk-button--secondary"
-      }) }}
-      {{ govukButton({
-        text: "Clawback required",
-        href: "/cannot/clawback-required",
-        classes: "govuk-button--secondary"
-      }) }}
-      <a class="govuk-link" href="#">Download CSV</a>
-      <a class="govuk-link" href="#">Upload CSV</a>
+    <div class="flex-button-h2-cont">
+      <h2 class="govuk-heading-l">Sampling</h2>
+    
+      <div class="govuk-button-group flex-right">
+        <a class="govuk-link" href="#">Download CSV</a>
+        <a class="govuk-link" href="#">Upload CSV</a>
+      </div>
     </div>
+
 
     <div class="app-filter-layout">
       <div class="app-filter-layout__filter">
@@ -35,6 +29,28 @@
       <div class="app-filter-layout__content">
 
         {% include "_includes/search-form-claims.njk" %}
+
+        
+          <div>
+            <p class="govuk-body"><a href="#" class="govuk-link govuk-!-margin-right-2 govuk-!-font-size-16">Select all  </a>  |  <a href="#" class="govuk-link govuk-!-margin-left-2 govuk-!-font-size-16">  Select all on this page</a></p>
+          </div>
+          
+          {{ mojButtonMenu({
+            items: [
+              {
+                text: "Sampled and processed",
+                href: "/cannot/sampled-processed",
+                classes: "govuk-button--secondary"
+              },
+              {
+                text: "Clawback required",
+                href: "/cannot/clawback-required",
+                classes: "govuk-button--secondary"
+              }
+            ]
+          }) }} 
+        
+        
 
         <div class="app-action-bar">
           <div class="app-action-bar__filter"></div>
@@ -73,7 +89,8 @@
       container: document.querySelector(".moj-button-menu"),
       mq: "(min-width: 200em)",
       buttonText: "Actions",
-      menuClasses: "moj-button-menu__wrapper--right",
+      buttonClasses:
+        "govuk-button--primary moj-button-menu__toggle-button--secondary",
     });
   </script>
 {% endblock %}
