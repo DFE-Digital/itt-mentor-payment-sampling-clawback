@@ -14,9 +14,9 @@
     <div class="flex-button-h2-cont">
       <h2 class="govuk-heading-l">Sampling</h2>
     
-      <div class="govuk-button-group flex-right">
+      <div class="govuk-button-group">
         <a class="govuk-link" href="#">Download CSV</a>
-        <a class="govuk-link" href="#">Upload CSV</a>
+        {# <a class="govuk-link" href="#">Upload CSV</a> #}
       </div>
     </div>
 
@@ -30,27 +30,11 @@
 
         {% include "_includes/search-form-claims.njk" %}
 
-        
-          <div>
+                
+          {# <div>
             <p class="govuk-body"><a href="#" class="govuk-link govuk-!-margin-right-2 govuk-!-font-size-16">Select all  </a>  |  <a href="#" class="govuk-link govuk-!-margin-left-2 govuk-!-font-size-16">  Select all on this page</a></p>
-          </div>
+          </div> #}
           
-          {{ mojButtonMenu({
-            items: [
-              {
-                text: "Sampled and processed",
-                href: "/cannot/sampled-processed",
-                classes: "govuk-button--secondary"
-              },
-              {
-                text: "Clawback required",
-                href: "/cannot/clawback-required",
-                classes: "govuk-button--secondary"
-              }
-            ]
-          }) }} 
-        
-        
 
         <div class="app-action-bar">
           <div class="app-action-bar__filter"></div>
@@ -58,7 +42,8 @@
 
         {{ data | log }}
     
-       {% include "_includes/samples-card.njk" %}
+       {# {% include "_includes/samples-card.njk" %} #}
+       {% include "_includes/samples-new-card.njk" %}
        {# {% include "_includes/pagination.njk" %} #}
         
 {% endblock %}
@@ -83,14 +68,6 @@
         container: $('.app-filter-layout__filter')
       }
     })
-
-
-    new MOJFrontend.ButtonMenu({
-      container: document.querySelector(".moj-button-menu"),
-      mq: "(min-width: 200em)",
-      buttonText: "Actions",
-      buttonClasses:
-        "govuk-button--primary moj-button-menu__toggle-button--secondary",
-    });
+    
   </script>
 {% endblock %}
