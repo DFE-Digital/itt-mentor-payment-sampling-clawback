@@ -12,17 +12,27 @@
 
     {% include "_includes/secondary-navigation.njk" %}
 
-    <h2 class="govuk-heading-l">Clawback</h2>
-
-    <div class="govuk-button-group">
-      {{ govukButton({
-        text: "Start clawback",
-        classes: "govuk-button--secondary"
-      }) }}
-      <a class="govuk-link" href="#">Download CSV</a>
-      <a class="govuk-link" href="clawback-new/upload.html">Upload CSV</a>
+    <div class="flex-button-h2-cont">
+      <h2 class="govuk-heading-l">Clawback</h2>
+    
+      <div class="govuk-button-group">
+        <a class="govuk-link" href="#">Download CSV</a>
+        <a class="govuk-link" href="clawback-new/upload.html">Upload CSV</a>
+      </div>
     </div>
 
+    <div class="flex-vert-centre" data-module="govuk-checkboxes">
+    <div>
+      <p class="govuk-body"><a href="#" class="govuk-link govuk-!-margin-right-2">Select all  </a>  |  <a href="#" class="govuk-link govuk-!-margin-left-2">  Select all on this page</a></p>
+    </div>  
+  </div>
+  
+  <div class="govuk-button-group">
+    {{ govukButton({
+      text: "Start clawback",
+      classes: "govuk-button--primary"
+    }) }}
+  </div>
     {% include "_includes/clawback-card.njk" %}
 
   

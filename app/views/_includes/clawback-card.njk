@@ -1,12 +1,5 @@
 {% if data.claims.length %}
-  <div class="govuk-checkboxes govuk-checkboxes--small govuk-!-margin-top-4" data-module="govuk-checkboxes">
-    <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="#">
-      <label class="govuk-label govuk-label--s govuk-checkboxes__label" for="organisation">
-        <span >Select all</span>
-      </label>
-    </div>
-  </div>
+  
   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
   <div class="app-list app-list--checkboxes">
@@ -28,7 +21,7 @@
           
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              {{ claim.claimRefandNum }}
+              <a href="/clawback/{{claim.id}}" class="govuk-link govuk-!-font-size-19">{{ claim.claimRefandNum }}</a>  
             </h3>
 
             {{ govukTag({
@@ -65,10 +58,10 @@
                     <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
                       <b>Total amount: </b> {{ claim.amount | currency  }}
                     </dd>
-                  <dt class="govuk-visually-hidden">Total amount</dt>
+                  {# <dt class="govuk-visually-hidden">Total amount</dt>
                     <dd class="govuk-body-s  govuk-!-margin-bottom-1 dd-checkbox">
                       <a href="/clawback/{{claim.id}}" class="govuk-link govuk-!-font-size-19">Update claim</a>
-                    </dd>    
+                    </dd>     #}
                 </div>
               </div>
         </div>
