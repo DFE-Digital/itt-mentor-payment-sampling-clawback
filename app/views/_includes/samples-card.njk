@@ -4,9 +4,9 @@
 
   <div class="app-list app-list--checkboxes">
       {% for claim in data.claims %}
-      {% if claim.status == 'Sampling in progress' %}
+      {# {% if claim.status == 'Sampling in progress' %} #}
       {% if claim.provider == 'Best Practice Network'%}
-        {# {% if claim.status == 'Request information' %} #}
+        {% if claim.status == 'Request information' %}
           <div class="app-list__item">
 
             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">

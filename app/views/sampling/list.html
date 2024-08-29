@@ -16,7 +16,7 @@
     
       <div class="govuk-button-group">
         <a class="govuk-link" href="#">Download CSV</a>
-        {# <a class="govuk-link" href="#">Upload CSV</a> #}
+        <a class="govuk-link" href="#">Upload CSV</a>
       </div>
     </div>
 
@@ -41,9 +41,9 @@
         </div>
 
         {{ data | log }}
-    
-       {# {% include "_includes/samples-card.njk" %} #}
-       {% include "_includes/samples-new-card.njk" %}
+       {% include "_includes/bulk-actions.njk" %} 
+       {% include "_includes/samples-card.njk" %}
+       {# {% include "_includes/samples-new-card.njk" %} #}
        {# {% include "_includes/pagination.njk" %} #}
         
 {% endblock %}

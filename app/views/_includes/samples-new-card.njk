@@ -3,50 +3,50 @@
     {% if data.claims.length %}
       <div class="app-list">
         {% for claim in data.claims %}
-        {% if claim.status == 'Sampling in progress' %}
-        {% if claim.provider == 'Best Practice Network'%}
-        {# {% if claim.status == 'Request information' %} #}
+          {# {% if claim.status == 'Sampling in progress' %} #}
+          {% if claim.provider == 'Best Practice Network'%}
+          {% if claim.status == 'Request information' %}
 
-        <div class="app-list__item">
+          <div class="app-list__item">
 
-            <h3 class="govuk-heading-s govuk-!-width-two-thirds">
-              <a href="/claims/{{claim.id}}">
-                {{ claim.claimRefandNum }}
-              </a>
-            </h3>
+              <h3 class="govuk-heading-s govuk-!-width-two-thirds">
+                <a href="/claims/{{claim.id}}">
+                  {{ claim.claimRefandNum }}
+                </a>
+              </h3>
 
-            {{ govukTag({
-              text: claim.status,
-              classes: claim.status | statusColour
-            }) }}
+              {{ govukTag({
+                text: claim.status,
+                classes: claim.status | statusColour
+              }) }}
 
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds">
-                  <dt class="govuk-visually-hidden">Academic year</dt>
-                  <dd class="govuk-body-s  govuk-!-margin-bottom-2">
-                    {{claim.academicYear }}
-                  </dd>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <dt class="govuk-visually-hidden">Academic year</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-2">
+                      {{claim.academicYear }}
+                    </dd>
 
-                  <dt class="govuk-visually-hidden">Accredited provider</dt>
-                  <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{claim.provider }}
-                  </dd>
+                    <dt class="govuk-visually-hidden">Accredited provider</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                      {{claim.provider }}
+                    </dd>
+                </div>
+
+                <div class="govuk-grid-column-one-third">
+                  <dt class="govuk-visually-hidden">Submitted on</dt>
+                    <dd class="govuk-body-s govuk-!-margin-bottom-2">
+                      {{ claim.date | govukDate  }}
+                    </dd>
+                  <dt class="govuk-visually-hidden">Total amount</dt>
+                    <dd class="govuk-body-s  govuk-!-margin-bottom-1">
+                      {{ claim.amount | currency }}
+                    </dd>
               </div>
-
-              <div class="govuk-grid-column-one-third">
-                <dt class="govuk-visually-hidden">Submitted on</dt>
-                  <dd class="govuk-body-s govuk-!-margin-bottom-2">
-                    {{ claim.date | govukDate  }}
-                  </dd>
-                <dt class="govuk-visually-hidden">Total amount</dt>
-                  <dd class="govuk-body-s  govuk-!-margin-bottom-1">
-                    {{ claim.amount | currency }}
-                  </dd>
             </div>
           </div>
-        </div>
-        {% endif %}
-        {% endif %}
+          {% endif %}
+          {% endif %}
         {% endfor %}
       </div>
   {% else %}
