@@ -28,8 +28,11 @@
         <li>who they are sent to</li>
         <li>what to expect next - revised CSV back from ESFA etc</li>
       </ul> #}
+      <p class="govuk-body">(**CD needed)</p>
+      <p class="govuk-body">Sending theses claims for paymenmt will email a copy of them to both ESFA will and the support setting tab / email inbox / somewhere tbc</p>
+      <p class="govuk-body">There will be no action required until the revised CSV is returned fro ESFA</p>
 
-      <form method="post" action="/payments/sent">
+      <form method="post" action="/payments/list-sent-esfa">
         {{ govukButton({
           text: "Send claims for payment"
         }) }}

@@ -1,0 +1,67 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "payments" %}
+{% set filters = req.session.data.filters %}
+
+{% block content %}
+
+    <h1 class="govuk-heading-xl">{{ pageName }}</h1>
+
+    {% include "_includes/secondary-navigation.njk" %}
+
+    
+    <div class="flex-button-h2-cont">
+      <h2 class="govuk-heading-l">Payments</h2>
+    
+      <div class="govuk-button-group flex-right">
+        <a class="govuk-link" href="sent">Upload CSV</a>
+      </div>
+    </div>
+
+
+    <div class="app-filter-layout">
+      <div class="app-filter-layout__filter">
+        {% include "_includes/filter-panel.njk" %}
+      </div>
+
+      <div class="app-filter-layout__content">
+
+        {% include "_includes/search-form-claims.njk" %}
+
+        <div class="app-action-bar">
+          <div class="app-action-bar__filter"></div>
+        </div>
+
+        
+        {{ data | log }}
+    
+        {# {% include "_includes/payments-bulk-actions.njk" %}  #}
+       {% include "_includes/payments-no-check.njk" %}
+       {# {% include "_includes/pagination.njk" %} #}
+        
+{% endblock %}
+  
+  {% block scripts %}
+    {{super()}}
+    <script>
+      new AppFrontend.FilterToggleButton({
+        bigModeMediaQuery: '(min-width: 48.063em)',
+        startHidden: false,
+        toggleButton: {
+          container: $('.app-action-bar__filter'),
+          showText: 'Show filter',
+          hideText: 'Hide filter',
+          classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+        },
+        closeButton: {
+          container: $('.app-filter__header-action'),
+          text: 'Close'
+        },
+        filter: {
+          container: $('.app-filter-layout__filter')
+        }
+      })
+    </script>
+  {% endblock %}

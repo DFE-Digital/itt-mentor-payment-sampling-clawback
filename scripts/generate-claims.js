@@ -19,6 +19,7 @@ const generateClaim = () => {
     'Submitted',
     'Request information',
     'Pending ESFA check',
+    'Sent to ESFA',
     'Processed',
     'Payment not approved',
     'Sampling in progress',

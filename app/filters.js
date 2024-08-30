@@ -16,6 +16,8 @@ addFilter('statusColour', status => {
       return 'govuk-tag--orange'
     case 'Pending ESFA check':
       return 'govuk-tag--light-blue'
+    case 'Sent to ESFA':
+      return 'govuk-tag--light-green'
     case 'Processed':
       return 'govuk-tag--green'
     case 'Payment not approved':
