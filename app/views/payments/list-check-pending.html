@@ -27,21 +27,12 @@
           <div class="app-action-bar__filter"></div>
         </div>
 
-        <div class="govuk-button-group">
-          {{ govukButton({
-            text: "Payment not approved",
-            classes: "govuk-button--secondary"
-          }) }}
-          {{ govukButton({
-            text: "Information sent to ESFA",
-            classes: "govuk-button--secondary"
-          }) }}
-        </div>
 
         {{ data | log }}
     
-       {% include "_includes/payments-card.njk" %}
-       {% include "_includes/pagination.njk" %}
+        {% include "_includes/payments-bulk-actions.njk" %} 
+       {% include "_includes/payments-pending-card.njk" %}
+       {# {% include "_includes/pagination.njk" %} #}
         
 {% endblock %}
   
