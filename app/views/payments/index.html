@@ -1,16 +1,16 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Payments (99)" %}
+{% set pageName = "Send submitted claims to ESFA" %}
 {% set primaryNavId = "claims" %}
 {# {% set secondaryNavId = "payments" %} #}
 
-{% block beforeContent %}
+{# {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
     href: "javascript:window.history.back()",
     classes: "govuk-!-margin-top-6 govuk-!-display-block" 
   }) }}
-{% endblock %}
+{% endblock %} #}
 
 
 {% block content %}
@@ -28,7 +28,7 @@
 
 <form method="post" action="/payments/review">
   {{ govukButton({
-    text: "Send 99 submitted claims to ESFA"
+    text: "Continue"
   }) }}
 </form>
 {% endblock %}

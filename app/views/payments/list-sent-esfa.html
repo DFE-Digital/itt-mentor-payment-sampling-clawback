@@ -5,7 +5,21 @@
 {% set secondaryNavId = "payments" %}
 {% set filters = req.session.data.filters %}
 
+{% set claimsSentToESFA %}
+  <h3 class="govuk-notification-banner__heading">
+    Claims sent to ESFA
+  </h3>
+{% endset %}
+
+
 {% block content %}
+
+    
+      {{ govukNotificationBanner({
+        html: claimsSentToESFA,
+        type: "success"
+      }) }}
+    
 
     <h1 class="govuk-heading-xl">{{ pageName }}</h1>
 
@@ -16,7 +30,7 @@
       <h2 class="govuk-heading-l">Payments</h2>
     
       <div class="govuk-button-group flex-right">
-        <a class="govuk-link" href="sent">Upload CSV</a>
+        <a class="govuk-link" href="sent2">Upload CSV</a>
       </div>
     </div>
 
@@ -43,25 +57,25 @@
         
 {% endblock %}
   
-  {% block scripts %}
-    {{super()}}
-    <script>
-      new AppFrontend.FilterToggleButton({
-        bigModeMediaQuery: '(min-width: 48.063em)',
-        startHidden: false,
-        toggleButton: {
-          container: $('.app-action-bar__filter'),
-          showText: 'Show filter',
-          hideText: 'Hide filter',
-          classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
-        },
-        closeButton: {
-          container: $('.app-filter__header-action'),
-          text: 'Close'
-        },
-        filter: {
-          container: $('.app-filter-layout__filter')
-        }
-      })
-    </script>
-  {% endblock %}
+{% block scripts %}
+  {{super()}}
+  <script>
+    new AppFrontend.FilterToggleButton({
+      bigModeMediaQuery: '(min-width: 48.063em)',
+      startHidden: false,
+      toggleButton: {
+        container: $('.app-action-bar__filter'),
+        showText: 'Show filter',
+        hideText: 'Hide filter',
+        classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+      },
+      closeButton: {
+        container: $('.app-filter__header-action'),
+        text: 'Close'
+      },
+      filter: {
+        container: $('.app-filter-layout__filter')
+      }
+    })
+  </script>
+{% endblock %}

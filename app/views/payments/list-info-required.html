@@ -5,7 +5,20 @@
 {% set secondaryNavId = "payments" %}
 {% set filters = req.session.data.filters %}
 
+{% set claimsUploaded %}
+  <h3 class="govuk-notification-banner__heading">
+    Claims uploaded
+  </h3>
+{% endset %}
+
+
 {% block content %}
+
+    
+      {{ govukNotificationBanner({
+        html: claimsUploaded,
+        type: "success"
+      }) }}
 
     <h1 class="govuk-heading-xl">{{ pageName }}</h1>
 
