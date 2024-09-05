@@ -42,7 +42,8 @@
     {% if claims.length %}
       <div class="app-list">
         {% for claim in claims %}
-        {% if claim.status == 'Payment not approved' %}
+        {# {% if claim.status == 'Payment not approved' %} #}
+        {% if claim.status == 'Processed' %}
         <div class="app-list__item">
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
