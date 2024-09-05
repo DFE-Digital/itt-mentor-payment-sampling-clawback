@@ -2,8 +2,9 @@
 
 {% set pageName = "You cannot send claims to ESFA" %}
 {% set subheadName = "Payments" %}
+{% set pageName = "Payments" %}
+{% set subheadName = "You cannot send claims to ESFA" %}
 {% set primaryNavId = "claims" %}
-{% set secondaryNavId = "payments" %}
 
 {% block beforeContent %}
   {{ govukBackLink({
@@ -15,27 +16,14 @@
 
 
 {% block content %}
-<h1 class="govuk-heading-l">{{ pageName }}</h1>
+<span class="govuk-caption-l">{{ pageName }}</span>
+<h1 class="govuk-heading-l">{{ subheadName }}</h1>
 
-{% include "_includes/secondary-navigation.njk" %}
-<h2 class="govuk-heading-m">{{ subheadName }}</h2>
-
-<p class="govuk-body">In Payments, you can:</p>
+<p class="govuk-body">This is because:</p>
 <ul class="govuk-list govuk-list--bullet">
-  <li>trigger an email and CSV file to be sent to ESFA by selecting 'Send claims to ESFA'</li>
-  <li>upload a CSV from ESFA if they need further information</li> 
+  <li>there is no CSV of submitted claims ready for payment</li>
 </ul>
 
-<form method="post" action="/payments/review">
-  <div class="govuk-button-group">
-    {{ govukButton({
-      text: "Send claims to ESFA"
-    }) }}
+  <p class="govuk-body"><a class="govuk-link" href="/payments">Cancel</a></p>
   
-    {{ govukButton({
-      text: "Upload ESFA response",
-      classes: "govuk-button--secondary"
-    }) }}
-  </div>
-</form>
 {% endblock %}
