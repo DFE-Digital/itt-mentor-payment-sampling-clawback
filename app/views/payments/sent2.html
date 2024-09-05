@@ -1,6 +1,7 @@
 {% extends "layouts/main.html" %}
 {% set primaryNavId = "claims" %}
 {% set pageName = "Payments" %}
+{% set subheadName = "Claims sent to ESFA" %}
 
 
 
@@ -10,12 +11,12 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full-width">
 
-    <h1 class="govuk-heading-xl">{{ pageName }}</h1>
+    <span class="govuk-caption-l">{{ pageName }}</span>
+    <h1 class="govuk-heading-l">{{ subheadName }}</h1>
 
     {{ govukTable({
-      caption: "Submitted claims last sent for payment",
       captionClasses: "govuk-table__caption--m",
-      firstCellIsHeader: true,
+      firstCellIsHeader: false,
       head: [
         {
           text: "Date"
@@ -30,32 +31,19 @@
             text: "28 August 2024"
           },
           {
-            text: "Bob Bobbins (can we play this back???)"
+            text: "[support team member name]"
           }
         ]
       ]
     }) }}
 
    <h2 class="govuk-heading-m govuk-!-margin-top-8">What happens next</h2>
-   <ol class="govuk-list govuk-list--number">
-    <li>ESFA will return a revised CSV</li>
-    <li>Upload the CSV here to add revised claims to payments tab</li>
-  </ol>
+    <ol class="govuk-list govuk-list--number">
+      <li>ESFA will return a response CSV</li>
+      <li>Upload the CSV in the payments tab to show the claims</li>
+    </ol>
 
-
-      <form method="post" action="/payments/list-info-required">
-        {{ govukFileUpload({
-          id: "file-upload-1",
-          name: "fileUpload1",
-          label: {
-            text: "Upload a file"
-          }
-        }) }}
-
-        {{ govukButton({
-          text: "Continue"
-        }) }}
-      </form>
+    <p class="govuk-body"><a class="govuk-link" href="/claims">Go to all claims</a></p> 
       
   </div>
 </div>

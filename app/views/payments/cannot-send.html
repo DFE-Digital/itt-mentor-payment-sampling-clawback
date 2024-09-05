@@ -1,18 +1,17 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Claims" %}
+{% set pageName = "You cannot send claims to ESFA" %}
 {% set subheadName = "Payments" %}
-
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "payments" %}
 
-{# {% block beforeContent %}
+{% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
     href: "javascript:window.history.back()",
     classes: "govuk-!-margin-top-6 govuk-!-display-block" 
   }) }}
-{% endblock %} #}
+{% endblock %}
 
 
 {% block content %}
@@ -30,14 +29,12 @@
 <form method="post" action="/payments/review">
   <div class="govuk-button-group">
     {{ govukButton({
-      text: "Send claims to ESFA",
-      href: "/payments/review"
+      text: "Send claims to ESFA"
     }) }}
   
     {{ govukButton({
       text: "Upload ESFA response",
-      classes: "govuk-button--secondary",
-      href: "#"
+      classes: "govuk-button--secondary"
     }) }}
   </div>
 </form>

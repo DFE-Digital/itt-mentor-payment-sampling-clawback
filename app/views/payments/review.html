@@ -1,6 +1,8 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Do you want to send 99 submitted claims to ESFA for payment?" %}
+{% set pageName = "Payments" %}
+{% set subheadName = "Do you want to send these claims to ESFA for payment?" %}
+
 {% set primaryNavId = "claims" %}
 {# {% set secondaryNavId = "payments" %} #}
 
@@ -17,26 +19,22 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">{{ pageName }}</h1>
+    <span class="govuk-caption-l">{{ pageName }}</span>
+    <h1 class="govuk-heading-l">{{ subheadName }}</h1>
 
-      {# {% include "_includes/secondary-navigation.njk" %} #}
-
-      {# <h2 class="govuk-heading-l">Payments</h2> #}
-      {# <p class="govuk-body">Bit of info here on:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>what type of claims are being sent</li>
-        <li>who they are sent to</li>
-        <li>what to expect next - revised CSV back from ESFA etc</li>
-      </ul> #}
-      <p class="govuk-body">(**CD needed)</p>
-      <p class="govuk-body">Sending theses claims for paymenmt will email a copy of them to both ESFA will and the support setting tab / email inbox / somewhere tbc</p>
-      <p class="govuk-body">There will be no action required until the revised CSV is returned fro ESFA</p>
+  
+      <p class="govuk-body">This action cannot be undone.</p>
+      <p class="govuk-body">The status of these claims will automatically update to 'Processed'.</p>
 
       <form method="post" action="/payments/list-sent-esfa">
-        {{ govukButton({
-          text: "Send claims for payment"
-        }) }}
+        <div class="govuk-button-group">
+          {{ govukButton({
+            text: "Send email to ESFA",
+            href: "sent2"
+          }) }}
+        </div>
       </form>
+     <p class="govuk-body"><a class="govuk-link" href="/payments">Cancel</a></p> 
   </div>
 </div>
 
