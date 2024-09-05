@@ -24,7 +24,16 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Information sent to ESFA"
+        }) }}
+      
+        {{ govukButton({
+          text: "Payment not approved",
+          classes: "govuk-button--secondary"
+        }) }}
+      </div>
 
       <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
 

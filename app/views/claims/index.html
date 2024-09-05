@@ -12,13 +12,18 @@
 
 {% include "_includes/secondary-navigation.njk" %}
 
-<div class="flex-button-h2-cont">
-  <h2 class="govuk-heading-l">All claims (999)</h2>
+{# <div class="flex-button-h2-cont">
+  <h2 class="govuk-heading-l">All claims</h2>
 
   <div class="govuk-button-group flex-right">
     <a class="govuk-link" href="#">Download CSV</a>
   </div>
-</div>
+</div> #}
+
+<h2 class="govuk-heading-l">All claims</h2>
+{{ govukButton({
+  text: "Download CSV"
+}) }}
 
 
 <div class="app-filter-layout">
@@ -43,7 +48,7 @@
       <div class="app-list">
         {% for claim in claims %}
         {# {% if claim.status == 'Payment not approved' %} #}
-        {% if claim.status == 'Processed' %}
+        {% if claim.status == 'Payment not approved' %}
         <div class="app-list__item">
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
