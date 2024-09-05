@@ -1,8 +1,9 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Send submitted claims to ESFA" %}
+{% set pageName = "Claims" %}
+{% set subheadName = "Payments" %}
 {% set primaryNavId = "claims" %}
-{# {% set secondaryNavId = "payments" %} #}
+{% set secondaryNavId = "payments" %}
 
 {# {% block beforeContent %}
   {{ govukBackLink({
@@ -14,21 +15,27 @@
 
 
 {% block content %}
-<h1 class="govuk-heading-xl">{{ pageName }}</h1>
+<h1 class="govuk-heading-l">{{ pageName }}</h1>
 
-{# {% include "_includes/secondary-navigation.njk" %} #}
+{% include "_includes/secondary-navigation.njk" %}
+<h2 class="govuk-heading-m">{{ subheadName }}</h2>
 
-{# <h2 class="govuk-heading-l">Payments</h2> #}
-<p class="govuk-body">(**CD required**)Bit of info here on:</p>
+<p class="govuk-body">In Payments, you can:</p>
 <ul class="govuk-list govuk-list--bullet">
-  <li>what type of claims are being sent (claims that are ready for payment)</li>
-  <li>who/where these claims are sent to</li>
-  <li>what to expect next - revised CSV back from ESFA etc</li>
+  <li>trigger an email and CSV file to be sent to ESFA by selecting 'Send claims to ESFA'</li>
+  <li>upload a CSV from ESFA if they need further information</li> 
 </ul>
 
 <form method="post" action="/payments/review">
-  {{ govukButton({
-    text: "Continue"
-  }) }}
+  <div class="govuk-button-group">
+    {{ govukButton({
+      text: "Send claims to ESFA"
+    }) }}
+  
+    {{ govukButton({
+      text: "Upload ESFA response",
+      classes: "govuk-button--secondary"
+    }) }}
+  </div>
 </form>
 {% endblock %}
