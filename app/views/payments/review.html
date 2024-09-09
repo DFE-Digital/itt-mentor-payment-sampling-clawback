@@ -22,9 +22,13 @@
     <span class="govuk-caption-l">{{ pageName }}</span>
     <h1 class="govuk-heading-l">{{ subheadName }}</h1>
 
-  
-      <p class="govuk-body">This action cannot be undone.</p>
-      <p class="govuk-body">The status of these claims will automatically update to 'Processed'.</p>
+
+      {{ govukWarningText({
+        text: "This action cannot be undone.",
+        iconFallbackText: "Warning"
+      }) }}
+      {# <p class="govuk-body">This action cannot be undone.</p> #}
+      <p class="govuk-body">The status of these claims will automatically update to 'Sent to ESFA'.</p>
 
       <form method="post" action="/payments/list-sent-esfa">
         <div class="govuk-button-group">

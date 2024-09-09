@@ -48,7 +48,6 @@
       <div class="app-list">
         {% for claim in claims %}
         {# {% if claim.status == 'Payment not approved' %} #}
-        {% if claim.status == 'Payment not approved' %}
         <div class="app-list__item">
 
             <h3 class="govuk-heading-s govuk-!-width-two-thirds">
@@ -87,7 +86,7 @@
             </div>
           </div>
         </div>
-        {% endif %}
+        {# {% endif %} #}
         {% endfor %}
       </div>
   {% else %}
