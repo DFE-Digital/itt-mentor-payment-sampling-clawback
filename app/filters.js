@@ -18,13 +18,13 @@ addFilter('statusColour', status => {
       return 'govuk-tag--light-blue'
     case 'Sent to ESFA':
       return 'govuk-tag--light-green'
-    case 'Processed':
+    case 'Paid':
       return 'govuk-tag--green'
     case 'Payment not approved':
       return 'govuk-tag--red'
     case 'Sampling in progress':
       return 'govuk-tag--yellow'
-    case 'Sampled and processed':
+    case 'Sampled and paid':
       return 'govuk-tag--green'
     case 'Clawback required':
       return 'govuk-tag--light-blue'

@@ -1,0 +1,56 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Payments" %}
+{% set subheadName = "Upload respose from ESFA" %}
+
+{% set primaryNavId = "claims" %}
+{# {% set secondaryNavId = "payments" %} #}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukErrorSummary({
+      titleText: "There is a problem",
+      errorList: [
+        {
+          text: "Select a CSV file from ESFA",
+          href: "#"
+        }
+      ]
+    }) }}
+    <span class="govuk-caption-l">{{ pageName }}</span>
+    <h1 class="govuk-heading-l">{{ subheadName }}</h1>
+
+      <form method="post" action="/payments/list-info-required">
+        {{ govukFileUpload({
+          id: "file-upload-1",
+          name: "fileUpload1",
+          label: {
+            text: "Upload a file"
+          },
+          errorMessage: {
+            text: "Select a CSV file from ESFA"
+          }
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+      <p class="govuk-body"><a class="govuk-link" href="/payments">Cancel</a></p> 
+  </div>
+</div>
+
+
+{% endblock %}
