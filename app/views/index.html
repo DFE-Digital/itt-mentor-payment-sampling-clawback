@@ -1,46 +1,102 @@
 {% extends "layouts/main.html" %}
 
+{% set dates %}
+  <p class="govuk-notification-banner__heading">
+    The service is open for claims. Deadline to submit claims is: 11:59pm on Friday 27 September 2024.
+  </p>
+{% endset %}
 {% set pageName = "Claim funding for mentor training" %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    {{ govukNotificationBanner({
+      html: dates
+    }) }}
+  </div>
   <div class="govuk-grid-column-two-thirds">
-
 
     <h1 class="govuk-heading-l">{{ pageName }}</h1>
     <p class="govuk-body">
-      Use this service to claim for mentors who supported, or intended to support, trainee teachers from September 2023 to July 2024.
+      Use this service to claim payment for the time a teacher spends becoming an initial teacher training (ITT) mentor, also known as a 'general mentor'. Payments will be made directly to the school or placement organisation.  
     </p>
 
-    <p class="govuk-body">
-      Final closing date for claims: <strong>19 July 2024 at 11:59 pm</strong>
-    </p>
+    {# -------- SECTION --------- #}
+
+    <h2 class="govuk-heading-m">Who can use this service</h2>
 
     <p class="govuk-body">
-      You must wait until May 2025 to claim for training that took place from April 2024 for the school year starting September 2025.
-    </p>
-
-    <h2 class="govuk-heading-m">Before you start</h2>
-
-    <p class="govuk-body">
-      You’ll be asked for:
+      To use this service, your school or placement organisation must:
     </p>
 
     <ul class="govuk-list govuk-list--bullet">
       <li>
-        initial teacher training (ITT) provider name
+        offer ITT placements with an approved provider
       </li>
       <li>
-        your mentors’ teacher reference numbers (TRN)
+        be registered with <a href="#" class="govuk-link">Get Information about Schools (GIAS)</a>
       </li>
       <li>
-        your mentors’ dates of birth
-      </li>
-      <li>
-        hours of training each mentor completed
+        have at least one teacher who has started, or is due to start, their ITT mentor (general mentor) training this academic year
       </li>
     </ul>
+
+    <p class="govuk-body">This funding is not available for training early career framework (ECF) mentors. To claim for ECF mentors, <a href="#" class="govuk-link">you need a different service</a>.</p>
+
+    {# -------- SECTION --------- #}
+
+    <h2 class="govuk-heading-m">When to submit a claim</h2>
+    <p class="govuk-body">
+      To submit a claim, you first need to register your mentors.  
+    </p>
+
+
+    <p class="govuk-body">
+      Key dates:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        You can submit a claim from spring 2025
+      </li>
+      <li>
+        For training that took place from April 2024 for the school year starting September 2025, you must wait until May 2025 to submit a claim
+      </li>
+      <li>
+        have at least one teacher who has started, or is due to start, their ITT mentor (general mentor) training this academic year
+      </li>
+    </ul>
+    
+    {# -------- SECTION --------- #}
+    
+    <h2 class="govuk-heading-m">Before you start</h2>
+    <p class="govuk-body">
+      To start a claim, you will be asked to add your mentors to the service.
+    </p>
+
+    <p class="govuk-body">
+      To add your mentors, you will need:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        a DfE Sign-in account 
+      </li>
+      <li>
+        the name of your ITT accredited provider
+      </li>
+      <li>
+        your mentors' teacher reference number (TRN)
+      </li>
+      <li>
+        your mentors' dates of birth
+      </li>
+    </ul>
+
+    <p class="govuk-body">
+      To submit a claim, you need to add the number of training hours mentors have completed – this should match your provider's.
+    </p>
 
     <a href="/account/sign-in" role="button" draggable="false" class="govuk-button govuk-!-margin-top-4 govuk-button--start" data-module="govuk-button">
       Start now
@@ -48,19 +104,46 @@
         <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/>
       </svg>
     </a>
-    
-    
-    <h2 class="govuk-heading-m">Get an account to claim funding for mentor training</h2>
 
+    {# -------- SECTION --------- #}
+
+    <h2 class="govuk-heading-m">How much can I claim </h2>
     <p class="govuk-body">
-      Ask a colleague within your organisation to add you if you do not have an account.
+      You can claim different amounts depending on where your school or placement organisation is located. You can claim up to:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        £876 outside of London 
+      </li>
+      <li>
+        £1072 inside London
+      </li>
+    </ul>
+
+    {# -------- SECTION --------- #}
+
+    <h2 class="govuk-heading-m">How many hours can I claim for</h2>
+    <p class="govuk-body">
+      A claim can be submitted for between 1 to 20 hours for each mentor. The service will only show the maximum hours a mentor can claim. For example, if a mentor is completing their 6 hours of top-up training, the service will only show the available 6 hours.
     </p>
 
     <p class="govuk-body">
+      The mentor does not need to complete the full 20 hours to be eligible for payment.
+    </p>
+
+    <h2 class="govuk-heading-m">When will I receive payment </h2>
+    <p class="govuk-body">
+      Payment will be made directly to the placement school by the Education and Skills Funding Agency (ESFA) or from your Local Authority. Once approved, payment will be made from October following your claim submission date. 
+    </p>
+
+    {# <p class="govuk-body">
       If your organisation has not been set up to claim funding for mentor training, send an email to <a href="mailto:ittmentor.funding@education.gov.uk" class="govuk-link">ittmentor.funding@education.gov.uk</a>.
-    </p>
+    </p> #}
     
   </div>
+
+  {# -------- SIDEBAR --------- #}
 
   <div class="govuk-grid-column-one-third">
     <aside class="app-related" role="complementary">
