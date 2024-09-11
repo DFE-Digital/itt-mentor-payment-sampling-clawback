@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+
+
+{% block content %}
+<h1 class="govuk-heading-xl">{{ pageName }}</h1>
+
+{% include "_includes/secondary-navigation.njk" %}
+
+<h2 class="govuk-heading-l">Sampling</h2>
+
+    <form method="post" action="/sampling">
+      <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
+        <ol class="govuk-list govuk-list--number">
+          <li>Fetch the download CSV of sample claims</li>
+          <li>Upload it</li>
+          <li>Do we need any other instructions for the user here????</li>
+        </ol>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="file-upload-1">
+          Upload a CSV
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
+      </div>
+
+      {{ govukButton({
+        text: "Save and continue",
+        href: "/sampling/list"
+      }) }}
+    </form>
+{% endblock %}

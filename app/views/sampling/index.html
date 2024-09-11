@@ -1,36 +1,44 @@
 {% extends "layouts/main.html" %}
 
 {% set pageName = "Claims" %}
+{% set subheadName = "Sampling" %}
+
 {% set primaryNavId = "claims" %}
 {% set secondaryNavId = "sampling" %}
 
+{# {% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %} #}
+
 
 {% block content %}
-<h1 class="govuk-heading-xl">{{ pageName }}</h1>
+<h1 class="govuk-heading-l">{{ pageName }}</h1>
 
 {% include "_includes/secondary-navigation.njk" %}
+<h2 class="govuk-heading-m">{{ subheadName }}</h2>
 
-<h2 class="govuk-heading-l">Sampling</h2>
+<p class="govuk-body">In sampling, you can:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>trigger an email and CSV file to be sent to a provider by selecting 'Send claims provider'</li>
+  <li>upload a CSV with claims which ara part of the sampling process</li> 
+</ul>
 
-    <form method="post" action="/sampling">
-      <div id="file-upload-1-hint" class="govuk-hint  govuk-!-margin-top-6">
-        <ol class="govuk-list govuk-list--number">
-          <li>Fetch the download CSV of sample claims</li>
-          <li>Upload it</li>
-          <li>Do we need any other instructions for the user here????</li>
-        </ol>
-      </div>
-
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="file-upload-1">
-          Upload a CSV
-        </label>
-        <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
-      </div>
-
-      {{ govukButton({
-        text: "Save and continue",
-        href: "/sampling/list"
-      }) }}
-    </form>
+<form method="post" action="/sampling/review">
+  <div class="govuk-button-group">
+    {{ govukButton({
+      text: "Send claims to provider",
+      href: "/payments/review"
+    }) }}
+  
+    {{ govukButton({
+      text: "Upload sampling claims",
+      classes: "govuk-button--secondary",
+      href: "/sampling/upload"
+    }) }}
+  </div>
+</form>
 {% endblock %}
