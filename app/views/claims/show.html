@@ -39,11 +39,13 @@
 
         <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
       {% else  %}
-      
+        
         <div class="govuk-inset-text">
           This payment was not approved because: [claim_unpaid_reason]
         </div>
-      
+        
+        <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
+
       {% endif %}
 
       {# claim details #}
