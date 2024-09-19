@@ -1,0 +1,39 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Claims" %}
+{% set subheadName = "Payments" %}
+
+{% set primaryNavId = "claims" %}
+{% set secondaryNavId = "sampling" %}
+
+{% set claimsUploaded %}
+  <h3 class="govuk-notification-banner__heading">
+    Provider response uploaded
+  </h3>
+{% endset %}
+
+
+{% block content %}
+
+    
+      {{ govukNotificationBanner({
+        html: claimsUploaded,
+        type: "success"
+      }) }}
+
+      <h1 class="govuk-heading-l">{{ pageName }}</h1>
+
+      {% include "_includes/secondary-navigation.njk" %}
+      <h2 class="govuk-heading-m">{{ subheadName }}</h2>
+
+
+   
+    {{ data | log }}
+    
+    <p class="govuk-body govuk-!-font-weight-bold">2 claims</p>
+    {% include "_includes/payments-send-card.njk" %}
+    {# {% include "_includes/pagination.njk" %} #}
+        
+{% endblock %}
+  
+ 

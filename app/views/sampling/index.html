@@ -23,21 +23,21 @@
 
 <p class="govuk-body">In sampling, you can:</p>
 <ul class="govuk-list govuk-list--bullet">
-  <li>trigger an email and CSV file to be sent to a provider by selecting 'Send claims provider'</li>
-  <li>upload a CSV with claims which ara part of the sampling process</li> 
+  <li>upload a CSV with all claims to be sampled</li>
+  <li>upload a CSV response from providers with approved and not approved claims</li> 
 </ul>
 
 <form method="post" action="/sampling/review">
   <div class="govuk-button-group">
     {{ govukButton({
-      text: "Send claims to provider",
-      href: "/payments/review"
+      text: "Upload claims to be sampled",
+      href: "/sampling/upload"
     }) }}
   
     {{ govukButton({
-      text: "Upload sampling claims",
+      text: "Upload response from provider",
       classes: "govuk-button--secondary",
-      href: "/sampling/upload"
+      href: "/sampling/provider-upload"
     }) }}
   </div>
 </form>
