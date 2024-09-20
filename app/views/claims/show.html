@@ -13,40 +13,53 @@
 
 {% block content %}
 {{ data | log }}
-<span class="govuk-caption-l">Claim - {{ claimDetails.claimRef }}</span>
-<div class="flex-cont">
-<h1 class="govuk-heading-l govuk-!-margin-right-2">{{ claimDetails.orgName }} </h1>
-  <strong class="govuk-tag {{ claimDetails.status | statusColour }}">
-    {{ claimDetails.status }}
-  </strong>
-</div>
+
+{{ req.session.data | log }}
 
   
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      {% if claim.status == 'Payment not approved' %}  
+      <span class="govuk-caption-l">Claim - {{ claimDetails.claimRef }}</span>
+      <div class="flex-cont">
+        <h1 class="govuk-heading-l govuk-!-margin-right-2">{{ claimDetails.orgName }} </h1>
+          <strong class="govuk-tag {{ claimDetails.status | statusColour }}">
+            {{ claimDetails.status }}
+          </strong>
+      </div> 
+       
+        {% if not claim.status == 'Payment not approved' %}
+
+          <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
+          
+        {% else  %}
+          
         <div class="govuk-button-group">
           {{ govukButton({
-            text: "Information sent to ESFA"
+            text: "Sampled and paid"
           }) }}
         
           {{ govukButton({
-            text: "Payment not approved",
+            text: "Send to clawback",
             classes: "govuk-button--secondary"
           }) }}
         </div>
+          
+          <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
 
-        <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
-      {% else  %}
-        
-        <div class="govuk-inset-text">
-          This payment was not approved because: [claim_unpaid_reason]
-        </div>
-        
-        <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
+        {% endif %}
 
-      {% endif %}
+        {#   --------------   Sampling info req -------------------  #}
+
+        {% if not claim.status == 'Request information' %}  
+          
+
+          <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
+
+        {% endif %}
+
+
+
 
       {# claim details #}
       {{ govukSummaryList({
