@@ -3,7 +3,7 @@
     {% if data.claims.length %}
       <div class="app-list">
         {% for claim in data.claims %}
-          {% if claim.status == 'Payment not approved' %}
+          {% if claim.status == 'Request information' %}
           {% if claim.provider == 'Best Practice Network'%}
           {# {% if claim.status == 'Request information' %} #}
 

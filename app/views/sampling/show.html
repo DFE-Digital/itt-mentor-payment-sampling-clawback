@@ -13,52 +13,29 @@
 
 {% block content %}
 {{ data | log }}
+<span class="govuk-caption-l">Claim - {{ claimDetails.claimRef }}</span>
+<div class="flex-cont">
+<h1 class="govuk-heading-l govuk-!-margin-right-2">{{ claimDetails.orgName }} </h1>
+  <strong class="govuk-tag {{ claimDetails.status | statusColour }}">
+    {{ claimDetails.status }}
+  </strong>
+</div>
 
-{{ req.session.data | log }}
 
-  
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Information sent to ESFA"
+        }) }}
+      
+        {{ govukButton({
+          text: "Payment not approved",
+          classes: "govuk-button--secondary"
+        }) }}
+      </div>
 
-      <span class="govuk-caption-l">Claim - {{ claimDetails.claimRef }}</span>
-      <div class="flex-cont">
-        <h1 class="govuk-heading-l govuk-!-margin-right-2">{{ claimDetails.orgName }} </h1>
-          <strong class="govuk-tag {{ claimDetails.status | statusColour }}">
-            {{ claimDetails.status }}
-          </strong>
-      </div> 
-       
-        {% if not claim.status == 'Payment not approved' %}
-
-          <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
-          
-        {% else  %}
-          
-        <div class="govuk-button-group">
-          {{ govukButton({
-            text: "Sampled and paid"
-          }) }}
-        
-          {{ govukButton({
-            text: "Send to clawback",
-            classes: "govuk-button--secondary"
-          }) }}
-        </div>
-          
-          <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
-
-        {% endif %}
-
-        {#   --------------   Sampling info req -------------------  #}
-
-        {% if not claim.status == 'Request information' %}  
-          
-
-          <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
-
-        {% endif %}
-
-
+      <p class="govuk-body">Submitted by {{ claimDetails.submittedBy }} on 28 March 2024.</p>
 
 
       {# claim details #}

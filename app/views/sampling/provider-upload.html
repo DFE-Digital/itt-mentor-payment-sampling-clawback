@@ -1,0 +1,43 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Sampling" %}
+{% set subheadName = "Upload response from provider" %}
+
+{% set primaryNavId = "claims" %}
+{# {% set secondaryNavId = "payments" %} #}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">{{ pageName }}</span>
+    <h1 class="govuk-heading-l">{{ subheadName }}</h1>
+
+    <form method="post" action="/sampling/sample-list-info-required">
+        {{ govukFileUpload({
+          id: "file-upload-1",
+          name: "fileUpload1",
+          label: {
+            text: "Upload a file"
+          }
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+      <p class="govuk-body"><a class="govuk-link" href="/sampling">Cancel</a></p> 
+  </div>
+</div>
+
+
+{% endblock %}
