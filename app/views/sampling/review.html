@@ -1,0 +1,46 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Sampling" %}
+{% set subheadName = "Do you want to send [num_claims] to providers for sampling?" %}
+
+{% set primaryNavId = "claims" %}
+{# {% set secondaryNavId = "payments" %} #}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">{{ pageName }}</span>
+    <h1 class="govuk-heading-l">{{ subheadName }}</h1>
+
+
+      {{ govukWarningText({
+        text: "This action cannot be undone.",
+        iconFallbackText: "Warning"
+      }) }}
+      {# <p class="govuk-body">This action cannot be undone.</p> #}
+      <p class="govuk-body">The status of these claims will automatically update to 'Sampling in progress'.</p>
+
+      <form method="post">
+        <div class="govuk-button-group">
+          {{ govukButton({
+            text: "Send email to providers",
+            href: "sent"
+          }) }}
+        </div>
+      </form>
+     <p class="govuk-body"><a class="govuk-link" href="/sampling">Cancel</a></p> 
+  </div>
+</div>
+
+
+{% endblock %}

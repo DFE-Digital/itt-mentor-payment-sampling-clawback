@@ -1,0 +1,32 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Payments" %}
+{% set subheadName = "You cannot download this file" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+  
+  {# <span class="govuk-caption-l">{{ pageName }}</span> #}
+  <h1 class="govuk-heading-l">{{ subheadName }}</h1>
+  
+  <p class="govuk-body">This is because the download link has expired.</p>
+
+  {# <p class="govuk-body">
+    If you have any questions, please email us at <a class="govuk-link" href="mailto:ittmentor.funding%3Cwbr%3E@education.gov.uk">ittmentor.funding<wbr>@education.gov.uk</a>
+  </p> #}
+  {# <p class="govuk-body">**- Something about what they need to do next here. -**</p> #}
+  {# <ul class="govuk-list govuk-list--bullet">
+    <li>there is no CSV of submitted claims ready for payment</li>
+  </ul> #
+
+
+  
+    {# <p class="govuk-body"><a class="govuk-link" href="sent2">Cancel</a></p> #}
+    
+
+  </div>
+</div>
+
+{% endblock %}  

@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Payments" %}
-{% set subheadName = "Upload response from ESFA" %}
+{% set pageName = "Sampling" %}
+{% set subheadName = "Upload claims to be sampled" %}
 
 {% set primaryNavId = "claims" %}
 {# {% set secondaryNavId = "payments" %} #}
@@ -18,16 +18,29 @@
 {% block content %}
 
 <div class="govuk-grid-row">
+  
   <div class="govuk-grid-column-two-thirds">
+    {{ govukErrorSummary({
+      titleText: "There is a problem",
+      errorList: [
+        {
+          text: "Select a CSV file",
+          href: "#"
+        }
+      ]
+    }) }}
     <span class="govuk-caption-l">{{ pageName }}</span>
     <h1 class="govuk-heading-l">{{ subheadName }}</h1>
 
-      <form method="post" action="/payments/list-info-required">
+      <form method="post" action="#">
         {{ govukFileUpload({
           id: "file-upload-1",
           name: "fileUpload1",
           label: {
             text: "Upload a CSV file"
+          },
+          errorMessage: {
+            text: "Select a CSV file"
           }
         }) }}
 
@@ -35,7 +48,7 @@
           text: "Continue"
         }) }}
       </form>
-      <p class="govuk-body"><a class="govuk-link" href="/payments">Cancel</a></p> 
+      <p class="govuk-body"><a class="govuk-link" href="/sampling">Cancel</a></p> 
   </div>
 </div>
 

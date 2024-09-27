@@ -1,0 +1,58 @@
+{% extends "layouts/main.html" %}
+{% set primaryNavId = "claims" %}
+{% set pageName = "Sampling" %}
+{% set subheadName = "Response from provider uploaded" %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full-width">
+
+    <span class="govuk-caption-l">{{ pageName }}</span>
+    <h1 class="govuk-heading-l">{{ subheadName }}</h1>
+
+    {{ govukTable({
+      captionClasses: "govuk-table__caption--m",
+      firstCellIsHeader: false,
+      head: [
+        {
+
+          text: "Date"
+        },
+        {
+          text: "Sent by"
+        },
+        {
+          text: "Actions"
+        }
+      ],
+      rows: [
+        [
+          {
+            text: "28 August 2024"
+          },
+          {
+            text: "[data team member name]"
+          },
+          {
+            html: '<p class="govuk-body"><a href="#" class="govuk-link">View claims</a></p>'
+          }
+        ]
+      ]
+    }) }}
+
+   <h2 class="govuk-heading-m govuk-!-margin-top-8">What happens next</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Claims approved by the provider will appear as 'Sampled and paid' in the all claims tab</li>
+      <li>Claims not approved by the provider will appear as 'Clawback required' in the claback tab</li>
+    </ul>
+
+    <p class="govuk-body"><a class="govuk-link" href="/claims">Go to all claims</a></p> 
+      
+  </div>
+</div>
+
+{% endblock %}

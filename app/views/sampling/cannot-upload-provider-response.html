@@ -1,0 +1,28 @@
+{% extends "layouts/main.html" %}
+
+
+{% set pageName = "Sampling" %}
+{% set subheadName = "You cannot upload a response from the provider" %}
+{% set primaryNavId = "claims" %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()",
+    classes: "govuk-!-margin-top-6 govuk-!-display-block" 
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+<span class="govuk-caption-l">{{ pageName }}</span>
+<h1 class="govuk-heading-l">{{ subheadName }}</h1>
+
+<p class="govuk-body">This is because no claims for sampling have been sent to providers.</p>
+{# <ul class="govuk-list govuk-list--bullet">
+  <li>there has been no extract sent to ESFA **Rachel to check**</li>
+</ul> #}
+
+  <p class="govuk-body"><a class="govuk-link" href="/sampling">Cancel</a></p>
+  
+{% endblock %}

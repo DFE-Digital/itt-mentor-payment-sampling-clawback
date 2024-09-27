@@ -22,12 +22,12 @@
     <span class="govuk-caption-l">{{ pageName }}</span>
     <h1 class="govuk-heading-l">{{ subheadName }}</h1>
 
-    <form method="post" action="/sampling/sample-list-info-required">
+    <form method="post" action="/sampling/sent">
         {{ govukFileUpload({
           id: "file-upload-1",
           name: "fileUpload1",
           label: {
-            text: "Upload a file"
+            text: "Upload a CSV file"
           }
         }) }}
 
